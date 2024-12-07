@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Company Structure</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <style>
+
+    /* Page transition */
+.page-transition {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ffeb3b; /* Warna transisi */
+    z-index: 9999;
+    pointer-events: none;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: transform 0.6s ease-in-out;
+}
+
+.page-transition.active {
+    transform: scaleY(1);
+}
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: black;
+      color: white;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      padding: 20px;
+    }
+
+    nav{
+    display: flex;
+    width: 85%;
+    margin:auto;
+    padding: 10px 0;
+    align-items: center;
+    justify-content: space-around;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: rgb(251, 250, 250);
+    font-weight: bold;
+}
+
+nav ul li a:hover{
+    color: red;
+
+}
+
+.container a {
+      text-decoration: none;
+      font-weight: bold;
+      color: #007bff;
+      border: 2px solid transparent;
+      padding: 5px 10px;
+      border-radius: 4px;
+      transition: all 0.3s ease;  
+      left: 50%; transform: translateX(-50%)
+
+    }
+
+    .container a:hover {
+      color: #ffffff;
+      background: #007bff;
+      border-color: #0056b3;
+      text-decoration: none;
+      box-shadow: 0 4px 6px rgba(0, 123, 255, 0.4);
+     
+    }
+
+    .container a:active {
+      background: #0056b3;
+      box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2);
+      
+    }
+
+    .container a:visited {
+      background: #007bff;
+      border-color: #0056b3;
+      text-decoration: none;
+      box-shadow: 0 4px 6px rgba(0, 123, 255, 0.4);
+     
+    }
+
+
+
+
+.line {
+      height: 2px;
+      background: #ffe23c;
+      margin: 20px 0;
+    }
+
+    .card {
+      background-color: #ffffff;
+      border-radius: 10px;
+      text-align: center;
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      transition: transform 0.2s;
+      width: 200px;
+      display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 350px; 
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .card p {
+      margin: 10px 0 0;
+      font-size: 1em;
+      font-weight: bold;
+      color: #ffffff;
+      text-shadow: 0 0 5px #010101, 0 0 10px #000000, 0 0 15px #050505;
+    }
+
+    .footer-bottom {
+  text-align: center;
+  padding: 10px 0;
+  border-top: 1px solid #444;
+  background-color: #ff0202;
+  padding: 20px;
+}
+
+.footer-bottom h2 {
+  margin: 0;
+  font-size: 20px;
+  color: #ffffff;
+ background-color: #ff0202;
+}
+
+  </style>
+  <body>
+    <div class="page-transition" id="page-transition"></div>
+
+    <nav>
+        <img src="Bright Orange illustrates Food Chicken Logo (Logo).png" width="100" height="100" class="logo">
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="menu.html">OUR MENU</a></li>
+            <li><a href="promo.html">PROMO</a></li>
+            <li><a href="follow.html">FOLLOW US</a></li>
+            <li><a href="position.html">CONTACT</a></li>            
+        </ul>
+    </nav>
+
+    <div class="line"></div>
+
+
+    <div class="container">
+      <div class="card">
+        <img src="manda.jpeg" alt="Amanda Vidya Sabila" />
+        <p>Amanda Vidya Sabila</p>
+        
+            <a
+              href="CVamanda.html"
+              target="_blank"
+              >CV</a
+            >
+         
+      </div>
+
+      <div class="card">
+        <img
+          src="WhatsApp Image 2024-12-04 at 13.56.54.jpeg"
+          alt="Meila Putri Enjelina"
+        />
+        <p>Meila Putri Enjelina</p>
+        
+            <a
+              href="cv_meila.html"
+              target="_blank"
+              >CV</a
+            >
+         
+      </div>
+
+      <div class="card">
+        <img
+          src="hani.jpeg"
+          width="350px"
+          height="270px"
+          alt="Hanisya Ayu Natasya"
+        />
+        <p>Hanisya Ayu Natasya</p>
+        
+            <a
+              href="CVhanisya.html"
+              target="_blank"
+              >CV</a
+            >
+          
+      </div>
+
+      <div class="card">
+        <img
+          src="WhatsApp Image 2024-12-04 at 13.56.55.jpeg"
+          alt="Nadya Fitrian Maharani"
+        />
+        <p>Nadya Fitrian Maharani</p>
+       
+            <a
+              href="CVNadya.html"
+              target="_blank"
+              >CV</a
+            >
+          
+      </div>
+
+      <div class="card">
+        <img src="lusi.jpeg" alt="Lusiana Tia Savana" />
+        <p>Lusiana Tia Savana</p>
+            <a
+              href="CVlusiana.html"
+              target="_blank"
+              >CV</a
+            >
+      </div>
+    </div>
+
+     
+    <div class="footer-bottom">
+        <h2>@Golden Crust 2024</h2>
+
+        <script>
+          // Pilih semua tautan di menu navigasi dan tombol
+          document.querySelectorAll('nav ul li a, .button').forEach(link => {
+              link.addEventListener('click', (e) => {
+                  const targetUrl = link.getAttribute('href'); // Ambil URL tujuan
+      
+                  // Cek apakah link adalah anchor link internal (dimulai dengan #)
+                  if (targetUrl.startsWith('#')) {
+                      e.preventDefault(); // Cegah tindakan default tautan
+                      const targetElement = document.querySelector(targetUrl); // Cari elemen target berdasarkan ID
+      
+                      if (targetElement) {
+                          // Scroll ke elemen target secara halus
+                          targetElement.scrollIntoView({ behavior: 'smooth' });
+                      }
+                  } else {
+                      // Jika bukan anchor link (navigasi antar halaman)
+                      e.preventDefault(); // Cegah tindakan default tautan
+      
+                      // Aktifkan efek transisi
+                      const pageTransition = document.getElementById('page-transition');
+                      pageTransition.classList.add('active');
+      
+                      // Pindahkan ke halaman tujuan setelah animasi selesai
+                      setTimeout(() => {
+                          window.location.href = targetUrl;
+                      }, 600); // Harus sesuai dengan durasi CSS transition (0.6s)
+                  }
+              });
+          });
+      </script>
+      
+      
+
+  </body>
+</html>

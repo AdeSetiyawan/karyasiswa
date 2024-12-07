@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum Vitae</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000; /* Latar belakang hitam */
+    color: #fff;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    display: flex;
+    justify-content: space-around;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 900px;
+    width: 90%;
+    background-color: #111; 
+    border-radius: 10px;
+    box-shadow: 0 0 15px #0ff, 0 0 30px #0ff;
+    overflow: hidden;
+}
+
+.neon-header {
+    text-align: center;
+    padding: 20px 10px;
+    background-color: #222;
+    box-shadow: 0 0 15px #0ff;
+}
+
+.neon-header h1 {
+    font-size: 2.5rem;
+    color: #0ff;
+    text-shadow: 
+        0 0 5px #0ff, 
+        0 0 10px #0ff, 
+        0 0 20px #0ff, 
+        0 0 40px rgb(250, 250, 250);
+}
+
+.neon-header p {
+    font-size: 1.2rem;
+    color: #fff;
+    text-shadow: 0 0 10px #0ff;
+}
+
+.navigasi{
+    gap: 15px;
+    justify-content: space-around;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    align-items: center;
+    
+}
+
+nav ul li a:hover{
+    color: rgb(251, 250, 250);
+    text-shadow: 0 0 10px #0ff;
+    
+}
+
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px;
+    gap: 80px;
+}
+
+.photo {
+    flex: 1;
+    min-width: 200px;
+    text-align: center;
+}
+
+.photo img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #0ff;
+    box-shadow: 0 0 20px #0ff;
+}
+
+.details {
+    flex: 2;
+    min-width: 700px;
+}
+
+.details section {
+    margin-bottom: 20px;
+}
+
+.details h2 {
+    font-size: 1.5rem;
+    color: #0ff;
+    text-shadow: 0 0 10px #0ff;
+    margin-bottom: 10px;
+}
+
+.details p, .details ul {
+    color: #fff;
+    text-shadow: 0 0 5px #aaa;
+}
+
+.details ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.details ul li {
+    margin-bottom: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #111;
+    box-shadow: 0 0 15px #0ff;
+    color: #fff;
+    font-size: 0.9rem;
+}
+
+
+
+.skills-container {
+  padding: 50px 0;
+  display: flex;
+  justify-content: center;
+ align-items: center;
+}
+
+.skill {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+
+}
+
+.circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 5px solid #333;
+  position: relative;
+  justify-content: right;
+  background: conic-gradient(
+    #ffd700 calc(var(--percentage) * 1%),
+    #333 calc(var(--percentage) * 1%)
+  );
+}
+
+.circle::after {
+  content: attr(data-percentage) '%';
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+p {
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+</style>
+
+<body>
+    <div class="container">
+        <header class="neon-header">
+            <h1>HANISYA AYU NATASYA</h1>
+            <p>PPLG / SMKN 1 JATIROTO</p>
+        
+            <nav class="navigasi">
+                <ul>
+                    <li><a href="#ABOUT ME">ABOUT ME</a></li>
+                    <li><a href="#CONTACT">CONTACT</a></li>
+                    <li><a href="#SKILLS">SKILLS</a></li>
+                    <li><a href="#EXPERIENCE">EXPERIENCE</a></li>            
+                </ul>
+            </nav>
+           
+        </header>
+        <main>
+            <div class="photo">
+                <img src="c:\Users\LAB KOMPUTER B\Downloads\WhatsApp Image 2024-08-13 at 10.41.07.jpeg" alt="Your Photo">
+            </div>
+            <div class="details">
+                <section id="ABOUT ME">
+                    <h2>About Me</h2>
+                    <p>
+                        Saya lahir di Jakarta pada tanggal 9 April  2008, dan saya merupakan anak tunggal. Saat ini saya berstatus sebagai seorang mahasiswi di SMKN 1 Jatiroto dan mengambil jurusan PPLG. Saya mempunyai bakat dibidang seni, terutama musik maka, hobi saya tidak jauh dari bermain musik. Bertentangan dengan jurusan yang saya ambil, ini merupakan sebuah tantangan dan bisa menjadi pembelajaran berharga tentang adaptasi dan ketangguhan untuk masa depan.
+                    </p>
+                </section>
+                <section id="CONTACT">
+                    <h2>Personal Information</h2>
+                    <ul>
+                        <li><strong>Email:</strong> hanisyaayu960@gmail.com</li>
+                        <li><strong>Phone:</strong> +62 858 6598 5955</li>
+                        <li><strong>Address:</strong> Dayakan, Duren, Jatiroto</li>
+                    </ul>
+                </section>
+               
+                <div class="skills-container">
+                    <div class="skill">
+                        <section id="SKILLS">
+                      <div class="circle" data-percentage="67"></div>
+                      <p>CANVA</p>
+                    </div>
+                    <div class="skill">
+                      <div class="circle" data-percentage="78"></div>
+                      <p>C++</p>
+                    </div>
+                    <div class="skill">
+                      <div class="circle" data-percentage="70"></div>
+                      <p>NETBEANS</p>
+                    </div>
+                    <div class="skill">
+                      <div class="circle" data-percentage="50"></div>
+                      <p>VSC</p>
+                    </div>
+                  </div>
+                
+                  <script src="script.js"></script>
+                </section>
+
+                <section id="EXPERIENCE">
+                    <h2>Experience</h2>
+                    <ul>
+                        <li><strong>TK:</strong> Saya pernah mengikuti Lomba Meronce: Juara 1 tingkat Kecamatan, Juara 1 tingkat Kabupaten, Juara 1 tingkat Provinsi</li>
+                        <li><strong>SD:</strong> Saya pernah mengikuti Lomba mapsi mendapat juara 3, dan olahraga cabang atletik Juara 1 tingkat Kecamatan, Juara 1 tingkat Distrik</li>
+                        <li><strong>SMP:</strong> Saya pernah mengikuti Lomba olimpiade IPA tingkat Kabupaten</li>
+                    </ul>
+                </section>
+            </div>
+        </main>
+        <footer>
+            <p>© 2024 Hanisya. All Rights Reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>

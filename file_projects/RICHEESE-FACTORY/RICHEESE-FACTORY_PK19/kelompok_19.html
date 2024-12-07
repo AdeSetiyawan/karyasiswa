@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rumah Makan Ricis</title>
+    <style> 
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.5;
+            background-color: #ffffff;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #f4b41a;
+            text-align: center;
+            color: white;
+            padding: 20px;
+            opacity: 0;
+            animation: fadeInHeader 1s forwards;
+        }
+
+        @keyframes fadeInHeader {
+            0% {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        #logo {
+            width: 150px;
+            height: 100px;
+        }
+
+        .header-text {
+            text-align: center;
+            margin-right: 680px;
+        }
+
+        .header-text h2 {
+            margin-bottom: 5px;
+            color: #080808;
+        }
+
+        .header-text h1 {
+            color: rgb(212, 48, 48);
+            font-size: 4rem;
+            
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+            opacity: 0;
+            animation: fadeInNav 1s 0.5s forwards;
+        }
+
+        @keyframes fadeInNav {
+            0% {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        nav a:hover {
+            background-color: #575757;
+        }
+
+        section {
+            padding: 40px 20px;
+            text-align: center;
+            opacity: 0;
+            animation: fadeInSection 1s 1s forwards;
+        }
+
+        @keyframes fadeInSection {
+            0% {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        section h1,
+        section h2 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .menu table {
+            width: 80%;
+            margin: 20px auto;
+            border-spacing: 20px;
+            text-align: center;
+            opacity: 0;
+            animation: fadeInTable 1s 1.5s forwards;
+        }
+
+        @keyframes fadeInTable {
+            0% {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .menu img {
+            width: 200px;
+            margin-bottom: 10px;
+        }
+
+        .menu h3 {
+            margin-top: 10px;
+            color: #333;
+        }
+
+        .gallery {
+            padding: 40px 20px;
+            background-color: #fff;
+            text-align: center;
+            opacity: 0;
+            animation: fadeInGallery 1s 2s forwards;
+        }
+
+        @keyframes fadeInGallery {
+            0% {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .gallery table {
+            width: 80%;
+            margin: 20px auto;
+            border-spacing: 20px;
+            text-align: center;
+        }
+
+        .gallery img {
+            width: 150px;
+            margin-bottom: 10px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .gallery h3 {
+            margin-top: 10px;
+        }
+
+        .view-button {
+            display: block;
+            margin-top: 5px;
+            color: #f4b41a;
+            text-decoration: none;
+        }
+
+        .contact-form form {
+            max-width: 400px;
+            margin: 0 auto;
+            text-align: left;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            opacity: 0;
+            animation: fadeInForm 1s 2.5s forwards;
+        }
+
+        @keyframes fadeInForm {
+            0% {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        .contact-form button {
+            background-color: #ffbb00;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            cursor: pointer;
+            width: 100%;
+            border-radius: 4px;
+        }
+
+        .contact-form button:hover {
+            background-color: #333;
+        }
+
+        .success-message {
+            margin-top: 20px;
+            color: green;
+            font-weight: bold;
+            display: none;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <img id="logo" src="logo2.jpeg" alt="Logo Rumah Makan Ricis">
+        <div class="header-text">
+            <h2>Rumah Makan Ricis</h2>
+            <h1>RicheeseFactory</h1>
+        </div>
+    </header>
+
+    <nav>
+        <a href="#home">Beranda</a>
+        <a href="#menu">Menu</a>
+        <a href="#gallery">Gallery</a>
+    </nav>
+
+    <section id="home">
+        <h1>Selamat Datang di Rumah Makan Ricis</h1>
+        <h4>Richeese Factory adalah sebuah rumah makan siap saji<br> asal Indonesia dengan menu utama ayam goreng<br> dan keju
+             yang dimiliki oleh PT Richeese <br>Kuliner Indonesia, anak usaha Kaldu Sari Nabati.<br> Richeese Factory membuka gerai
+              pertamanya di pusat <br>perbelanjaan Paris Van Java, Bandung, pada 8 Februari 2011.</h4>
+    </section>
+    
+    <section class="menu" id="menu">
+        <h2>Menu Kami</h2>
+        <table>
+            <tr>
+                <td>
+                    <img src="burger.png" alt="Fire Burger">
+                    <h3>FireBurger</h3>
+                </td>
+                <td>
+                    <img src="FF.jpeg" alt="Combo FireFlying">
+                    <h3>Fire Chicken</h3>
+                </td>
+                <td>
+                    <img src="CKWNGS.png" alt="FireWhings">
+                    <h3>Fire Wings</h3>
+                </td>
+                <td>
+                    <img src="Paket.jpeg" alt="Paket Lezat">
+                    <h3>Paket Lezat</h3>
+                </td>
+            </tr>
+        </table>
+    </section>
+
+    <section class="gallery" id="gallery">
+        <h2>Galeri</h2>
+        <table>
+            <tr>
+                <td>
+                    <img src="satria.jpeg" alt="Image 1">
+                    <a href="../Satria_XIPPLG3/cv_satria.html" class="view-button">Lihat</a>
+                </td>
+                <td>
+                    <img src="yulianti.jpeg" alt="Image 2">
+                    <a href="../Yulianti_XIPPLG1/index.html" class="view-button">Lihat</a>
+                </td>
+                <td>
+                    <img src="suci.jpeg" alt="Image 3">
+                    <a href="../Suci_XIPPLG3/index.html" class="view-button">Lihat</a>
+                </td>
+                <td>
+                    <img src="resa.jpeg" alt="Image 4">
+                    <a href="../Resa_XIPPLG3/cv.html" class="view-button">Lihat</a>
+                </td>
+                <td>
+                    <img src="Rifai.jpeg" alt="Image 5">
+                    <a href="../Rifai_XIPPLG2/cv.html" class="view-button">Lihat</a>
+                </td>
+            </tr>
+        </table>
+    </section>
+
+    <section class="contact-form" id="about">
+        <h2>Kontak</h2>
+        <form id="contactForm">
+            <input type="email" id="email" placeholder="Email" required>
+            <input type="tel" id="phone" placeholder="Nomor Telepon" required>
+            <textarea id="message" placeholder="Pesan" rows="5" required></textarea>
+            <button type="submit">Kirim</button>
+        </form>
+        <div id="successMessage" class="success-message">
+            Pesan berhasil terkirim! Anda akan diarahkan ke halaman baru.
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Rumah Makan Ricis. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            event.preventDefault(); 
+
+
+            document.getElementById('successMessage').style.display = 'block';
+
+            setTimeout(function() {
+                window.location.href = "file:///C:/Users/LAB%20RPL%20AIO105/Downloads/RICHEESE-FACTORY_PK19/RICHEESE-FACTORY_PK19/pesan.html";
+            }, 2000);
+
+            document.getElementById('email').value = '';
+            document.getElementById('phone').value = '';
+            document.getElementById('message').value = '';
+        });
+    </script>
+
+</body>
+
+</html>

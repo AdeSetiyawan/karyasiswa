@@ -1,0 +1,881 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    }
+
+  
+body {
+    background: #ffffff;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    z-index: 1000;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #0F2C59;
+}
+
+    .hamburger {
+        display: none;
+    }
+    .nav-bar ul {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .nav-bar ul li a {
+        display: block;
+        color: #0F2C59;
+        font-size: 16px;
+        padding: 8px 15px;
+        border-radius: 25px;
+        transition: 0.2s;
+        margin: 5px;
+    }
+
+    .nav-bar ul li a:hover {
+        color: #ffffff;
+        background: #0F2C59;
+    }
+
+    .nav-bar ul li a.active {
+        color: white;
+        background: #0F2C59;
+    }
+
+    @media only screen and (max-width: 1320px) {
+        header {
+            padding: 0 50px;
+        }
+    }
+
+    @media only screen and (max-width: 1100px) {
+        header {
+            padding: 0 30px;
+        }
+    }
+
+    @media only screen and (max-width: 900px) {
+        .hamburger {
+            display: block;
+            cursor: pointer;
+        }
+
+        .hamburger .line {
+            width: 30px;
+            height: 3px;
+            background: #0F2C59;
+            margin: 6px 0;
+        }
+
+        .nav-bar {
+            position: absolute;
+            top: 80px;
+            left: 0;
+            right: 0;
+            width: 100vw;
+            height: 0;
+            background: #DAC0A3;
+            transition: 0.5s;
+            overflow: hidden;
+        }
+
+        .nav-bar.active {
+            height: 450px;
+        }
+
+        .nav-bar ul {
+            display: block;
+            width: fit-content;
+            margin: 80px auto 0 auto;
+            text-align: center;
+            transition: 0.5s;
+            opacity: 0;
+        }
+
+        .nav-bar.active ul {
+            opacity: 1;
+        }
+
+        .nav-bar ul li a {
+            margin-bottom: 12px;
+        }
+    }
+body{
+    background: #ffffff;
+}
+header{
+    width: 100%;
+    height: 80px;
+    background-color: #DAC0A3;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 100px;
+}
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #0F2C59;
+}
+.hamburger{
+    display: none;
+}
+.nav-bar ul {
+    display: flex;
+}
+.nav-bar ul li a {
+    display: block;
+    color: #0F2C59;
+    font-size: 20px;
+    padding: 10px 25px;
+    border-radius: 50px;
+    transition: 0.2s;
+    margin: 0 5px;
+}
+.nav-bar ul li a:hover{
+    color: #ffffff;
+    background: #0F2C59;
+}
+.nav-bar ul li a.active {
+    color: white;
+    background: #0F2C59;
+}
+@media only screen and (max-width: 1320px) {
+    header {
+        padding: 0 50px;
+    }
+}
+@media only screen and (max-width: 1100px) {
+    header {
+        padding: 0 30px;
+    }
+}
+@media only screen and (max-width: 900px) {
+    .hamburger{
+        display: block;
+        cursor: pointer;
+    }
+    .hamburger .line {
+        width: 30px;
+        height: 3px;
+        background: #0F2C59;
+        margin: 6px 0
+    }
+    .nav-bar {
+        position: absolute;
+        top: 80px;
+        left: 0;
+        right: 0;
+        width: 100vw;
+        background: #DAC0A3;
+        transition: 0.5s;
+        overflow: hidden;
+    }
+    .nav-bar.active {
+        height: 450px;
+    }
+    .nav-bar ul {
+        display: block;
+        width: fit-content;
+        margin: 80px auto 0 auto;
+        text-align: center;
+        transition: 0.5s;
+        opacity: 0;
+    }
+    .nav-bar.active {
+        opacity: 1;
+    }
+    .nav-bar ul li a {
+        margin-bottom: 12px;
+        color: white;
+    }
+}
+.about-container {
+    background-color: white;
+    padding: 40px;
+    min-height: 530px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    margin-top: 30px;
+    margin-bottom: 70px;
+}
+
+.about-content {
+    flex: 1;
+}
+
+.about-title {
+    font-size: 48px;
+    color: #0F2C59;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.about-description {
+    font-size: 24px;
+    color: #333;
+    line-height: 1.6;
+    max-width: 800px;
+}
+
+.logo-container {
+    width: 300px;
+    height: 300px;
+    flex-shrink: 0;
+}
+
+.logo-circle {
+    width: 100%;
+    height: 130%;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .about-title {
+        font-size: 36px;
+    }
+
+    .about-description {
+        font-size: 18px;
+    }
+
+    .logo-container {
+        width: 200px;
+        height: 200px;
+        margin: 20px auto;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .about-container {
+        padding: 15px;
+    }
+
+    .about-title {
+        font-size: 28px;
+    }
+
+    .about-description {
+        font-size: 16px;
+    }
+
+    .logo-container {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+
+.wrapper .title{
+    text-align: center;
+}
+
+.title h4{
+    display: inline-block;
+    padding: 20px;
+    color: #0F2C59;
+    font-size: 50px;
+    font-weight: 500;
+    letter-spacing: 1.2px;
+    word-spacing: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    text-transform: uppercase;
+    backdrop-filter: blur(15px);
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    word-wrap: break-word;
+}
+
+.wrapper .card_Container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 40px 0;
+}
+
+.card_Container .card{
+    position: relative;
+    width: 300px;
+    height: 400px;
+    margin: 20px;
+    overflow: hidden;
+    box-shadow: 0 30px 30px -20px rgba(0, 0, 0, 1),
+                inset 0 0 0 1000px rgba(67, 52, 109, .6);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card .imbBx, .imbBx img{
+    width: 100%;
+    height: 100%;
+}
+
+.card .content{
+    position: absolute;
+    bottom: -160px;
+    width: 100%;
+    height: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    backdrop-filter: blur(15px);
+    box-shadow: 0 -10px 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    transition: bottom 0.5s;
+    transition-delay: 0.65s;
+}
+
+.card:hover .content{
+    bottom: 0;
+    transition-delay: 0s;
+}
+
+.content .contentBx h3{
+    text-transform: uppercase;
+    color: white;
+    text-shadow: 2px 2px 5px black;
+    letter-spacing: 2px;
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center;
+    margin: 20px 0 15px;
+    line-height: 1.1em;
+    transition: 0.5s;
+    transition-delay: 0.6s;
+    opacity: 0;
+    transform: translateY(-20px);
+}
+
+.card:hover .content .contentBx h3{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.content .contentBx h3 span{
+    font-size: 12px;
+    font-weight: 300;
+    text-transform: initial;
+}
+
+.content .sci{
+    position: relative;
+    bottom: 10px;
+    display: flex;
+}
+
+.content .sci li{
+    list-style: none;
+    margin: 0 10px;
+    transform: translateY(40px);
+    transition: 0.5s;
+    opacity: 0;
+    transition-delay: calc(0.2s * var(--i));
+}
+
+.card:hover .content .sci li{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.content .sci li a{
+    color: #fff;
+    font-size: 24px;
+}
+
+
+
+
+
+
+.team .team-title{
+    text-align: center;
+    margin-top: 200px;
+}
+
+.team-title h4{
+    font-size: 48px;
+    color: #0F2C59;
+    margin-bottom: 30px;
+}
+
+.team .card_Containe{
+    position: relative;
+    display: flex;
+    justify-content: space-between; /* Menjaga jarak antar card */
+    align-items: flex-start; /* Agar foto tidak melayang ke tengah */
+    flex-wrap: wrap;
+    margin: 40px 0;
+}
+
+.card_Containe .car{
+    position: relative;
+    width: calc(400px); /* Membuat 3 card dalam satu baris, minus margin */
+    height: 500px;
+    margin: 20px;
+    overflow: hidden;
+    box-shadow: 0 30px 30px -20px rgba(0, 0, 0, 1),
+                inset 0 0 0 1000px rgba(67, 52, 109, .6);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.car .imbB, .imbB img{
+    width: 100%;
+    height: 100%;
+}
+
+.car .conten{
+    position: absolute;
+    bottom: -160px;
+    width: 100%;
+    height: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    backdrop-filter: blur(15px);
+    box-shadow: 0 -10px 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    transition: bottom 0.5s;
+    transition-delay: 0.65s;
+}
+
+.car:hover .conten{
+    bottom: 0;
+    transition-delay: 0s;
+}
+
+.conten .contentB h3{
+    text-transform: uppercase;
+    color: #000000;
+    letter-spacing: 2px;
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center;
+    margin: 20px 0 15px;
+    line-height: 1.1em;
+    transition: 0.5s;
+    transition-delay: 0.6s;
+    opacity: 0;
+    transform: translateY(-20px);
+}
+
+.car:hover .conten .contentB h3{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.conten .contentB h3 span{
+    font-size: 12px;
+    font-weight: 300;
+    text-transform: initial;
+}
+
+.conten .sc{
+    position: relative;
+    bottom: 10px;
+    display: flex;
+}
+
+.conten .sc li{
+    list-style: none;
+    margin: 0 10px;
+    transform: translateY(40px);
+    transition: 0.5s;
+    opacity: 0;
+    transition-delay: calc(0.2s * var(--i));
+}
+
+.car:hover .conten .sc li{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.conten .sc li a{
+    color: #fff;
+    font-size: 24px;
+}
+/* Responsif: Jika layar lebih kecil dari 480px, tampilkan 1 card per baris */
+@media (max-width: 480px) {
+    .card_Containe .car{
+        width: 100%; /* 1 card per baris pada layar sangat kecil */
+    }
+}
+
+/* Menyusun konten dengan Flexbox */
+.logo-about {
+    display: flex;
+    flex-direction: column; /* Menyusun elemen secara vertikal */
+    align-items: center; /* Menyelaraskan item di tengah secara horizontal */
+    justify-content: center; /* Menyelaraskan item di tengah secara vertikal (jika tinggi elemen lebih besar) */
+    text-align: center; /* Agar teks juga terpusat di dalam div */
+    gap: 4rem; /* Memberikan jarak antara teks dan gambar */
+}
+
+.logo-about h4 {
+    margin: 80px; /* Menghapus margin default pada <h4> */
+    font-size: 48px;
+    color: #0F2C59;
+    margin-bottom: 30px;
+}
+
+.logo-about img {
+    display: block; /* Membuat gambar menjadi block element */
+    margin: 0 auto; /* Menjaga gambar tetap terpusat */
+    max-width: 100%; /* Agar gambar responsif */
+    height: auto; /* Menjaga rasio aspek gambar */
+    
+}
+
+
+
+.team .team-title{
+    text-align: center;
+}
+
+.team-title h4{
+    display: inline-block;
+    padding: 20px;
+    color: #0F2C59;
+    font-size: 50px;
+    font-weight: 500;
+    letter-spacing: 1.2px;
+    word-spacing: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    text-transform: uppercase;
+    backdrop-filter: blur(15px);
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    word-wrap: break-word;
+}
+
+.team .car_Containe{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 40px 0;
+}
+
+.car_Containe .car{
+    position: relative;
+    width: 300px;
+    height: 400px;
+    margin: 20px;
+    overflow: hidden;
+    box-shadow: 0 30px 30px -20px rgba(0, 0, 0, 1),
+                inset 0 0 0 1000px rgba(67, 52, 109, .6);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.car .imbB, .imbB img{
+    width: 100%;
+    height: 100%;
+}
+
+.car .conten{
+    position: absolute;
+    bottom: -160px;
+    width: 100%;
+    height: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    backdrop-filter: blur(15px);
+    box-shadow: 0 -10px 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    transition: bottom 0.5s;
+    transition-delay: 0.65s;
+}
+
+.car:hover .conten{
+    bottom: 0;
+    transition-delay: 0s;
+}
+
+.conten .contentB h3{
+    text-transform: uppercase;
+    color: #fff;
+    letter-spacing: 2px;
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center;
+    margin: 20px 0 15px;
+    line-height: 1.1em;
+    transition: 0.5s;
+    transition-delay: 0.6s;
+    opacity: 0;
+    transform: translateY(-20px);
+}
+
+.car:hover .conten .contentB h3{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.conten .contentB h3 span{
+    font-size: 12px;
+    font-weight: 300;
+    text-transform: initial;
+}
+
+.conten .sc{
+    position: relative;
+    bottom: 10px;
+    display: flex;
+}
+
+.conten .sc li{
+    list-style: none;
+    margin: 0 10px;
+    transform: translateY(40px);
+    transition: 0.5s;
+    opacity: 0;
+    transition-delay: calc(0.2s * var(--i));
+}
+
+.car:hover .conten .sc li{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.conten .sc li a{
+    color: #fff;
+    font-size: 24px;
+}
+
+.follow-us .follow{
+    text-align: center;
+}
+
+/* Styling untuk header Follow Us */
+.follow-us h4 {
+    display: inline-block;
+    padding: 20px;
+    color: #0F2C59;
+    font-size: 50px;
+    font-weight: 500;
+    letter-spacing: 1.2px;
+    word-spacing: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    text-transform: uppercase;
+    backdrop-filter: blur(15px);
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    word-wrap: break-word;
+    margin: 0 auto; /* Centang header */
+}
+
+/* Styling untuk cell di tabel */
+.social-cell {
+    text-align: center; /* Menyusun teks dan gambar di tengah */
+    padding: 20px;
+}
+
+/* Styling untuk gambar di bawah teks */
+.social-cell img {
+    width: 70px; /* Atur lebar gambar sesuai kebutuhan */
+    display: block; /* Gambar menjadi block agar bisa diberi margin */
+    margin-top: 10px; /* Memberi jarak antara teks dan gambar */
+}
+
+table {
+    width: 100%; /* Menyesuaikan lebar tabel agar pas dengan container */
+}
+
+table td {
+    padding: 10px; /* Memberikan jarak di dalam tabel */
+}
+
+
+/* Mengatur follow-us dan menempatkannya di tengah */
+.follow-us {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Teks Follow Us */
+.follow-us h4 {
+    font-size: 40px;
+    color: #0F2C59;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Kontainer untuk kotak sosial media */
+/* Footer styling */
+.footer {
+    background-color: #0F2C59;
+    color: #DAC0A3;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    position: sticky;
+    bottom: 0;
+    left: 0;
+    margin-top: auto; /* Mendorong footer ke bawah */
+}
+
+/* Mengatur ukuran font dan padding footer untuk tampilan mobile */
+.footer p {
+    font-size: 14px; /* Ukuran font lebih kecil untuk mobile */
+    margin: 0;
+}
+
+/* Media query untuk perangkat dengan lebar maksimal 768px (tablet dan mobile) */
+@media (max-width: 768px) {
+    .footer {
+        padding: 15px; /* Mengurangi padding untuk perangkat lebih kecil */
+    }
+
+    .footer p {
+        font-size: 12px; /* Mengurangi ukuran font pada layar kecil */
+    }
+}
+
+/* Media query untuk perangkat dengan lebar maksimal 480px (layar sangat kecil) */
+@media (max-width: 480px) {
+    .footer {
+        padding: 10px; /* Lebih kecil lagi padding pada layar kecil */
+    }
+
+    .footer p {
+        font-size: 10px; /* Menyesuaikan ukuran font untuk ponsel kecil */
+    }
+}
+
+/* Social Box Styling */
+.social-boxes {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Jarak antar kotak */
+    flex-wrap: wrap; /* Membuat kotak sosial menjadi baris baru di layar kecil */
+    margin-bottom: 50px; /* Memberi jarak bawah untuk social boxes */
+}
+
+.social-box {
+    width: 150px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Responsif untuk social box */
+@media (max-width: 768px) {
+    .social-box {
+        width: 120px; /* Mengurangi ukuran social box pada tablet */
+        height: 120px; /* Mengurangi ukuran social box pada tablet */
+    }
+
+    .social-boxes {
+        gap: 15px; /* Mengurangi jarak antar kotak sosial media */
+    }
+}
+
+/* Responsif untuk social box di layar lebih kecil */
+@media (max-width: 480px) {
+    .social-box {
+        width: 100px; /* Mengurangi ukuran lebih kecil pada layar ponsel */
+        height: 100px; /* Mengurangi ukuran lebih kecil pada layar ponsel */
+    }
+
+    .social-boxes {
+        gap: 10px; /* Menyesuaikan jarak pada ponsel */
+    }
+}
+
+/* Gaya untuk masing-masing social media */
+.maps {
+    background-color: rgb(135, 196, 243);
+    color: white;
+}
+
+.whatsapp {
+    background-color: #1df232;
+    color: white;
+}
+
+.instagram {
+    background-color: purple;
+    color: white;
+}
+
+.maps:hover, .whatsapp:hover, .instagram:hover {
+    transform: scale(1.1);
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Ikon sosial media */
+.social-box i {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+/* Teks di dalam kotak */
+.social-box h4 {
+    font-size: 16px;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+}

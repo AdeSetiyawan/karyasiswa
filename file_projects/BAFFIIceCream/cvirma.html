@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Irma Rusmiati</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            padding-top: 60px; /* Memberikan jarak agar konten tidak tertutup navigasi */
+        }
+        nav {
+            position: fixed; /* Membuat navigasi tetap di posisi layar */
+            top: 0; /* Menempatkan navigasi di bagian atas halaman */
+            left: 0; /* Memastikan navigasi melekat ke sisi kiri */
+            width: 100%; /* Mengatur lebar navigasi agar memenuhi layar */
+            text-align: center;
+            background-color: #f8c1d1;
+            padding: 10px 0;
+            z-index: 1000; /* Menjaga agar navigasi berada di atas elemen lain */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Memberikan bayangan agar terlihat rapi */
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+        nav a:hover {
+            background-color: #fda6b9;
+        }
+        .cv-container {
+            display: flex;
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .sidebar {
+            width: 35%;
+            background-color: #f8c1d1;
+            padding: 20px;
+            text-align: center;
+            color: #fff;
+        }
+        .profile-picture img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+        .sidebar h3 {
+            margin: 20px 0 10px;
+        }
+
+        .main-content {
+            width: 65%;
+            padding: 20px;
+        }
+        .main-content h1 {
+            font-size: 24px;
+            color: #f8c1d1;
+        }
+        .main-content h2 {
+            font-size: 18px;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        
+        .section h3 {
+            background-color: #fde4eb;
+            color: #f8c1d1;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        ul {
+            padding-left: 20px;
+            margin: 0;
+        }
+        ul li {
+            margin-bottom: 5px;
+        }
+
+        .progress-bar {
+            background-color: #fde4eb;
+            border-radius: 10px;
+            overflow: hidden;
+            height: 20px;
+            margin: 10px 0;
+        }
+        .progress-bar span {
+            display: block;
+            height: 100%;
+            background-color: #f8c1d1;
+            border-radius: 10px;
+        }
+
+        .portfolio-images img {
+            width: 45%;
+            margin: 5px 2.5%;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .footer {
+            width: 100%;
+            background-color: #f8c1d1; /* Same color as sidebar */
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+            font-size: 0.9rem;
+            position: relative;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="#profil">Profil</a>
+        <a href="#pendidikan">Pendidikan</a>
+        <a href="#keahlian">Keahlian</a>
+        <a href="#portofolio">Portofolio</a>
+        <a href="#contact">Kontak</a>       
+    </nav>
+
+    <div class="cv-container">
+        <div class="sidebar">
+            <div class="profile-picture">
+                <img src="ftirma.jpg" width="50px" hight="50px"alt="Irma Rusmiati">
+            </div>
+
+            <div class="kontak" id="kontak">
+                <h3>kontak</h3>
+                <p>Telepon: +62 889-0297-6870</p>
+                <p>Email: irma677@gmail.com</p>
+            </div>
+
+            <div class="data-diri">
+                <h3>Data Diri</h3>
+                <p>Nama: Irma Rusmiati</p>
+                <p>TTL: Wonogiri, 29 Juli 2008</p>
+                <p>Alamat: Kerok,Tremes,Sidoharjo</p>
+
+                <h3>Link Google Drive</h3>
+                <p><a href="https://drive.google.com/drive/folders/14v3qkmUxPD232pPwjtwX9DppuQOaQqM8" target="_blank">Klik Disini Untuk Ke Google Drive</a></p>
+                <p><div class="sosial media">
+                <p><h3>Sosial Media</h3>
+                    <p><a href="https://www.instagram.com/thyvmm44aa/profilecard/?igsh=MTk0dnRxZzVnemUyMA==" target="_blank">Instagram</a></p>
+            </div>
+        </p>
+            </div>
+        </div>
+
+        <div class="main-content">
+            <center><h1>Irma Rusmiati</h1>
+            <h2>Pelajar</h2></center>
+
+            <div class="section" id="profil">
+                <h3>Profil</h3>
+                <p>Saya adalah siswi yang sedang bersekolah di SMK N 1 Jatiroto, jurusan Pengembangan Perangkat Lunak dan Gim, dengan keahlian pemrograman Java. Saya mendapatkan pengalaman mengenai pembuatan website dan desain.</p>
+            </div>
+
+            <div class="section" id="pendidikan">
+                <h3>Pendidikan</h3>
+                <ul>
+                    <li>SD N 1 Tremes (2014-2020)</li>
+                    <li>SMP N 2 Jatisrono (2020-2023)</li>
+                    <li>SMK N 1 Jatiroto (2023-2026)</li>
+                </ul>
+            </div>
+
+            <div class="section" id="keahlian">
+                <h3>Keahlian</h3>
+                <h1>Aplikasi</h1>
+                <p>Canva : 50%</p>
+                <div class="progress-bar">
+                    <span style="width: 50%;"></span>
+                </div>
+                <p>NetBeans : 15%</p>
+                <div class="progress-bar">
+                    <span style="width: 15%;"></span>
+                </div>
+                <p>Replit :75 %</p>
+                <div class="progress-bar">
+                    <span style="width: 75%;"></span>
+                </div>
+
+                <h1>Bahasa pemrograman</h1>
+                <p>C++: 75%</p>
+                <div class="progress-bar">
+                    <span style="width: 75%;"></span>
+                </div>
+                <p>HTML : 85%</p>
+                <div class="progress-bar">
+                    <span style="width: 85%;"></span>
+                </div>
+                <p>Java :15 %</p>
+                <div class="progress-bar">
+                    <span style="width: 15%;"></span>
+                </div>
+            </div>
+            <div class="section" id="portofolio">
+                <h3>Portfolio</h3>
+                <div class="portfolio-images">
+                    <p><h4>Nirmana</h4></p>
+                    <img src="nirmanairmaq.jpg" alt="Portfolio 1">
+                    <p><h4>Hasil Aplikasi NetBeans</h4></p>
+                    <img src="kirma.jpg" alt="Portfolio 2">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2024 Irma Rusmiati. All rights reserved.</p>
+    </div>
+</body>
+</html>

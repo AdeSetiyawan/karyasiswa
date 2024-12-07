@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restoran Garuda</title>
+    <style>
+
+        html{
+            scroll-behavior: smooth;
+        }
+       
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #dad5c9, #ffe0b2);
+        }
+
+        header {
+            background: linear-gradient(to right, #feb47b, #ff7e5f);
+            background-size: cover;
+            background-position: center;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0px 20px;
+        }
+
+        header img {
+            max-width: 150px;
+        }
+
+
+        nav {
+            display: flex;
+            gap: 15px;
+        }
+
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 8px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }           
+
+
+        nav a:hover {
+            background-color: rgba(255, 255, 255, 0.3);
+        }
+
+
+        .hero {
+            text-align: center;
+            padding: 0px 0px;
+            background-size: cover;
+            background-position: center;
+            color: white;
+            overflow: hidden;
+        }
+
+
+        .hero img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+
+        .section {
+            padding: 80px;
+            text-align: center;
+            font-family:'Times New Roman', Times, serif
+        
+        }
+.section h2{
+    font-size: 30px;
+    padding-bottom: 20px;
+    margin-top: 10px;
+}
+
+        .menu-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+
+        .menu-item {
+            background-color: #fff;
+            border: 3px solid #ddd;
+            border-radius: 10px;
+            overflow: hidden;
+            width: 200px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .menu-item:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    }
+
+
+        .menu-item img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+
+        .menu-item img:hover {
+        transform: scale(1.1);
+    }
+    
+        .menu-item h3 {
+            margin: 10px 0;
+            font-size: 18px;
+            color: #333;
+        }
+
+
+        .menu-item p {
+            margin: 0 0 10px;
+            color: #555;
+        }
+
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+
+        footer a {
+            color: #FFD700;
+            text-decoration: none;
+        }
+
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+
+        table {
+            margin: 0 auto;
+            border-collapse: collapse;
+            width: 50%;
+            font-size: 16px;
+        }
+
+
+        table th,
+        table td {
+            padding: 10px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+
+
+        table th {
+            background-color: #feb47b;
+            color: white;
+        }
+
+       
+.owner-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+.owner-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 10px;
+    width: 180px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.owner-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.owner-container img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+
+
+.owner-item h3 {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #333;
+}
+
+
+        .map-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+
+
+        .map-container img {
+            max-width: 300px;
+            height: auto;
+            border-radius: 10px;
+            cursor: pointer;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s;
+        }
+
+
+        .map-container img:hover {
+            transform: scale(1.05);
+        }
+
+        
+.tentang-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+
+.tentang-text {
+    flex: 1;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: left;
+    letter-spacing: 1px; /* Memberikan jarak antar huruf */
+    line-height: 1.5;
+}
+
+.tentang-gambar {
+    flex: 1;
+}
+
+.tentang-gambar img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+.ulasan-text {
+    text-align: left;
+}
+
+
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="logoresto.png" alt="Logo Restoran">
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#tentang-kami">Tentang Kami</a>
+            <a href="#menu">Menu</a>
+            <a href="#ulasan">Ulasan</a>
+            <a href="#owner">Owner</a>
+            <a href="#hubungi-kami">Hubungi Kami</a>
+        </nav>
+    </header>
+
+    <div class="hero">
+        <img src="Selamat Datang di Restoran Kami.png" alt="Hero Image">
+    </div>
+
+    <section id="tentang-kami" class="section">
+        <h2>Tentang Kami</h2>
+        <div class="tentang-container">
+        
+            <div class="tentang-gambar">
+                <img src="foto kelompok.jpg" alt="Restoran Garuda">
+            </div>
+           
+            <div class="tentang-text">
+                <p text align="justify">Restoran Garuda didirikan pada tahun 1976 di Medan. Kami menawarkan beragam menu khas Indonesia, seperti soto, nasi goreng, hingga gado-gado, semua disiapkan oleh koki berpengalaman yang memahami seni memasak dengan sempurna. Setiap hidangan di restoran kami melewati proses kontrol kualitas ketat untuk memastikan cita rasa yang konsisten dan memuaskan. Restoran kami hadir untuk memberikan pengalaman kuliner terbaik dengan cita rasa autentik dan kualitas bahan yang terjaga. Mengusung suasana hangat dan ramah, kami ingin setiap pelanggan merasa nyaman dan menikmati momen bersantap, baik untuk acara keluarga maupun pertemuan bisnis. Dengan pelayanan profesional dan dukungan terhadap produk lokal, kami berkomitmen menghadirkan lebih dari sekadar makanan. Kami menciptakan kenangan yang tak terlupakan di setiap kunjungan.</p>
+            </div>
+        </div>
+    </section>
+    
+
+    <section id="menu" class="section">
+        <h2>Menu</h2><br>
+        <div class="menu-container">
+            <div class="menu-item">
+                <img src="nasgorr.jpg" alt="Nasi Goreng">
+                <h3>Nasi Goreng</h3>
+                <p>Rp 15.000</p>
+            </div>
+            <div class="menu-item">
+                <img src="satee.jpg" alt="Sate Madura">
+                <h3>Sate Madura</h3>
+                <p>Rp 20.000</p>
+            </div>
+            <div class="menu-item">
+                <img src="bakso.jpg" alt="Nasi Padang">
+                <h3>Bakso</h3>
+                <p>Rp 18.000</p>
+            </div>
+            <div class="menu-item">
+                <img src="gado.jpg" alt="Soto Ayam">
+                <h3>Gado-Gado</h3>
+                <p>Rp 15.000</p>
+            </div>
+            <div class="menu-item">
+                <img src="soto.jpg" alt="Soto Ayam">
+                <h3>Soto Ayam</h3>
+                <p>Rp 15.000</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="ulasan" class="section">
+        <h2>Ulasan</h2>
+        <div class="ulasan-text">
+            <p><h3>Ulasan 1:</h3></p>
+            <p>⭐⭐⭐⭐⭐</p>
+            <p>Pengalaman makan yang luar biasa! Nasi Gorengnya super lezat, pedasnya pas. Soto Ayamnya juga hangat dan gurih, bikin kenyang dan puas. Tempatnya nyaman, cocok untuk makan keluarga.</p>
+            <p><h3>Ulasan 2:</h3></p>
+            <p>⭐⭐⭐⭐⭐</p>
+            <p>Makanan enak dengan harga yang terjangkau! Sate Madurannya juara, bumbu kacangnya mantap banget. Pelayanan cepat dan ramah, suasana restoran juga nyaman. Pasti akan kembali lagi!</p>
+            <p><h3>Ulasan 3:</h3></p>
+            <p>⭐⭐⭐⭐⭐</p>
+            <p>Bakso di Restoran Garuda luar biasa! Kuahnya gurih, baksonya kenyal dan penuh rasa. Penyajiannya cepat dan enak, membuat saya ingin kembali lagi. Highly recommended untuk pecinta bakso!</p>
+            <p><h3>Ulasan 4:</h3></p>
+            <p>⭐⭐⭐⭐⭐</p>
+            <p>Gado-Gadonya segar dan bumbu kacangnya enak banget! Baksonya juga kenyal, kuahnya segar. Pelayanan sangat baik dan cepat. Recommended buat yang cari makan enak dan harga bersahabat.</p>
+            <p><h3>Ulasan 5:</h3></p>
+            <p>⭐⭐⭐⭐⭐</p>
+            <p>Soto Ayam di Restoran Garuda sangat menggugah selera! Kuahnya kaya rasa dan ayamnya empuk. Paduan rempah yang pas membuat setiap suapan terasa nikmat. Cocok untuk makan siang yang menyegarkan!</p>
+        </div>
+    </section>
+    
+
+<section id="owner" class="section">
+    <h2>OWNER RESTORAN GARUDA</h2><br><br>
+    <div class="owner-container">
+        <div class="owner-item">
+            <a href="destri.html" target="_blank">
+                <img src="DESTRI.jpeg" alt="DESTRI">
+            </a>
+            <h3>DESTRI</h3>
+        </div>
+        <div class="owner-item">
+            <a href="katerina.html" target="_blank">
+                <img src="KETRIN.jpeg" alt="KETRIN">
+            </a>
+            <h3>KATERINA</h3>
+        </div>
+        <div class="owner-item">
+            <a href="cvwisnu.html" target="_blank">
+                <img src="WISNU.jpeg" alt="WISNU">
+            </a>
+            <h3>WISNU</h3>
+        </div>
+        <div class="owner-item">
+            <a href="putri.html" target="_blank">
+                <img src="PUTRI.jpeg" alt="PUTRI">
+            </a>
+            <h3>PUTRI</h3>
+        </div>
+        <div class="owner-item">
+            <a href="cv_pipit/pipit2.html" target="_blank">
+                <img src="PIPIT.jpeg" alt="PIPIT">
+            </a>
+            <h3>PIPIT</h3>
+        </div>
+    </div>
+<br><br><br>
+    <p>Klik gambar untuk melihat CV masing - masing owner</p>
+</section>
+
+    <section id="hubungi-kami" class="section">
+        <h2>Hubungi Kami</h2><br><br>
+        <div style="display: flex; justify-content: center; align-items: center; gap: 20px;">
+            
+            <table>
+                <tr>
+                    <th>Informasi</th>
+                    <th>Detail</th>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td>info@restorangaruda.com</td>
+                </tr>
+                <tr>
+                    <td>Telepon</td>
+                    <td>+62 812-3456-7890</td>
+                </tr>
+                <tr>
+                    <td>Alamat</td>
+                    <td>Jalan Pemuda No. 20, Medan, Sumatera Utara</td>
+                </tr>
+                <tr>
+                    <td>Jam Operasional</td>
+                    <td>Senin - Minggu: 08:00 - 21:00</td>
+                </tr>
+            </table>
+
+           
+            <div class="map-container">
+                <a href="https://maps.app.goo.gl/qqGoBNMW8tHZCUeL6" target="_blank">
+                    <img src="map.jpg" alt="Peta Lokasi">
+                </a>
+                <p>Klik gambar tersebut untuk menuju ke lokasi Restoran Garuda</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Restoran Garuda. Semua Hak Dilindungi.</p>
+        <p><a href="#privacy">Kebijakan Privasi</a></p>
+    </footer>
+</body>
+
+</html>

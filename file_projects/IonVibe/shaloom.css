@@ -1,0 +1,242 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f7f7; /* Latar belakang pastel */
+}
+
+/* Style untuk Navigasi */
+nav {
+    background-color: #ffb3b3; /* Pastel pink */
+    color: white;
+    width: "100%";
+    padding: 15px 0;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+    font-family: monospace;
+    text-transform: uppercase;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Style untuk Container */
+.container {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 30px;
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px;
+    background-color: #fff5f5; /* Pastel pink background */
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    grid-column: span 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+header .photo {
+    margin-right: 30px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 36px;
+    color: #333;
+}
+
+header p {
+    color: #777;
+    font-size: 20px;
+}
+
+.photo img {
+    width: 200px;
+    height: 210px;
+    border-radius: 50%;
+    border: 4px solid #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Style untuk Sidebar */
+.sidebar {
+    padding: 20px;
+    background-color: #fce5cd; /* Pastel peach */
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar h2 {
+    color: #333;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar li {
+    margin-bottom: 10px;
+}
+
+.sidebar li h3 {
+    margin: 0;
+    font-size: 18px;
+    color: #333;
+}
+
+/* Style untuk Konten */
+section {
+    margin-bottom: 30px;
+}
+
+section h2 {
+    font-size: 24px;
+    border-bottom: 2px solid #ffb3b3; /* Pastel pink underline */
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+section ul li {
+    margin-bottom: 15px;
+}
+
+section ul li p {
+    margin: 5px 0;
+    color: #555;
+}
+
+.portfolio img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.portfolio ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.portfolio li {
+    flex: 1 1 30%;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    color: #777;
+    grid-column: span 2;
+}
+
+/* Keahlian */
+.skill .skill {
+    margin-bottom: 10px;
+}
+
+.skill .skill span {
+    display: inline-block;
+    width: 100%;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    height: 8px;
+    position: relative;
+}
+
+.skill .skill span::after {
+    content: "";
+    display: block;
+    height: 100%;
+    background-color: #ff3333;
+}
+
+.skill .skill span.replit::after {
+    width: 79%;
+}
+
+.skill .skill span.canva::after {
+    width: 70%;
+}
+
+.skill .skill span.html::after {
+    width: 55%;
+}
+
+.skill .skill span.netbeans::after {
+    width: 18%;
+}
+
+/* sosial media */
+.sosial-media h2 {
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.sosial-media ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sosial-media li {
+    margin-bottom: 10px;
+}
+
+.sosial-media li a {
+    color: #ff69b4; /* Warna pink untuk link */
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.sosial-media li a:hover {
+    text-decoration: underline;
+}
+
+/* Responsif untuk tampilan lebih kecil */
+@media screen and (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    header .photo {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .portfolio ul {
+        flex-direction: column;
+    }
+
+    .portfolio li {
+        flex: 1 1 100%;
+    }
+}

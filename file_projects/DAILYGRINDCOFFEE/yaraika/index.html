@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <head>
+        <title>Profile Page</title>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+                display: flex;
+                justify-content: center;
+                align-items: flex-start;
+                height: 100vh;
+                background-color: #f4f4f4;
+            }
+            .container {
+                display: flex;
+                width: 80%;
+                max-width: 1000px;
+                background-color: white;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                margin-top: 20px;
+            }
+            .left {
+                background-color: #333;
+                color: white;
+                padding: 20px;
+                width: 40%;
+                text-align: center;
+            }
+            .left img {
+                border-radius: 50%;
+                width: 150px;
+                height: 150px;
+                object-fit: cover;
+            }
+            .left h1 {
+                font-size: 24px;
+                margin: 10px 0;
+            }
+            .left h2 {
+                font-size: 20px;
+                color: #007bff;
+                margin: 10px 0;
+            }
+            .left .section {
+                margin: 20px 0;
+                text-align: left;
+            }
+            .left .section h3 {
+                font-size: 18px;
+                margin-bottom: 10px;
+                color: #007bff;
+                border-bottom: 2px solid #007bff;
+                display: inline-block;
+            }
+            .left .section p, .left .section a {
+                font-size: 16px;
+                margin: 5px 0;
+            }
+            .left .section a {
+                color: white;
+                text-decoration: none;
+            }
+            .left .section a:hover {
+                text-decoration: underline;
+            }
+            .left .skills .skill {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin: 5px 0;
+            }
+            .left .skills .skill .bar {
+                width: 70%;
+                height: 10px;
+                background-color: #555;
+                border-radius: 5px;
+                overflow: hidden;
+            }
+            .left .skills .skill .bar div {
+                height: 100%;
+                background-color: #007bff;
+            }
+            .right {
+                padding: 20px;
+                width: 60%;
+            }
+            .right .section {
+                margin: 20px 0;
+            }
+            .right .section h3 {
+                font-size: 18px;
+                margin-bottom: 10px;
+                color: #007bff;
+                border-bottom: 2px solid #007bff;
+                display: inline-block;
+            }
+            .right .section p, .right .section ul {
+                font-size: 16px;
+                margin: 5px 0;
+            }
+            .right .section ul {
+                list-style-type: none;
+                padding: 0;
+            }
+            .right .section ul li {
+                margin: 5px 0;
+            }
+            .right .section ul li::before {
+                content: "•";
+                color: #007bff;
+                margin-right: 5px;
+            }
+            .right .section img {
+                width: 50%;
+                height: auto;
+                border-radius: 10px;
+            }
+            @media (max-width: 768px) {
+                .container {
+                    flex-direction: column;
+                }
+                .left, .right {
+                    width: 100%;
+                }
+            }
+            footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            width: 100%;
+            bottom: 0;
+        }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="left">
+                <img alt="Profile picture of a person smiling" src="yara profil.jpg" />
+                <h1>YARAIKA</h1>
+                <h2>PURNAMA DHANI</h2>
+                
+                <div class="section">
+                    <h3>KONTAK</h3>
+                    <p><i class="fas fa-phone"></i> +62 813 9099 4727</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Sugihan, Jatiroto</p>
+                    <p><i class="fas fa-envelope"></i> yaraika@gmail.com</p>
+                </div>
+                <div class="section skills">
+                    <h3>Bahasa</h3>
+                    <div class="skill">
+                        <span>C++</span>
+                        <div class="bar">
+                            <div style="width: 80%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>HTML</span>
+                        <div class="bar">
+                            <div style="width: 70%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Java Script</span>
+                        <div class="bar">
+                            <div style="width: 70%;"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="section skills">
+                    <h3>KEAHLIAN</h3>
+                    <div class="skill">
+                        <span>Netbeans</span>
+                        <div class="bar">
+                            <div style="width: 80%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>vs code</span>
+                        <div class="bar">
+                            <div style="width: 70%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Replit</span>
+                        <div class="bar">
+                            <div style="width: 60%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Canva</span>
+                        <div class="bar">
+                            <div style="width: 90%;"></div>
+                        </div>
+                        
+                    </div>
+                    <div class="section">
+                        <a href="/kelmpok/company_profile/index.html" class="button" target="_blank">ke company porfile</a>
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <div class="section">
+                    <div class="section">
+                        <div class="section-title">
+                         <i class="fas fa-user">
+                         </i>
+                        <h3>TENTANG SAYA</h3>
+                    <p>Saya bernama Yaraika Purnama Dhani dari kelas XI PPLG 1, saya lahir di Wonogiri 05 Juli 2008, saya tinggal di alamat Sugihan Jatiroto, saya juga mempunyai hobi memasak dan membaca buku, saya anak satu-satunya yang disebut juga anak tunggal.</p>
+                </div>
+
+                <div class="section">
+                    <div class="section education">
+                        <div class="section-title">
+                         <i class="fas fa-graduation-cap">
+                         </i>
+                       <h3>RIWAYAT PENDIDIKAN</h3>
+                    <p>TK KASIH BUNDA (2013-2014)</p>
+                    <p>SDN 2 SUGIHAN (2014-2020)</p>
+                    <p>SMPN 2 JATIROTO (2020-2023)</p>
+                    <p>SMKN 1 JATIROTO (2023-2026)</p>
+                </div>
+
+                <div class="section">
+                    <div class="section experience">
+                        <div class="section-title">
+                         <i class="fas fa-briefcase">
+                         </i>
+                        <h3>PENGALAMAN</h3>                   
+                    <ul>
+                        <li>MEMBUAT CRUD</li>
+                            <p> (Membuat aplikasi Kasir Swalayan)</p>
+                        <li>MEMBUAT WEBSITE LANDIDING PAGE</li>
+                            <P>(Membuat website produk perusahaan)</P>
+                    </ul>
+                </div>
+
+                <div class="section" id="Portfolio">
+                    <h2 class="section-title"></h2>
+                         <i class="fas fa-folder-open">
+                         </i>
+                    <h3>PORTOFOLIO</h3>
+                </div>
+                    <img alt="Portfolio image of a landscape with hills and sky" height="50" src="login.jpeg" width="50"/>
+                    <img alt="Portfolio image of a landscape with hills and sky" height="50" src="signup.jpeg" width="50"/>
+                    <img alt="Portfolio image of a landscape with hills and sky" height="50" src="nirmana.jpeg" width="50"/>
+                    <br> 
+                        <a href="https://drive.google.com/drive/folders/13KE7d9hPLe4RWGoPB5MkxfBr0MH7Rn3N">Klik disini</a>
+                        
+                        <center>
+            <div class="footer">
+                copyright@YARAIKA
+            </div> 
+                </div>
+            </div>
+        </div>
+    </center>
+    </body>
+    </html>

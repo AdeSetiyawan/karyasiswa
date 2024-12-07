@@ -1,0 +1,101 @@
+*{
+    font-family: 'Times New Roman', Times, serif;
+}
+nav{
+   
+   
+
+    display: flex;
+    justify-content: center;
+   margin-bottom: 0px;
+  
+  
+}
+header {
+    background-color: #020408;
+    padding: 10px;
+    display: flex;
+    color: white;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+ 
+}
+header img{
+    margin-top: auto;
+    margin-bottom: auto;
+
+}
+nav {
+    display: flex;
+    gap: 1em;
+    width: 100%;
+    padding: 10px;
+    
+}
+
+nav a:first-child {
+    margin-right: auto;
+}
+
+a {
+    text-decoration: none;
+ font-size: 20px;
+    color: white;
+    
+    padding: 5px;
+}
+nav :hover{
+    color: #008CFF;
+}
+nav  :active{
+color: antiquewhite;
+}
+.isi{
+    width: 100%;
+    font-size: 20px;
+    margin-top: 0px;
+    display: flex;
+    justify-content:left;
+    margin-top: 5px;
+    color: #333333;
+
+   
+}
+.team{
+    display: inline-block;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    background-color: #B0B0B0;
+
+}
+.team h3{
+    font-size: 25px;
+}
+.susunan img{
+    width: 250px;
+    height: 500px;
+    border-radius: 20px;
+    border: 2px solid black;
+    transition: 0.3 ease;
+    
+}
+.susunan :hover img{
+    transform: scale(1.05);
+}
+.susunan{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 10px;
+    margin: 10px;
+    
+}
+.susunan figcaption{
+    color: black;
+    margin-top: 10px;
+}
+
+

@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Curriculum Vitae</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background-color: #000; /* Latar belakang hitam */
+      color: #fff;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      display: flex;
+      justify-content: space-around;
+      min-height: 100vh;
+    }
+
+    .container {
+      max-width: 900px;
+      width: 90%;
+      background-color: #111;
+      border-radius: 10px;
+      box-shadow: 0 0 15px #0ff, 0 0 30px #0ff;
+      overflow: hidden;
+      gap: 20px;
+      padding: 20px;
+      justify-content: center;
+    }
+
+    .neon-header {
+      text-align: center;
+      padding: 20px 10px;
+      background-color: #222;
+      box-shadow: 0 0 15px #0ff;
+    }
+
+    .neon-header h1 {
+      font-size: 2.5rem;
+      color: #0ff;
+      text-shadow: 0 0 5px #0ff, 0 0 10px #0ff, 0 0 20px #0ff,
+        0 0 40px rgb(250, 250, 250);
+    }
+
+    .neon-header p {
+      font-size: 1.2rem;
+      color: #fff;
+      text-shadow: 0 0 10px #0ff;
+    }
+
+    .navigasi {
+      gap: 15px;
+      justify-content: space-around;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: rgb(255, 255, 255);
+      font-weight: bold;
+      align-items: center;
+    }
+
+    nav ul li a:hover {
+      color: rgb(251, 250, 250);
+      text-shadow: 0 0 10px #0ff;
+    }
+
+    a {
+      text-decoration: none;
+      font-weight: bold;
+      color: #007bff;
+      border: 2px solid transparent;
+      padding: 5px 10px;
+      border-radius: 4px;
+      transition: all 0.3s ease;
+    }
+
+    a:hover {
+      color: #fff;
+      background: #007bff;
+      border-color: #0056b3;
+      text-decoration: none;
+      box-shadow: 0 4px 6px rgba(0, 123, 255, 0.4);
+    }
+
+    a:active {
+      background: #0056b3;
+      box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2);
+    }
+
+    a:visited {
+      background: #007bff;
+      border-color: #0056b3;
+      text-decoration: none;
+      box-shadow: 0 4px 6px rgba(0, 123, 255, 0.4);
+    }
+
+    main {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 50px;
+      gap: 80px;
+    }
+
+    .photo {
+      flex: 1;
+      min-width: 200px;
+      text-align: center;
+    }
+
+    .photo img {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 5px solid #0ff;
+      box-shadow: 0 0 20px #0ff;
+    }
+
+    .details {
+      flex: 2;
+      min-width: 700px;
+    }
+
+    .details section {
+      margin-bottom: 20px;
+    }
+
+    .details h2 {
+      font-size: 1.5rem;
+      color: #0ff;
+      text-shadow: 0 0 10px #0ff;
+      margin-bottom: 10px;
+    }
+
+    .details p,
+    .details ul {
+      color: #fff;
+      text-shadow: 0 0 5px #aaa;
+    }
+
+    .details ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .details ul li {
+      margin-bottom: 10px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 10px;
+      background-color: #111;
+      box-shadow: 0 0 15px #0ff;
+      color: #fff;
+      font-size: 0.9rem;
+    }
+
+    .image {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+      padding: 2rem;
+    }
+
+    .image-item {
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      padding: 1rem;
+      text-align: center;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      position: relative;
+      overflow: hidden;
+      transition: transform 0.3s;
+    }
+
+    .image-item img {
+      max-width: 100%;
+      border-radius: 8px;
+      display: block;
+      transition: transform 0.5s ease;
+    }
+
+    .image-item:hover {
+      transform: scale(1.05);
+    }
+
+    .image-item:hover img {
+      transform: scale(1.1);
+    }
+
+    .circle {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      border: 5px solid #333;
+      position: relative;
+      justify-content: right;
+      background: conic-gradient(
+        #ffd700 calc(var(--percentage) * 1%),
+        #333 calc(var(--percentage) * 1%)
+      );
+    }
+
+    .circle::after {
+      content: attr(data-percentage) "%";
+      color: #fff;
+      font-size: 20px;
+      font-weight: bold;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    p {
+      margin-top: 10px;
+      font-size: 18px;
+    }
+
+    .item {
+      display: inline;
+      width: 300px;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .item img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 8px;
+      border: 2px solid #fff;
+    }
+
+    .promo-item {
+      display: flex;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      padding: 1rem;
+      text-align: center;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      position: relative;
+      overflow: hidden;
+      transition: transform 0.3s;
+      justify-content: space-between;
+    }
+
+    .promo-item img {
+      max-width: 100%;
+      border-radius: 8px;
+      display: block;
+      transition: transform 0.5s ease;
+    }
+
+    .promo-item:hover {
+      transform: scale(1.05);
+    }
+
+    .promo-item:hover img {
+      transform: scale(1.1);
+    }
+
+    .card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: black;
+      border: 2px solid white;
+      padding: 10px;
+      width: 120px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px cyan;
+    }
+
+    .card img {
+      width: 100px;
+      height: 100px;
+      border-radius: 5px;
+    }
+
+    .circle {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 50px;
+      height: 50px;
+      margin-top: -25px;
+      background-color: black;
+      border: 2px solid white;
+      border-radius: 50%;
+      color: white;
+      font-weight: bold;
+      font-size: 14px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .text {
+      margin-top: 10px;
+      font-size: 14px;
+      color: white;
+    }
+
+    .info {
+      text-align: center;
+    }
+
+    .circle {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      border: 5px solid #333;
+      background: conic-gradient(
+        #999 calc(var(--percentage) * 1%),
+        #333 calc(var(--percentage) * 1%)
+      );
+      position: relative;
+      justify-content: center;
+      margin: 0 auto;
+    }
+
+    .circle::after {
+      content: attr(data-percentage) "%";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 20px;
+      font-weight: bold;
+      color: #fff;
+    }
+
+    p {
+      margin-top: 10px;
+      font-size: 18px;
+      font-weight: bold;
+    }
+  </style>
+
+  <body>
+
+    <div class="container">
+      <header class="neon-header">
+        <h1>HANISYA AYU NATASYA</h1>
+        <p>PPLG / SMKN 1 JATIROTO</p>
+
+        <nav class="navigasi">
+          <ul>
+            <li><a href="#ABOUT ME">ABOUT ME</a></li>
+            <li><a href="#CONTACT">CONTACT</a></li>
+            <li><a href="#SKILLS">SKILLS</a></li>
+            <li><a href="#EXPERIENCE">EXPERIENCE</a></li>
+            <a
+            href="index.html"
+            target="_blank"
+            >CP</a
+          >
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <div class="photo">
+          <img src="hani.jpeg" alt="Your Photo" />
+        </div>
+        <div class="details">
+          <section id="ABOUT ME">
+            <h2>About Me</h2>
+            <p>
+              Saya lahir di Jakarta pada tanggal 9 April 2008, dan saya
+              merupakan anak tunggal. Saat ini saya berstatus sebagai seorang
+              mahasiswi di SMKN 1 Jatiroto dan mengambil jurusan PPLG. Saya
+              mempunyai bakat dibidang seni, terutama musik maka, hobi saya
+              tidak jauh dari bermain musik. Bertentangan dengan jurusan yang
+              saya ambil, ini merupakan sebuah tantangan dan bisa menjadi
+              pembelajaran berharga tentang adaptasi dan ketangguhan untuk masa
+              depan. Berikut adalah riwayat pendidikan saya:
+              <ul>
+                <li>
+                  <strong>SD:</strong> 2012-2013
+                </li>
+                <li>
+                  <strong>TK:</strong> 2013-2014
+                </li>
+                <li>
+                  <strong>SD:</strong> 2014-2020
+                </li>
+                <li>
+                  <strong>SMP:</strong> 2020-2023
+                </li>
+              </ul>
+
+            </p>
+          </section>
+          <section id="CONTACT">
+            <h2>Personal Information</h2>
+            <ul>
+              <li><strong>Email:</strong> hanisyaayu960@gmail.com</li>
+              <li><strong>Phone:</strong> +62 858 6598 5955</li>
+              <li><strong>Address:</strong> Dayakan, Duren, Jatiroto</li>
+            </ul>
+          </section>
+
+          <h2>Skills</h2>
+          <section id="SKILLS">
+            <div class="container">
+              <div class="item">
+                <div class="promotions">
+                  <div class="promo-item">
+                    <img src="logo canva.jpg" alt="" />
+                    <div class="info">
+                      <div class="circle" data-percentage="67"></div>
+                      <p>CANVA</p>
+                      <li>
+                        <a
+                          href="https://drive.google.com/drive/folders/19JGhCRDFCk7UDkQf7wOHg9zKdrsAgdkh"
+                          target="_blank"
+                          >Link Canva</a
+                        >
+                      </li>
+                    </div>
+                    <img src="nirmana.jpeg" alt="" />
+                    <div class="info">
+                      <div class="circle" data-percentage="92"></div>
+                      <p>NIRMANA</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="item">
+                <div class="promotions">
+                  <div class="promo-item">
+                    <img
+                      src="Netbeans Logo PNG - Download Netbeans Logo Png Hd 1080x1080.jpg"
+                      alt=""
+                    />
+                    <div class="info">
+                      <div class="circle" data-percentage="70"></div>
+                      <p>NETBEANS</p>
+                      <li>
+                        <a
+                          href="https://drive.google.com/drive/folders/10LQiCVFvRnBfBms_B7dNb4Fpu6Htf5yX"
+                          target="_blank"
+                          >Link NetBeans</a
+                        >
+                      </li>
+                    </div>
+                    <img src="java.jpeg" alt="" />
+                    <div class="info">
+                      <div class="circle" data-percentage="70"></div>
+                      <p>JAVA</p>
+                      <li>
+                        <a
+                          href="https://drive.google.com/drive/folders/10LQiCVFvRnBfBms_B7dNb4Fpu6Htf5yX"
+                          target="_blank"
+                          >Link Java</a
+                        >
+                      </li>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="item">
+                <div class="promotions">
+                  <div class="promo-item">
+                    <img
+                      src="Replit Icon Logo PNG Vector (SVG) Free Download.jpg"
+                      alt=""
+                    />
+                    <div class="info">
+                      <div class="circle" data-percentage="78"></div>
+                      <p>REPLIT</p>
+                      <li>
+                        <a
+                          href="https://drive.google.com/drive/folders/1AkVXtk_ClBz253UHBQVjdiIK6KVH_5qS"
+                          target="_blank"
+                          >Link Replit</a
+                        >
+                      </li>
+                    </div>
+                    <img src="C++.jpeg" alt="" />
+                    <div class="info">
+                      <div class="circle" data-percentage="78"></div>
+                      <p>C++</p>
+                      <li>
+                        <a
+                          href="https://drive.google.com/drive/folders/1AkVXtk_ClBz253UHBQVjdiIK6KVH_5qS"
+                          target="_blank"
+                          >Link C++</a
+                        >
+                      </li>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="item">
+                <div class="promotions">
+                  <div class="promo-item">
+                    <img src="VSC.jpg" alt="" />
+                    <div class="info">
+                      <div class="circle" data-percentage="50"></div>
+                      <p>VSC</p>
+                      <li>
+                        <a
+                          href="https://drive.google.com/drive/folders/10LL_m-ps82kkB1-kKjGwI9v0YBi9Xe_R"
+                          target="_blank"
+                          >Link VSC</a
+                        >
+                      </li>
+                    </div>
+
+                    <img src="html.jpeg" alt="" />
+                    <div class="info">
+                      <div class="circle" data-percentage="50"></div>
+                      <p>HTML</p>
+                      <li>
+                        <a
+                          href="https://drive.google.com/drive/folders/10LL_m-ps82kkB1-kKjGwI9v0YBi9Xe_R"
+                          target="_blank"
+                          >Link Html</a
+                        >
+                      </li>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section id="EXPERIENCE">
+            <h2>Experience</h2>
+            <ul>
+              <li>
+                <strong>TK:</strong> Saya pernah mengikuti Lomba Meronce: Juara
+                1 tingkat Kecamatan, Juara 1 tingkat Kabupaten, Juara 1 tingkat
+                Provinsi
+              </li>
+              <li>
+                <strong>SD:</strong> Saya pernah mengikuti Lomba mapsi mendapat
+                juara 3, dan olahraga cabang atletik Juara 1 tingkat Kecamatan,
+                Juara 1 tingkat Distrik
+              </li>
+              <li>
+                <strong>SMP:</strong> Saya pernah mengikuti Lomba olimpiade IPA
+                tingkat Kabupaten
+              </li>
+            </ul>
+          </section>
+        </div>
+      </main>
+      <footer>
+        <p>© 2024 Hanisya. All Rights Reserved.</p>
+      </footer>
+    </div>
+    
+  </body>
+</html>

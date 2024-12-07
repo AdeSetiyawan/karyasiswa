@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Gateway</title>
+    <link rel="stylesheet" href="stylepay.css">
+</head>
+<body>
+    <div class="payment-container">
+        <div class="header">
+            <div class="image"><img src="img/logo.png" alt=""></div>
+            <h1>Indarilva Pay</h1>
+        </div>
+        <form>
+            <div class="input-group">
+                <label for="nama-pembeli">Nama Pembeli:</label>
+                <input type="text" id="nama-pembeli" placeholder="Masukkan Nama Anda">
+            </div>
+            <div class="input-group">
+                <label for="kode-barang">Kode Barang:</label>
+                <input type="text" id="kode-barang" placeholder="Masukkan Kode Barang">
+            </div>
+            <div class="input-group">
+                <label for="date-input">Tanggal Pembelian:</label>
+                <input type="date" id="date-input" class="date-input">
+            </div>
+            <div class="input-group">
+                <label for="pembayaran">Pembayaran:</label>
+                <select id="pembayaran">
+                    <option value="cash" disabled selected>Cash</option>
+                    <option value="debit">Debit</option>
+                    <option value="qris">Qris</option>
+                    
+                </select>
+            </div>
+            <button type="submit"><a href="indexs.html" style="text-decoration: none;">Pay</a></button>
+            <button type="submit"><a href="index.html" style="text-decoration: none;">Back</a></button>
+        </form>
+    </div>
+</body>
+</html>

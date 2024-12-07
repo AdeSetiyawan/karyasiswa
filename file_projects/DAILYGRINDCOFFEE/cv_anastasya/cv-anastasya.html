@@ -1,0 +1,368 @@
+<html>
+  <head>
+    <title>Resume</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
+    <style>
+      body {
+        font-family: 'Roboto', sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #9ea5aa;
+      }
+      .container {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+      .left-column, .right-column {
+        padding: 20px;
+      }
+      .left-column {
+        background-color: #2c3e50;
+        color: rgb(255, 255, 255);
+        flex: 1;
+        min-width: 300px;
+      }
+      .right-column {
+        background-color: #ecedee;
+        flex: 2;
+        min-width: 300px;
+        margin-left: 20px; /* Jarak kiri antara left dan right column */
+      }
+      .profile-pic {
+        width: 100%;
+        border-radius: 10px;
+      }
+      .section-title {
+        background-color: #0c4f7c;
+        color: rgb(255, 253, 253);
+        padding: 20px;
+        border-radius: 10px;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      .contact-info, .skills, .portfolio {
+        margin-bottom: 20px;
+      }
+      .contact-info i, .skills i, .portfolio i {
+        margin-right: 10px;
+      }
+      .skills .skill {
+        margin-bottom: 10px;
+      }
+      .skills .skill-bar {
+        background-color: #34495e;
+        border-radius: 5px;
+        overflow: hidden;
+        height: 10px;
+        margin-top: 5px;
+      }
+      .skills .skill-bar div {
+        height: 10px;
+        border-radius: 5px;
+      }
+      .portfolio img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* Membuat gambar mengisi seluruh ruang dalam bingkai */
+        border-radius: 5px;
+      }
+      .experience, .education, .hobbies {
+        margin-bottom: 20px;
+      }
+      .experience .item, .education .item, .hobbies .item {
+        margin-bottom: 20px;
+      }
+      .experience .item i, .education .item i, .hobbies .item i {
+        margin-right: 10px;
+      }
+      .experience .item h4, .education .item h4, .hobbies .item h4 {
+        margin: 0;
+      }
+      .experience .item p, .education .item p, .hobbies .item p {
+        margin: 5px 0 0 0;
+      }
+      .education .item, .hobbies .item {
+        display: flex;
+        align-items: center;
+      }
+      .education .item i, .hobbies .item i {
+        font-size: 1.5em;
+      }
+      .education .item div, .hobbies .item div {
+        margin-left: 10px;
+      }
+      .programming-languages {
+        margin-bottom: 40px; /* Menambah jarak bawah untuk memisahkan dengan portfolio */
+      }
+      .programming-language {
+        margin-bottom: 15px;
+      }
+      .programming-language span {
+        font-weight: bold;
+        display: block;
+        margin-bottom: 5px;
+      }
+      .skill-bar {
+        background-color: #34495e;
+        border-radius: 5px;
+        height: 10px;
+        margin-top: 5px;
+      }
+      .skill-bar div {
+        height: 10px;
+        border-radius: 5px;
+      }
+      /* New Styles for Portfolio */
+      .portfolio-container {
+        display: flex;
+        justify-content: space-between;
+        gap: 15px;
+        margin-bottom: 40px; /* Tambahkan jarak bawah agar terpisah dengan section berikutnya */
+      }
+      .portfolio-item {
+        width: 35%;
+        border: 2px solid #3498db;
+        border-radius: 10px;
+        padding: 10px;
+        text-align: center;
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+      .portfolio-item img {
+        flex-grow: 1;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 5px;
+      }
+      .portfolio-item a {
+        display: inline-block;
+        margin-top: 10px;
+        text-decoration: none;
+        color: #3498db;
+        font-weight: bold;
+      }
+      .portfolio-item a:hover {
+        text-decoration: underline;
+      }
+      .button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  background-color: #2980b9;
+}
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="left-column">
+        <img alt="Profile picture of a person standing outside a building" class="profile-pic" height="400" src="potoo.jpeg" width="300"/>
+        <div class="contact-info">
+          <h2 class="section-title">KONTAK SAYA</h2>
+          <p><i class="fas fa-envelope"></i> anastasyarizqi@gmail.com</p>
+          <p><i class="fas fa-phone"></i> +6282329689198</p>
+          <p><i class="fas fa-home"></i> Pesido RTO3/RW01 Jatiroto Wonogiri</p>
+        </div>
+        <div class="skills">
+          <h2 class="section-title">KEMAMPUAN</h2>
+          <div class="skill">
+            <span>NETBEANS</span>
+            <div class="skill-bar"><div style="width: 80%; background-color: #3498db;"></div></div>
+          </div>
+          <div class="skill">
+            <span>CANVA</span>
+            <div class="skill-bar"><div style="width: 60%; background-color: #3498db;"></div></div>
+          </div>
+          <div class="skill">
+            <span>REPLIT</span>
+            <div class="skill-bar"><div style="width: 40%; background-color: #3498db;"></div></div>
+          </div>
+          <div class="skill">
+            <span>VISUAL STUDIO CODE</span>
+            <div class="skill-bar"><div style="width: 20%; background-color: #3498db;"></div></div>
+          </div>
+        </div>
+        <div class="section-title">PORTOFOLIO</div>
+        <div class="portfolio-container">
+          <div class="portfolio-item">
+            <img alt="Placeholder image for portfolio item 1" src="portofolio2.jpeg"/>
+            <a href="https://drive.google.com/drive/folders/1c7PpTfBeyjVBn3vcGPvcQpoVDsdDlf13" target="_blank">Klik di sini</a>
+          </div>
+          <div class="portfolio-item">
+            <img alt="Placeholder image for portfolio item 2" src="portofolio3.jpeg"/>
+            <a href="https://drive.google.com/drive/folders/1c7PpTfBeyjVBn3vcGPvcQpoVDsdDlf13" target="_blank">Klik di sini</a>
+          </div>
+        </div>
+        
+        <div class="section-title">BAHASA PEMOGRAMAN</div>
+        <div class="programming-languages">
+          <div class="programming-language">
+            <span>Java</span>
+            <div class="skill-bar"><div style="width: 70%; background-color: #3498db;"></div></div>
+          </div>
+          <div class="programming-language">
+            <span>HTML</span>
+            <div class="skill-bar"><div style="width: 80%; background-color: #3498db;"></div></div>
+          </div>
+          <div class="programming-language">
+            <span>C++</span>
+            <div class="skill-bar"><div style="width: 50%; background-color: #3498db;"></div></div>
+          </div>
+        </div>
+      </div>
+      <div class="right-column">
+        <div class="about">
+          <h2 class="section-title">TENTANG SAYA</h2>
+          <h1>Anastasya Sabilla R</h1>
+          <p>Saya adalah siswi kelas 11 jurusan Pengembangan Perangkat Lunak dan Gim (PPLLG) di SMK Negeri 1 Jatiroto. 
+            Saya memiliki minat besar dalam dunia teknologi, khususnya pengembangan aplikasi dan perangkat lunak.
+            Menguasai bahasa pemrograman seperti Java, C++, dan HTML, serta terbiasa menggunakan NetBeans dan Visual Studio Code.
+            Selain itu, saya aktif dalam ekstrakurikuler Palang Merah Remaja (PMR), yang mengasah keterampilan kepemimpinan dan kerjasama tim.
+            Saya selalu bersemangat untuk belajar dan berkembang di bidang teknologi maupun sosial.
+        </p>
+    </div>
+    <div class="experience">
+     <h2 class="section-title">
+        PENGALAMAN
+    </h2>
+    <div class="item">
+     <h4>
+      PROYEK KELAS – PENGEMBANGAN APLIKASI DESKTOP
+     </h4>
+     <p>
+      KELAS XI SEMESTER 1
+     </p>
+     <p>
+      Mengembangkan aplikasi desktop sederhana menggunakan Java dan NetBeans untuk manajemen data inventaris. Mengimplementasikan fungsi-fungsi dasar seperti pencarian, tambah, edit, dan hapus data.
+     </p>
+    </div>
+    <div class="item">
+     <h4>
+      MEMBUAT WEBSITE DENGAN HTML
+     </h4>
+     <p>
+      KELAS XI SEMESTER 1
+     </p>
+     <p>
+      Mengembangkan dan merancang website sederhana menggunakan HTML untuk menampilkan informasi dan konten secara efektif.
+     </p>
+    </div>
+    <div class="item">
+     <h4>
+      MEMPELAJARI C++
+     </h4>
+     <p>
+      KELAS X SEMESTER 1 DAN 2
+     </p>
+     <p>
+      Mempelajari dan mengembangkan program sederhana menggunakan C++ untuk memahami konsep dasar pemrograman berorientasi objek.
+     </p>
+    </div>
+   </div>
+         <div class="education">
+          <h2 class="section-title">
+           PENDIDIKAN
+          </h2>
+          <div class="item">
+           <i class="fas fa-graduation-cap">
+           </i>
+           <div>
+            <h4>
+             PAUD SIDO MAJU 2
+            </h4>
+            <p>
+             2013
+            </p>
+           </div>
+          </div>
+          <div class="item">
+           <i class="fas fa-graduation-cap">
+           </i>
+           <div>
+            <h4>
+             SDN 2 PESIDO
+            </h4>
+            <p>
+             2014 - 2019
+            </p>
+           </div>
+          </div>
+          <div class="item">
+           <i class="fas fa-graduation-cap">
+           </i>
+           <div>
+            <h4>
+             SMPN 1 JATIROTO
+            </h4>
+            <p>
+             2020 - 2023
+            </p>
+           </div>
+          </div>
+          <div class="item">
+           <i class="fas fa-graduation-cap">
+           </i>
+           <div>
+            <h4>
+             SMKN 1 JATIROTO
+            </h4>
+            <p>
+             2023 - 2026
+            </p>
+           </div>
+          </div>
+         </div>
+         <div class="hobbies">
+          <h2 class="section-title">
+            HOBI
+          </h2>
+          <div class="item">
+            <i class="fas fa-utensils"></i>
+            <div>
+              <h4>
+                Memasak
+              </h4>
+            </div>
+          </div>
+          <div class="item">
+            <i class="fas fa-book"></i>
+            <div>
+              <h4>
+                Membaca
+              </h4>
+            </div>
+          </div>
+          <div class="item">
+            <i class="fas fa-music"></i>
+            <div>
+              <h4>
+                Mendengarkan Musik
+              </h4>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Tombol untuk mengarah ke Google Drive -->
+        <div style="text-align: center; margin-top: 20px;">
+          <a href="/kelmpok/company_profile/index.html" target="_blank" class="button">company profile</a>
+        </div>
+       
+      </body>
+     </html>
+      
+
+          

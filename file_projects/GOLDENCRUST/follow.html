@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: rgb(8, 6, 6);
+
+}
+
+/* Page transition */
+.page-transition {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ffeb3b; /* Warna transisi */
+    z-index: 9999;
+    pointer-events: none;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: transform 0.6s ease-in-out;
+}
+
+.page-transition.active {
+    transform: scaleY(1);
+}
+
+
+nav{
+    display: flex;
+    width: 85%;
+    margin:auto;
+    padding: 10px 0;
+    align-items: center;
+    justify-content: space-around;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: rgb(251, 250, 250);
+    font-weight: bold;
+}
+
+nav ul li a:hover{
+    color: red;
+
+}
+.line {
+      height: 3px;
+      background: #ffe23c;
+      margin: 20px 0;
+    }
+    
+/* Grid Section */
+.content {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.grid-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.grid-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.5s ease;
+}
+
+/* Logo Overlay (Tengah dan Besar) */
+.logo-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  background: transparent;
+  text-align: center;
+  width: 30%; /* Sesuaikan ukuran relatif ke gambar */
+  max-width: 70px; /* Batas maksimum ukuran logo */
+  min-width: 50px; /* Batas minimum ukuran logo */
+}
+
+.logo-overlay img {
+  width: 100%;
+  height: auto;                                      
+  padding: 10px;
+  box-shadow: 0 4px 10px rgb(255, 255, 255);
+  background: transparent;
+}
+
+/* Hover Effect */
+.grid-item:hover {
+  transform: scale(1.05);
+}
+
+.grid-item:hover img {
+  transform: scale(1.1);
+}
+
+/* Footer */
+.footer-bottom {
+  text-align: center;
+  padding: 10px 0;
+  border-top: 1px solid #444;
+  background-color: #ff0202;
+  padding: 20px;
+}
+
+.footer-bottom h2 {
+  margin: 0;
+  font-size: 20px;
+  color: #ffffff;
+ background-color: #ff0202;
+}
+
+/* General reset */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.contact {
+  display: flex;
+  padding: 2em;
+  justify-content: space-around;
+}
+
+.contact-info {
+  width: 40%;
+  color: #fff;
+}
+
+.contact-info h1 {
+  font-size: 2rem;
+  margin-bottom: 1em;
+}
+
+.contact-info p {
+  text-align: justify;
+}
+
+.image-section img {
+  width: 400px;
+}
+
+.buttons {
+  margin-top: 20px;
+}
+
+.button {
+  display: inline-block;
+  background-color: #ff0000;
+  color: #fff;
+  text-decoration: none;
+  padding: 12px 24px; /* Ukuran tombol lebih besar */
+  margin-right: 10px;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.button:hover {
+  background-color: #cc0000;
+}
+
+
+
+</style>
+<body>
+  <div class="page-transition" id="page-transition"></div>
+
+    <nav>
+        <img src="Bright Orange illustrates Food Chicken Logo (Logo).png" width="100" height="100" class="logo">
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="menu.html">OUR MENU</a></li>
+          <li><a href="promo.html">PROMO</a></li>
+          <li><a href="follow.html">FOLLOW US</a></li>
+          <li><a href="position.html">CONTACT</a></li>           
+        </ul>
+    </nav>
+     <div class="line"></div>
+
+    <!-- Content Section -->
+    <section class="content">
+        <div class="grid">
+          <!-- Gambar 1 -->
+          <div class="grid-item">
+            <img
+              src="https://i.pinimg.com/736x/5b/36/76/5b3676238ec6b8d8e96e4d9614f46e45.jpg"
+              alt="Chicken Wing"
+            />
+            <div class="logo-overlay">
+              <img
+                src="logo ytb.png"
+                alt="Logo"
+              />
+            </div>
+          </div>
+          <!-- Gambar 2 -->
+          <div class="grid-item">
+            <img
+              src="Bright Orange illustrates Food Chicken Logo (Logo).png"
+              alt="Richeese Sign"
+            />
+            <div class="logo-overlay">
+              <img
+                src="logo ig.png"
+                alt="Logo"
+              />
+            </div>
+          </div>
+          <!-- Gambar 3 -->
+          <div class="grid-item">
+            <img
+              src="https://i.pinimg.com/736x/64/42/b1/6442b135c4884acef36e39f8a1048a53.jpg"
+              alt="Chicken in Hands"
+            />
+            <div class="logo-overlay">
+              <img
+                src="logo twitter.png"
+                alt="Logo"
+              />
+            </div>
+          </div>
+        </div>
+  
+        <section class="contact">
+          <article class="contact-info">
+            <h1>Hubungi Kami</h1>
+            <p>Helo Cheesemate</p>
+            <p>
+              Terima kasih sudah menjadi pelanggan setia kami. Kami sangat
+              menghargai upaya Anda dalam menyampaikan keluhan/kritik & saran
+              terhadap produk dan layanan di restoran kami.
+            </p>
+            <div class="buttons">
+              <a href="position.html" class="button">Team</a>
+            
+            </div>
+          </article>
+  
+          <article class="image-section">
+            <img
+              src="logo teh (Presentasi).png"
+              alt="Richeese Contact"
+            />
+          </article>
+  
+          
+        </section>
+      </section>
+  
+      <div class="footer-bottom">
+        <h2>@Golden Crust 2024</h2>
+      </div>
+
+      <script>
+        // Pilih semua tautan di menu navigasi dan tombol
+        document.querySelectorAll('nav ul li a, .button').forEach(link => {
+            link.addEventListener('click', (e) => {
+                const targetUrl = link.getAttribute('href'); // Ambil URL tujuan
+    
+                // Cek apakah link adalah anchor link internal (dimulai dengan #)
+                if (targetUrl.startsWith('#')) {
+                    e.preventDefault(); // Cegah tindakan default tautan
+                    const targetElement = document.querySelector(targetUrl); // Cari elemen target berdasarkan ID
+    
+                    if (targetElement) {
+                        // Scroll ke elemen target secara halus
+                        targetElement.scrollIntoView({ behavior: 'smooth' });
+                    }
+                } else {
+                    // Jika bukan anchor link (navigasi antar halaman)
+                    e.preventDefault(); // Cegah tindakan default tautan
+    
+                    // Aktifkan efek transisi
+                    const pageTransition = document.getElementById('page-transition');
+                    pageTransition.classList.add('active');
+    
+                    // Pindahkan ke halaman tujuan setelah animasi selesai
+                    setTimeout(() => {
+                        window.location.href = targetUrl;
+                    }, 600); // Harus sesuai dengan durasi CSS transition (0.6s)
+                }
+            });
+        });
+    </script>
+    
+
+</body>
+</html>

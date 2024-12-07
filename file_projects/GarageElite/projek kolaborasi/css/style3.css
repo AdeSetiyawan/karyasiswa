@@ -1,0 +1,77 @@
+*{
+    font-family: 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+}
+
+
+.gambar{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #F2F2F2;
+}
+.gambar img{
+    border: 1px solid black;
+    margin-top: 5px;
+    border-radius: 16px;
+    transition:0.3 ease;
+width: 100px;
+height: 100px;
+display: flex;
+justify-content: center;
+
+}
+.gambar  :hover img{
+    transform: scale(1.02);
+}
+
+.produk{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+figcaption{
+    text-transform: capitalize;
+    color: #333333;
+}
+.jdl a{
+    text-decoration: none;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: aliceblue;
+    color: black;
+    border: 1px solid;
+}
+.jdl a:hover{
+    color: rgb(86, 178, 178);
+}
+nav a{
+text-decoration: none;
+background-color: #008CFF;
+margin-bottom: 5px;
+padding: 10px;
+font-size: 20px;
+border-radius: 20px;
+box-shadow: inset;
+color: black;
+font-family: inherit;
+cursor: pointer;
+box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff
+;
+
+}
+nav a:hover{
+    background-color: #3895e2;
+}
+nav{
+    margin-top: 60px;
+    text-align: center;
+   display: flex;
+justify-content: space-around;
+
+}
+.harga figcaption{
+    color: #FF6347;
+}

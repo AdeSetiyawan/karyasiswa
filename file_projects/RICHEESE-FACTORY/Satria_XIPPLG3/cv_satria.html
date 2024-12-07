@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curiculum Vitae</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .container {
+            width: 80%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 30px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            animation: fadeInContent 2s ease-in-out;
+        }
+
+        @keyframes fadeInContent {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        td {
+            padding: 15px;
+            border: 0px solid #ddd;
+            vertical-align: top;
+        }
+
+        .header, .footer {
+            background-color: #007bff;
+            color: #fff;
+        }
+
+        .header {
+            text-align: center;
+            font-size: 1.5rem;
+            padding: 20px;
+            font-weight: bold;
+            animation: slideDown 1s ease-out;
+        }
+
+        @keyframes slideDown {
+            from {
+                transform: translateY(-100px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        .footer {
+            text-align: center;
+            font-size: 0.9rem;
+            padding: 15px;
+        }
+
+        .navigasi {
+            text-align: center;
+            font-size: 1rem;
+            font-weight: bold;
+            color: #ffffff;
+            animation: fadeInLinks 1.5s ease-in-out;
+        }
+
+        .navigasi:hover {
+            text-decoration: underline;
+            cursor: pointer;
+        }
+
+        @keyframes fadeInLinks {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .foto {
+            text-align: center;
+            background-color: #e0e0e0;
+            border-radius: 10px;
+            overflow: hidden;
+            height: 250px;
+            width: 200px;
+            animation: zoomIn 1s ease-in-out;
+        }
+
+        @keyframes zoomIn {
+            from { transform: scale(0); opacity: 0; }
+            to { transform: scale(1); opacity: 1; }
+        }
+
+        .foto img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .konten {
+            font-size: 1rem;
+            animation: fadeInText 1.5s ease-in-out;
+        }
+
+        @keyframes fadeInText {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .konten ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .konten ul li {
+            margin: 5px 0;
+        }
+
+        .konten b {
+            font-weight: bold;
+            color: #007bff;
+        }
+
+        .konten center b {
+            font-size: 1.2rem;
+        }
+
+        .skill-bar {
+            width: 100%;
+            background-color: #ddd;
+            border-radius: 4px;
+            margin-bottom: 10px;
+            animation: fillBar 2s ease-out forwards;
+        }
+
+        @keyframes fillBar {
+            from { width: 0%; }
+            to { width: 100%; }
+        }
+
+        .skill-bar div {
+            height: 20px;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+    </style> 
+</head>
+<body>
+    <div class="container">
+        <table>
+            <tr class="header">
+                <td width="200px"><strong>Curiculum Vitae</strong></td>
+                <td class="navigasi"><a href="https://drive.google.com/drive/folders/1A32FIIF5xNcVObl3wQM-GUAD-izePEzx" style="color: #ffffff;">DRIVE</a></td>
+                <td class="navigasi"><a href="file:///C:/Users/LAB%20RPL%20AIO105/Downloads/RICHEESE-FACTORY_PK19/RICHEESE-FACTORY_PK19/kelompok_19.html" style="color: #ffffff;">COMPANY PROFIL</a></td>
+                <td class="navigasi" width="450px"><a href="file:///C:/Users/LAB%20RPL%20AIO105/Downloads/RICHEESE-FACTORY_PK19/Satria_XIPPLG3/portofolio.html" style="color: #ffffff;">Portofolio</a></td>
+            </tr>
+            <tr>
+                <td class="foto">
+                    <img src="PP.jpeg" alt="Foto Profil">
+                </td>
+                <td class="konten" colspan="3">
+                    <h2>Tentang Saya</h2>
+                    <p>Perkenalkan, nama saya Satria Dwi Angkasa, anak kedua dari tiga bersaudara, lahir di Wonogiri pada 20 April 2008. Saat ini, saya tinggal di Dusun Jelok, Desa Sumberejo, RT 04/RW 02, Jatisrono, Wonogiri. Saya seorang Muslim, dan agama menjadi panduan hidup saya. Saya sangat tertarik pada dunia olahraga meskipun masih perlu banyak latihan. Saya menikmati berbagai olahraga, terutama sepakbola, yang memberikan semangat dan kebugaran.</p>
+                    <p>Saat ini, saya bersekolah di SMK Negeri 1 Jatiroto, memilih jurusan Pengembangan Perangkat Lunak dan Gim (PPLG) karena minat besar saya di bidang teknologi. Harapan saya ke depannya adalah mencari modal untuk membuka wirausaha dan menciptakan lapangan kerja bagi masyarakat.</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="konten">
+                    <center><b>Satria Dwi Angkasa</b></center>
+                </td>
+                <td class="konten" rowspan="2" colspan="3">
+                    <b>Pendidikan :<br></b>
+                    <ul>
+                        <li><b>TK :</b><br>TK Pertiwi 12 Jatisrono  2013-2014</li>
+                        <li><b>SD :</b><br>SD Negeri 2 Sumberejo  2014-2020</li>
+                        <li><b>SMP :</b><br>SMP Negeri 1 Jatiroto  2020-2023</li>
+                        <li><b>SMK :</b><br>SMK Negeri 1 Jatiroto  2023-sekarang</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td class="konten">
+                    <b>Telepon:</b><br> (+62) 877 8128 1899<br>
+                    <b>Email:</b><br> satriangks@gmail.com<br>
+                    <b>Instagram:</b><br> @satriayooya<br>
+                    <b>Tiktok:</b><br> @satriangks<br>
+                </td>
+            </tr>
+            <tr>
+                <td class="konten">
+                    <b>Pengalaman:</b><br>
+                    <ul>
+                        <li>Paskibra</li>
+                        <li>OSIS</li>
+                        <li>Kali Grafi Kabupaten</li>
+                        <li>Kameramen</li>
+                    </ul>
+                </td>
+                <td rowspan="2" colspan="2">
+                    <h3>Keahlian Aplikasi</h3>
+                    <p>Berikut adalah beberapa aplikasi yang saya kuasai:</p><br>
+                    <b>Replit</b><br>
+                    <div class="skill-bar">
+                        <div style="width: 55%; background-color: #4CAF50;">55%</div>
+                    </div>
+                    <b>NetBeans</b><br>
+                    <div class="skill-bar">
+                        <div style="width: 21%; background-color: #2196F3;">21%</div>
+                    </div>
+                    <b>Canva</b><br>
+                    <div class="skill-bar">
+                        <div style="width: 35%; background-color: #FFC107;">35%</div>
+                    </div>
+                    <b>Visual Studio Code</b><br>
+                    <div class="skill-bar">
+                        <div style="width: 14%; background-color: #FF5722;">14%</div>
+                    </div>
+                </td>
+                <td rowspan="2" colspan="">
+                    <h3>Keahlian Bahasa Pemrograman</h3>
+                    <p>Berikut adalah beberapa bahasa pemrograman yang saya kuasai:</p>
+                    <b>C++</b><br>
+                    <div class="skill-bar">
+                        <div style="width: 55%; background-color: #4CAF50;">55%</div>
+                    </div>
+                    <b>Java</b><br>
+                    <div class="skill-bar">
+                        <div style="width: 21%; background-color: #2196F3;">21%</div>
+                    </div>
+                    <b>CSS</b><br>
+                    <div class="skill-bar">
+                        <div style="width: 55%; background-color: #FFC107;">55%</div>
+                    </div>
+                    <b>HTML</b><br>
+                    <div class="skill-bar">
+                        <div style="width: 14%; background-color: #FF5722;">14%</div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="konten">
+                    <b>Hobi:</b><br>
+                    <ul>
+                        <li>- Sepak Bola</li>
+                        <li>- Badminton</li>
+                        <li>- Game</li>
+                        <li>- Memancing</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="5" class="footer">
+                    <strong>&copy; Satria Dwi Angkasa</strong><br>
+                    SKANJA | 06-11-2024
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

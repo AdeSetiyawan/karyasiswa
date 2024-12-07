@@ -1,0 +1,91 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+  }
+  
+  .contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #002a5c;
+    color: white;
+    padding: 20px;
+  }
+  
+  .contact-info, .contact-form {
+    flex: 1 1 300px;
+    margin: 10px;
+    max-width: 400px;
+  }
+  
+  .contact-info h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .contact-info p {
+    margin: 5px 0;
+  }
+  
+  .social-media a {
+    margin-right: 10px;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .social-media a:hover {
+    text-decoration: underline;
+  }
+  
+  .contact-form h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+  
+  .form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .form-group label {
+    width: 80px;
+    font-size: 14px;
+  }
+  
+  .form-group input, 
+  .form-group textarea {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .contact-form button {
+    background-color: #0056b3;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .contact-form button:hover {
+    background-color: #003d80;
+  }
+  
+  footer {
+    background-color: #001b3a;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 14px;
+  }
+  .keunggulan.tr{
+    border: 4px;
+    border-radius: 10px;
+
+  }
+  

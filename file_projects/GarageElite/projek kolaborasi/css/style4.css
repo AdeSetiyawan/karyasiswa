@@ -1,0 +1,53 @@
+*{
+    font-family: tahoma;
+}
+.title {
+    text-transform: capitalize;
+    display: flex;
+    justify-content: center;
+}
+.title a{
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: bold;
+    color: black;
+}
+.pertanyaan li{
+    text-transform: capitalize;
+    display: block;
+    justify-content: center;
+    text-align: center;
+    border: 2px solid;
+    padding: 5px;
+   color: #333333;
+
+}
+.pertanyaan li:hover{
+    color: #00968a;
+}
+
+ul{
+    list-style-type: none;
+}
+.kembali{
+    display: flex;
+    justify-content: center;
+}
+.kembali a{
+    text-decoration: none;
+    background-color: #00ffc3;
+    margin-bottom: 5px;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 20px;
+    box-shadow: inset;
+    color: black;
+    font-family: inherit;
+    cursor: pointer;
+    box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff
+    ;
+
+    }
+    .kembali a:hover{
+        background-color: #19c19a;
+    }

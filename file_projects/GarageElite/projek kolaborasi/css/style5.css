@@ -1,0 +1,99 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+body{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 0 10px;
+    color: white;
+}
+body::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url("https://www.google.com/url?sa=i&url=https%3A%2F%2Fid.pngtree.com%2Ffreebackground%2Fcar-showroom-in-the-dark-lit-room-with-boxes_2675746.html&psig=AOvVaw2X0ftt4Ym-mCo7QkccUWVw&ust=1733454592303000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCIjCj9_Tj4oDFQAAAAAdAAAAABAE"), #000;
+background-position: center;
+background-size: cover;
+z-index: -1;
+}
+.wrap{
+    width: 490px;
+    border-radius: 8px;
+    padding: 30px;
+    text-align: center;
+    border: 1px solid #ffffff80;
+    backdrop-filter: blur(8px);
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+.input-field{
+    position: relative;
+    border-bottom: 2px solid #ccc;
+    margin: 15px 0;
+}
+.input-field label{
+    position: absolute;
+    color: #fff;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+    transition: 0.15s ease;
+}
+.input-field input{
+    width: 100%;
+    height:40px;
+    color: #fff;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
+.input-field input:focus~label,
+.input-field input:valid~label{
+    font-size: 0.8rem;
+    top: 10px;
+    transform: translateY(-120%);
+}
+select{
+    background: transparent;
+    color: #ccc;
+    position: relative;
+    left: 100px;
+    border: 2px solid;
+    font-size: 15px;
+}
+a{
+    width: 429px;
+    background-color: white;
+    margin-top: 10px;
+    text-decoration: none;
+}
+button, a{
+    background: #fff;
+    color: black;
+    font-weight: 600;
+    border: none;
+    padding: 12px 20px;
+    cursor: pointer;
+    border-radius: 3px;
+    font-size: 16px;
+    border: 2px solid transparent;
+    transition: 0.3 ease;
+}
+button:hover, a:hover{
+    background-color: #626262;
+}
+option{
+    color: #000000;
+}

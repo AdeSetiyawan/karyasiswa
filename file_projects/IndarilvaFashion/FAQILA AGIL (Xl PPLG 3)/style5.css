@@ -1,0 +1,138 @@
+/* General reset for body and container */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Styling for the profile section */
+.profile {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.profile img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.profile h2 {
+    font-size: 24px;
+    color: #333;
+}
+
+.profile p {
+    font-size: 16px;
+    color: #666;
+}
+
+/* Styling for details section */
+.details {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+}
+
+/* Each section in details */
+.section {
+    margin-bottom: 20px;
+}
+
+.section h3 {
+    font-size: 22px;
+    color: #333;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+/* Styling for lists in sections */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 8px;
+}
+
+/* Styling for contact section */
+.contact ul li {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 8px;
+}
+
+/* Portfolio section */
+.portfolio {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.portfolio h3 {
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.portfolio img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    margin: 10px;
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+}
+
+/* Styling for progress bars in Keahlian and Bahasa Pemrograman sections */
+.progress-bar {
+    width: 100%;
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    margin-top: 5px;
+    height: 12px;
+}
+
+.progress {
+    height: 100%;
+    border-radius: 10px;
+    background-color: #4caf50; /* Green color for progress */
+}
+
+/* Adjusting layout for Keahlian and Bahasa Pemrograman sections */
+.details .section ul {
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.details .section li {
+    font-size: 16px;
+    color: #444;
+}
+
+.details .section li div.progress-bar {
+    margin-top: 10px;
+}
+
+/* Adding spacing between sections */
+.details .section {
+    margin-bottom: 30px;
+}

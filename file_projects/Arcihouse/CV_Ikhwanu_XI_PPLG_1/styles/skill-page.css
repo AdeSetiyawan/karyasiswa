@@ -1,0 +1,30 @@
+#info h2 {
+  font-family: oswald;
+  font-size: 30px;
+}
+
+#bar {
+  display: inline-block;
+  background-color: white;
+  width: 400px;
+  height: 1em;
+}
+
+#fill-bar {
+  background-color: #FF4934;
+  width: 64px;
+  height: 1em;
+}
+
+#details-inside a {
+  width: 28vw;
+}
+
+main::before {
+  background-image: url(../images/2.png);
+  background-size: 30vw;
+}
+
+#info, #details {
+  justify-content: flex-start;
+}

@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resume - Amanda Vidya Sabila</title>
+    <style>
+      /* Reset */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+      }
+
+      body {
+        background-color: #a8e6cf;
+        padding: 20px;
+      }
+
+      .container {
+        max-width: 1000px;
+        margin: 0 auto;
+        background-color: #d4f1f4;
+        border: 2px solid black;
+        padding: 20px;
+      }
+
+      .header {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      .header h1 {
+        font-size: 28px;
+        color: #000;
+      }
+
+      .header img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        border: 2px solid black;
+        margin-top: 10px;
+      }
+
+      .navigation {
+        background-color: black;
+        display: flex;
+        justify-content: space-around;
+        padding: 10px 0;
+        margin-bottom: 20px;
+      }
+
+      .navigation a {
+        color: white;
+        text-decoration: none;
+        font-size: 16px;
+      }
+
+      .navigation a:hover {
+        text-decoration: underline;
+      }
+
+      .content {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+      }
+
+      .left-section,
+      .right-section {
+        flex: 1;
+        min-width: 300px;
+      }
+
+      .section {
+        margin-bottom: 20px;
+      }
+
+      .section h2 {
+        font-size: 20px;
+        margin-bottom: 10px;
+        border-bottom: 2px solid black;
+        padding-bottom: 5px;
+      }
+
+      .section p,
+      .section ul {
+        font-size: 16px;
+        line-height: 1.5;
+      }
+
+      .section ul {
+        list-style-type: none;
+      }
+
+      .section ul li {
+        margin-bottom: 5px;
+      }
+
+      .projects {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+      }
+
+      .project-card {
+        width: 30%;
+        text-align: center;
+        background-color: #e7f3f3;
+        border: 1px solid black;
+        padding: 10px;
+      }
+
+      .project-card img {
+        width: 100%;
+        height: auto;
+        border: 1px solid black;
+      }
+
+      .project-card h3 {
+        margin-top: 10px;
+        font-size: 16px;
+      }
+
+      .footer {
+        text-align: center;
+        margin-top: 20px;
+        background-color: black;
+        padding: 10px;
+        color: white;
+      }
+
+      .link a {
+        color: blue;
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>AMANDA VIDYA SABILA</h1>
+        <img src="img manda.jpeg" alt="Amanda Vidya Sabila" />
+      </div>
+
+      <div class="navigation">
+        <a href="#kontak">Kontak</a>
+        <a href="#kemampuan">Kemampuan</a>
+        <a href="#hobi">Hobi Saya</a>
+        <a href="#drive">Drive</a>
+        <a href="#tentang">Tentang Saya</a>
+        <a href="#data-diri">Data Diri</a>
+        <a href="#pendidikan">Pendidikan</a>
+      </div>
+
+      <div class="content">
+        <!-- Kiri -->
+        <div class="left-section">
+          <div class="section" id="kontak">
+            <h2>Kontak</h2>
+            <p>+62.831.0114 0175</p>
+            <p>amandasabila155@gmail.com</p>
+            <p><a href="https://instagram.com" target="_blank">Instagram</a></p>
+          </div>
+
+          <div class="section" id="kemampuan">
+            <h2>Kemampuan</h2>
+            <ul>
+              <li>Canva 26,38</li>
+              <li>Netbeans 18,05%</li>
+              <li>Replit 17.26</li>
+              <li>Visual Studio Code 37.5%</li>
+            </ul>
+          </div>
+
+          <div class="section" id="hobi">
+            <h2>Hobi Saya</h2>
+            <ul>
+              <li>Membaca Buku</li>
+              <li>Menyanyi</li>
+            </ul>
+          </div>
+
+          <div class="section" id="drive">
+            <h2>Drive</h2>
+            <p class="link">
+              <a
+                href="https://drive.google.com/drive/folders/1hRTsoaKRCJtp5rNBPxg4Qb8DkCKLorYM?usp=sharing"
+                target="_blank"
+                >Link ke Google Drive</a
+              >
+            </p>
+          </div>
+        </div>
+
+        <!-- Kanan -->
+        <div class="right-section">
+          <div class="section" id="data-diri">
+            <h2>Data Diri</h2>
+            <p><strong>Nama Lengkap:</strong> Amanda Vidya Sabila</p>
+            <p><strong>Jenis Kelamin:</strong> Perempuan</p>
+            <p><strong>TTL:</strong> Wonogiri, 29 Mei 2007</p>
+            <p><strong>Anak Ke:</strong> 2 (kedua) dari tiga bersaudara</p>
+            <p><strong>Agama:</strong> Islam</p>
+            <p><strong>Alamat:</strong> Sawit Rt 01 / Rw 01 Pesido, Jatiroto</p>
+          </div>
+
+          <div class="section" id="tentang">
+            <h2>Tentang Saya</h2>
+            <p>
+              Saya, Amanda Vidya Sabila, adalah seorang pelajar yang penuh
+              semangat untuk terus belajar dan mengembangkan diri...
+            </p>
+          </div>
+
+          <div class="section" id="pendidikan">
+            <h2>Pendidikan</h2>
+            <ul>
+              <li>PAUD SIDO MAJU 1 (2013-2014)</li>
+              <li>TK UTAMI 1 (2014-2015)</li>
+              <li>SDN JATIROTO (2015-2020)</li>
+              <li>SMP N 1 JATIROTO (2020-2023)</li>
+            </ul>
+          </div>
+
+          <div class="section" id="projek">
+            <h2>Projek</h2>
+            <div class="projects">
+              <div class="project-card">
+                <img src="hewan amanda (4).jpeg" alt="Projek Hewan" />
+                <h3>Hewan</h3>
+              </div>
+              <div class="project-card">
+                <img src="nirmana amanda (1).jpeg" alt="Projek Nirmana 2D" />
+                <h3>Nirmana 2D</h3>
+              </div>
+              <div class="project-card">
+                <img src="benda imanda.jpeg" alt="Projek Benda" />
+                <h3>Benda</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <button>
+        <a href="index.html">COMPANY PROFILE</a>
+      </button>
+
+      <div class="footer">
+        <p>&copy;copyright, 2024 AMANDA VIDYA SABILA</p>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Graphic Design Portfolio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      background-color: #f4f4f9; /* Light gray */
+      color: #333;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    .navbar {
+      position: sticky;
+      top: 0;
+      background: linear-gradient(135deg, #007BFF, #0056b3); /* Blue gradient */
+      padding: 10px 0;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      z-index: 1000;
+    }
+    .navbar ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 0;
+      margin: 0;
+    }
+    .navbar ul li a {
+      text-decoration: none;
+      color: #fff;
+      font-size: 1.2em;
+      padding: 10px 20px;
+      border-radius: 5px;
+      transition: background 0.3s;
+    }
+    .navbar ul li a:hover {
+      background: rgba(255, 255, 255, 0.2);
+    }
+  
+header {
+  position: relative;
+  text-align: center;
+  color: #fff;
+  background-color: #007BFF; /* Blue */
+}
+
+header .header-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Efek bayangan untuk keterbacaan */
+}
+header .header-bg {
+  text-align: center;
+  padding: 100px 20px;
+  background-image: url('your-image.jpg'); /* Path ke gambar */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #ffffff; /* Warna teks */
+  border-radius: 10px; /* Opsional */
+}
+    .photo {
+      text-align: center;
+      margin: 20px 0;
+    }
+    .photo img {
+      width: 300px;
+      height: 300px;
+      border-radius: 60%;
+      border: 5px solid #ffffff;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    .section {
+      margin: 50px 0;
+      padding: 20px;
+      background: #ffffff;
+      color: #333;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    .section h2 {
+      font-size: 1.8em;
+      margin-bottom: 20px;
+      text-align: center;
+      color: #007BFF;
+     
+  
+    
+.skill {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.skill-circle {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background: conic-gradient(
+    #007BFF 0% calc(var(--percentage) * 1%), 
+    #e0e0e0 calc(var(--percentage) * 1%) 100%
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  animation: fillProgress 1.5s ease-in-out;
+}
+
+.skill-circle span {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #ffffff;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.skill-circle::before {
+  content: attr(data-label);
+  position: absolute;
+  bottom: -20px;
+  font-size: 1em;
+  color: #007BFF;
+  font-weight: bold;
+  text-align: center;
+}
+
+@keyframes fillProgress {
+  from {
+    background: conic-gradient(
+      #007BFF 0% 0%, 
+      #e0e0e0 0% 100%
+    );
+  }
+  to {
+    background: conic-gradient(
+      #007BFF 0% calc(var(--percentage) * 1%), 
+      #e0e0e0 calc(var(--percentage) * 1%) 100%
+    );
+  }
+}
+    }
+    .skills, .languages, .education, .personal-skills {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly; 
+      gap: 20px;
+      align-items: flex-start; 
+    }
+    .skills-box, .languages-box, .education-box, .card {
+      background: linear-gradient(135deg, #39abf7, #0774da); 
+      color: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      flex: 1;
+      min-width: 200px;
+    }
+     /* Skill Section Styles */
+.skill {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.skill-circle {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background: conic-gradient(
+    #007BFF 0% calc(var(--percentage) * 1%), 
+    #e0e0e0 calc(var(--percentage) * 1%) 100%
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  animation: fillProgress 1.5s ease-in-out;
+}
+
+.skill-circle span {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #ffffff;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.skill-circle::before {
+  content: attr(data-label);
+  position: absolute;
+  bottom: -20px;
+  font-size: 1em;
+  color: #007BFF;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Animation for Progress Circle */
+@keyframes fillProgress {
+  from {
+    background: conic-gradient(
+      #007BFF 0% 0%, 
+      #e0e0e0 0% 100%
+    );
+  }
+  to {
+    background: conic-gradient(
+      #007BFF 0% calc(var(--percentage) * 1%), 
+      #e0e0e0 calc(var(--percentage) * 1%) 100%
+    );
+  }
+}
+    .languages-box {
+      min-width: 250px; 
+      background: linear-gradient(135deg, #0d53d6, #0e59e4); 
+    }
+    
+    
+    .progress-container {
+            width: 100%;
+            background-color: #e0e0e0;
+            border-radius: 10px;
+            overflow: hidden;
+            margin-top: 20px;
+        }
+
+        .progress-bar {
+            height: 30px;
+            width: 100%; 
+            background-color: #0288d1;
+            text-align: center;
+            color: white;
+            line-height: 30px;
+            font-weight: bold;
+            border-radius: 10px;
+            transition: width 0.5s;
+        }
+    .contact {
+      text-align: center;
+      background: linear-gradient(135deg, #15b4f8, #2290cf); 
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      margin: 50px 0;
+      color: #fff;
+    }
+    .contact h3 {
+      font-size: 1.5em;
+      margin-bottom: 20px;
+    }
+    .contact-info {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 15px;
+      margin-bottom: 15px;
+    }
+    .contact-info img {
+      width: 30px;
+      height: 30px;
+    }
+    footer {
+      text-align: center;
+      margin-top: 30px;
+      padding: 10px 0;
+      background: #333;
+      color: #fff;
+    }
+    .footer {
+  background-color: #222;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.footer p {
+  margin: 10px 0;
+  font-size: 14px;
+}
+
+.social-icons {
+  margin: 15px 0;
+}
+
+.social-icons a {
+  margin: 0 10px;
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.social-icons a:hover {
+  transform: scale(1.1);
+}
+
+.social-icons img {
+  width: 30px; /* Ukuran ikon */
+  height: auto;
+  vertical-align: middle;
+}
+  </style>
+</head>
+<body>
+  <div class="navbar">
+    <ul>
+      <li><a href="#personal-info">Personal Data</a></li>
+      <li><a href="#about">About Me</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#application-used">Application Used</a></li> 
+      <li><a href="#portofolio">Portofolio</a></li>
+      <li><a href="#contact">Contact</a></li> 
+    </ul>
+</div>
+  <div class="container">
+    <header>  
+    <img src="/assets/CurriculumVitae-Folder/Shoffyana_34_XI PPLG2/Shoffyana_34_XI PPLG2/HEADER (3).png" alt="Header Background" style="width: 100%; height: auto;">
+      </div>
+    </header>
+
+    <section id="personal-info" class="section">
+      <h2 style="text-align: center; color: #007BFF; font-size: 2em; margin-bottom: 20px;">Personal Data</h2>
+      <div style="background: linear-gradient(135deg, #007BFF, #199bbe); padding: 20px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); color: #fff;">
+        <div style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 10px;">
+          <!-- Nama Lengkap -->
+          <div style="flex: 1; min-width: 200px; max-width: 48%; padding: 10px 20px; background: rgba(255, 255, 255, 0.1); border-radius: 5px;">
+            <h3 style="font-size: 1.2em; margin-bottom: 5px;">Nama Lengkap</h3>
+            <p style="margin: 0;">Shoffyana Nur Cahyani</p>
+          </div>
+          <!-- Tempat, Tanggal Lahir -->
+          <div style="flex: 1; min-width: 200px; max-width: 48%; padding: 10px 20px; background: rgba(255, 255, 255, 0.1); border-radius: 5px;">
+            <h3 style="font-size: 1.2em; margin-bottom: 5px;">Tempat, Tanggal Lahir</h3>
+            <p style="margin: 0;">Wonogiri, 15 Januari 2008</p>
+          </div>
+          <!-- Alamat -->
+          <div style="flex: 1; min-width: 200px; max-width: 48%; padding: 10px 20px; background: rgba(255, 255, 255, 0.1); border-radius: 5px;">
+            <h3 style="font-size: 1.2em; margin-bottom: 5px;">Alamat</h3>
+            <p style="margin: 0;">Desa Pengkol, Kecamatan Jatiroto, Kabupaten Wonogiri</p>
+          </div>
+          <!-- Status -->
+          <div style="flex: 1; min-width: 200px; max-width: 48%; padding: 10px 20px; background: rgba(255, 255, 255, 0.1); border-radius: 5px;">
+            <h3 style="font-size: 1.2em; margin-bottom: 5px;">Status</h3>
+            <p style="margin: 0;">Pelajar</p>
+          
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <h2>About Me</h2>
+      <p>
+        Halo! Saya Shoffyana Nur Cahyani, seorang pelajar berusia 16 tahun yang saat ini menempuh pendidikan di 
+        SMKN 1 Jatiroto, jurusan PPLG (Pengembangan Perangkat Lunak dan Gim). Saya memiliki semangat besar 
+        untuk menjelajahi dunia teknologi, khususnya dalam pengembangan perangkat lunak dan desain kreatif.
+      </p>
+      <p>
+        Dalam perjalanan akademik saya, saya telah mempelajari berbagai keterampilan seperti pemrograman, desain grafis, 
+        dan pengembangan aplikasi. Dengan perpaduan kreativitas dan ketelitian, saya senang menciptakan solusi inovatif yang 
+        tidak hanya fungsional tetapi juga menarik secara visual.
+      </p>
+      <p>
+        Selain itu, saya percaya bahwa pembelajaran adalah proses seumur hidup. Oleh karena itu, saya terus mengasah 
+        kemampuan saya dan mengikuti perkembangan teknologi terbaru untuk menjadi profesional di bidang ini. 
+        Dengan dedikasi, saya bercita-cita untuk memberikan dampak positif di dunia teknologi.
+      </p>
+    </section>
+
+    <section id="education" class="section">
+      <h2>Education</h2>
+      <div class="education">
+        <div class="education-box">
+          <h3>TK</h3>
+          <p>TK Jemani</p>
+          <p>2013</p>
+        </div>
+        <div class="education-box">
+          <h3>SD</h3>
+          <p>SDN 3 Pengkol</p>
+          <p>2014 - 2019</p>
+        </div>
+        <div class="education-box">
+          <h3>SMP</h3>
+          <p>SMPN 3 Jatisrono</p>
+          <p>2020 - 2023</p>
+        </div>
+        <div class="education-box">
+          <h3>SMK</h3>
+          <p>SMKN 1 Jatiroto</p>
+          <p>2024 - 2026</p>
+        </div>
+      </div>
+    </section>
+    <section id="experience" class="section">
+      <h2>Experience</h2>
+      <div class="experience">
+        <div class="card">
+          <h3>Web Development</h3>
+          <ul>
+            <li>Membuat Website Produk menggunakan HTML dan CSS dengan desain responsif.</li>
+            <li>Mengembangkan Aplikasi Desktop berbasis web menggunakan JavaScript.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Graphic Design</h3>
+          <ul>
+            <li>Mendesain iklan produk untuk media cetak dan digital.</li>
+            <li>Membuat poster biodata dan desain resensi novel yang kreatif.</li>
+            <li>Mendesain presentasi profesional menggunakan Microsoft PowerPoint dan Canva.</li>
+            <li>Menciptakan video animasi sederhana menggunakan Canva.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Illustration & Artwork</h3>
+          <ul>
+            <li>Membuat sketsa gambar hewan berkaki dua dengan proporsi yang baik.</li>
+            <li>Mendesain gambar bidang silindris menggunakan teknik perspektif.</li>
+            <li>Membuat karya seni Nirmana Dwimatra untuk eksplorasi visual.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    
+    <section id="skills" class="section">
+      <h2>Skill</h2>
+      <div class="skill">
+        <!-- Skill 1 -->
+        <div class="skill-circle" data-label="C++" style="--percentage: 61;">
+          <span>61%</span>
+        </div>
+        <!-- Skill 2 -->
+        <div class="skill-circle" data-label="HTML" style="--percentage: 87;">
+          <span>87%</span>
+        </div>
+        <!-- Skill 3 -->
+        <div class="skill-circle" data-label="JavaScript" style="--percentage: 70;">
+          <span>70%</span>
+        </div>
+      </div>
+    </section>
+
+    
+    <div class="section" id="application-used">
+      <h2>Aplication Used</h2>
+      <div class="experience">
+          <p>Replit:</p>
+          <div class="progress-container">
+              <div class="progress-bar" style="width: 61%;">61%</div>
+          </div>
+
+          <p>Visual Studio Code:</p>
+          <div class="progress-container">
+              <div class="progress-bar" style="width: 87%;">87%</div>
+          </div>
+
+          <p>Netbeans:</p>
+          <div class="progress-container">
+              <div class="progress-bar" style="width: 70%;">70%</div>
+          </div>
+
+          <p>Canva:</p>
+          <div class="progress-container">
+              <div class="progress-bar" style="width: 90%;">90%</div>
+          </div>
+
+          <p>Capcut:</p>
+          <div class="progress-container">
+              <div class="progress-bar" style="width: 33%;">33%</div>
+          </div>
+      </div>
+  </div>
+
+    
+    <section id="portofolio" class="section">
+      <h2>Portofolio</h2>
+      <p>Berikut adalah hasil karya saya:</p>
+      <!-- Tambahkan konten portofolio di sini -->
+    </section>
+      
+        <!-- Portfolios Section -->
+        <div class="portfolio" style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center;">
+      
+          <!-- First Image -->
+          <div class="portfolio-item" style="text-align: center;">
+            <img src="/assets/CurriculumVitae-Folder/Shoffyana_34_XI PPLG2/Shoffyana_34_XI PPLG2/Logo Produk.jpeg" alt="Portfolio 1" style="width: 200px; height: 200px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+            <p>Desain Web Aplikasi</p>
+          </div>
+      
+          <!-- Second Image -->
+          <div class="portfolio-item" style="text-align: center;">
+            <img src="/assets/CurriculumVitae-Folder/Shoffyana_34_XI PPLG2/Shoffyana_34_XI PPLG2/Poster Produk.jpeg" alt="Portfolio 2" style="width: 200px; height: 200px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+            <p>Desain Poster</p>
+          </div>
+      
+          <!-- Third Image -->
+          <div class="portfolio-item" style="text-align: center;">
+            <img src="/assets/CurriculumVitae-Folder/Shoffyana_34_XI PPLG2/Shoffyana_34_XI PPLG2/Situs Web Canva.jpeg" alt="Portfolio 3" style="width: 200px; height: 200px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+            <p>Web Desain</p>
+          </div>
+      
+          <!-- Fourth Image -->
+          <div class="portfolio-item" style="text-align: center;">
+            <img src="/assets/CurriculumVitae-Folder/Shoffyana_34_XI PPLG2/Shoffyana_34_XI PPLG2/Web desain.jpeg" alt="Portfolio 4" style="width: 200px; height: 200px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+            <p>Web Desain</p>
+          </div>
+      
+          <!-- Fifth Image -->
+          <div class="portfolio-item" style="text-align: center;">
+            <img src="/assets/CurriculumVitae-Folder/Shoffyana_34_XI PPLG2/Shoffyana_34_XI PPLG2/Video Animasi Canva.jpeg" alt="Portfolio 5" style="width: 200px; height: 200px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+            <p>Video Animasi</p>
+          </div>
+      
+        </div>
+      </section>
+
+  
+      <footer class="footer" id="contact">
+        <!-- Contact Information Box -->
+        <div style="display: flex; justify-content: center; align-items: center; flex-direction: column; background: rgba(255, 255, 255, 0.1); padding: 30px; border-radius: 5px; margin-bottom: 20px;">
+            <h3 style="font-size: 1.5em; margin-bottom: 15px;">Contact Information</h3>
+            <!-- No Telepon -->
+            <div style="margin-bottom: 10px; text-align: center;">
+                <h4 style="font-size: 1.2em; margin-bottom: 5px;">No Telepon</h4>
+                <p style="margin: 0;">+62 812 3456 7890</p>
+            </div>
+            <!-- Email -->
+            <div style="margin-bottom: 10px; text-align: center;">
+                <h4 style="font-size: 1.2em; margin-bottom: 5px;">Email</h4>
+                <p style="margin: 0;">shoffyana.cahyani@email.com</p>
+            </div>
+            <!-- Alamat -->
+            <div style="margin-bottom: 10px; text-align: center;">
+                <h4 style="font-size: 1.2em; margin-bottom: 5px;">Alamat</h4>
+                <p style="margin: 0;">Alamat : Wates Pengkol Jatiroto</p>
+            </div>
+            <div style="margin-bottom: 10px; text-align: center;">
+              <h4 style="font-size: 1.2em; margin-bottom: 5px;">Company</h4>
+              <a style="margin: 0; color: rgb(255, 0, 0);" href="/index.html">More To Company Profile</a>
+          </div>
+        </div>
+        <p>© 2024 Shoffyana. All rights reserved.</p>
+      </footer>
+</body>
+</html>

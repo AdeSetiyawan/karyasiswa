@@ -1,0 +1,217 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: oswald;
+  color: white;
+}
+
+body {
+  background-color: black;
+}
+
+@font-face {
+  font-family: oswald;
+  src: url(../fonts/Oswald-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: "work force sans";
+  src: url(../fonts/WorkforceSansPersonalUseRegular-q20JV.otf);
+}
+
+img[alt="skill-logo"] {
+  width: 4em;
+}
+
+img[alt="ikhwanu-robik-saputra"] {
+  width: 28vw;
+  vertical-align: middle;
+}
+
+.fire-overlay {
+  width: 100vw;
+  height: 18vh;
+  position: absolute;
+  bottom: 0;
+}
+
+.fire-overlay img {
+  width: 100vw;
+  position: absolute;
+  bottom: 0;
+  transition: 1s;
+}
+
+#info-inside, #details-inside {
+  transition: 1s;
+}
+
+.fade-out {
+  opacity: 0;
+}
+
+body {
+  height: 100vh;
+  overflow: hidden;
+}
+
+main {
+  background-color: #212121;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  transition: 1s;
+}
+
+main::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  background-image: var(--bgimg, url(../images/Reunion.webp));;
+  background-repeat: no-repeat;
+  background-position: center top;
+  transition: opacity 1s ease-out;
+  opacity: var(--bgopc, 1);
+}
+
+#info,
+#details {
+  flex-basis: 35vw;
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+  justify-content: center;
+}
+
+#info {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(33, 33, 33, 1) 80%
+  );
+}
+
+#details {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    -90deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(33, 33, 33, 1) 80%
+  );
+}
+
+#details-inside {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h1,
+h2 {
+  font-family: "work force sans";
+  font-size: 75px;
+}
+
+.orange-text {
+    color: #FF4934;
+    letter-spacing: -8px;
+}
+
+#person {
+  flex-basis: 30vw;
+  height: 60vh;
+  justify-self: center;
+  align-self: center;
+  position: relative;
+  transition: 1s;
+}
+
+#swipe-icon {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  position: relative;
+  z-index: 10;
+}
+
+#swipe-icon .square {
+  width: 1em;
+  height: 1lh;
+  background-color: white;
+}
+
+#swipe-5 {
+  width: 0;
+  height: 0;
+  border-top: 1em solid transparent;
+  border-bottom: 1em solid transparent;
+
+  border-left: 1em solid rgb(255, 255, 255);
+}
+
+/* skill page css */
+.info-h2 {
+  font-family: oswald;
+  font-size: 30px;
+}
+
+.bar {
+  display: inline-block;
+  background-color: white;
+  width: 400px;
+  height: 1em;
+}
+
+.fill-bar {
+  background-color: #FF4934;
+  width: 16%;
+  height: 1em;
+}
+
+.details-inside-a {
+  width: 28vw;
+  position: relative;
+  z-index: 5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mainbf::before {
+  background-size: 30vw;
+}
+
+/* certificate page*/
+#certif {
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5px;
+  transition: 1s;
+  position: relative;
+  position: relative;
+  z-index: 6;
+}
+#certif img {
+  width: 18%;
+}
+
+/* contact page */
+#socials {
+  display: flex;
+  gap: 5px;
+  position: relative;
+  z-index: 16;
+}
+
+#socials img {
+  width: 9em;
+}

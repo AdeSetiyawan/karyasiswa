@@ -1,0 +1,402 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding-top: 60px;
+  background-color: #f4f4f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+:root {
+  --primary-color: #4335a7;
+  --secondary-color: #f88600;
+  --light-blue: #71c3ff;
+  --orange: #ff9900;
+  --white: #fff;
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+a:hover {
+  color: var(--orange);
+}
+
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 60px;
+  z-index: 10000;
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.nav td {
+  align-items: center;
+  padding: 10px;
+}
+.nav a {
+  color: white;
+  padding: 0 10px;
+}
+
+.nav a.logo {
+  text-align: left;
+}
+
+.nav-r {
+  text-align: right;
+  justify-content: flex-end;
+}
+.nav a:hover {
+  text-decoration: underline;
+}
+
+.slogan {
+  color: var(--primary-color);
+  background-color: var(--white);
+}
+.slogan h2 span {
+  color: var(--orange);
+}
+
+.slogan img {
+  width: 150px;
+}
+
+.product {
+  background-color: var(--white);
+}
+
+.product img {
+  width: 1195px;
+}
+table {
+  border-collapse: collapse;
+  margin: 0 auto;
+  margin: var(--primary-color);
+}
+
+td {
+  padding: 10px;
+}
+
+.tentang {
+  color: white;
+  background-color: var(--primary-color);
+  border: none;
+}
+.tentang, .gambar {
+  border: none;
+  background-color: var(--primary-color);
+}
+
+.gambar {
+  background-color: var(--primary-color);
+  color: white;
+}
+.gambar img {
+  align-items: center;
+  width: 250px;
+  height: 200px;
+  border-radius: 10%;
+}
+
+.tentang h1 span {
+  color: var(--orange);
+}
+
+.misi h1 {
+  color: var(--orange);
+}
+
+.visimisi {
+  color: #4335a7;
+}
+
+.keahlian h1 span {
+  color: var(--orange);
+}
+
+.cardblue {
+  background-color: var(--light-blue);
+}
+
+.cardblue td {
+  border-radius: 20px;
+  height: 50px;
+}
+
+.cardorange {
+  background-color: var(--orange);
+  color: white;
+}
+
+.cardorange td {
+  border-radius: 20px;
+  height: 50px;
+}
+
+b {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.layanan {
+  color: var(--primary-color);
+}
+.layanan h3 {
+  color: var(--orange);
+  text-align: left;
+  padding: 0px 50px;
+}
+.layanan p {
+  text-align: left;
+  padding: 0px 50px;
+}
+.layanan h1 span {
+  color: var(--orange);
+}
+
+.kontak {
+  color: var(--primary-color);
+}
+
+.kontak h1 span {
+  color: var(--orange);
+}
+
+.keahlian-kami {
+  text-align: center;
+  max-width: 100%;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.keahlian-kami h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #4335a7;
+}
+
+.keahlian-kami h1 span {
+  color: var(--orange);
+}
+
+.keahlian-kami p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+  color: var(--primary-color);
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-evenly;
+  margin: 0 auto;
+  max-width: 100%;
+  padding: 20px;
+}
+
+.card {
+  flex: 1 1 calc(33% - 20px);
+  max-width: calc(33% - 20px);
+  min-width: 250px;
+  background-color: #e8e8e8;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.card h2 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.card.blue p {
+  font-size: 0.9rem;
+  color: var(--primary-color);
+}
+
+.card.orange p {
+  font-size: 0.9rem;
+  color: var(--white);
+}
+
+.card.blue {
+  background-color: var(--light-blue);
+  color: var(--primary-color);
+  
+}
+
+.card.orange {
+  background-color: var(--orange);
+  color: var(--white);
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+@media (max-width: 768px) {
+  .card {
+    flex: 1 1 calc(45% - 20px);
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    flex: 1 1 100%;
+  }
+}
+
+.menjadi {
+  color: var(--primary-color);
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.kembang {
+  color: var(--primary-color);
+}
+
+.team {
+  background-color: var(--primary-color);
+  padding: 50px 40px;
+  text-align: center;
+  color: white;
+}
+
+.team h1 {
+  font-size: 2.5rem;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.team h1 span {
+  color: var(--orange);
+}
+
+.team p {
+  font-size: 1rem;
+  color: var(--white);
+  margin-bottom: 20px;
+}
+
+.team-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.team-member {
+  background-color: white;
+  border-radius: 20px;
+  text-align: center;
+  padding: 20px;
+  width: 180px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-member img {
+  border-radius: 100px;
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.team-member h3 {
+  font-size: 1.2rem;
+  color: var(--primary-color);
+  margin-bottom: 5px;
+}
+
+.team-member p {
+  font-size: 0.9rem;
+  color: #666;
+}
+.team-member:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.contact {
+  color: var(--primary-color);
+}
+
+.footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  padding: 40px 0;
+  background-color: var(--primary-color);
+}
+
+.footer .social {
+  text-align: center;
+  padding-bottom: 25px;
+  color: var(--white);
+}
+
+.footer .social a {
+  font-size: 25px;
+  color: white;
+  border: 2px solid white;
+  width: 42px;
+  height: 42px;
+  line-height: 42px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  margin: 0 10px;
+  transition: 0.3s ease;
+}
+
+.footer .social a:hover {
+  transform: scale(1.2) translateY(-10px);
+  background-color: white;
+  color: var(--primary-color);
+}
+
+.footer ul {
+  margin-top: 0;
+  padding: 0;
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.footer ul li a {
+  color: white;
+  border-bottom: 4px solid transparent;
+  transition: 0.3s;
+}
+
+.footer ul li a:hover {
+  border-bottom: 3px solid white;
+}
+
+.footer ul li {
+  display: inline-block;
+  padding: 0 15px;
+}
+
+.footer .copyright {
+  margin-top: 50px;
+  text-align: center;
+  font-size: 16px;
+  color: white;
+}

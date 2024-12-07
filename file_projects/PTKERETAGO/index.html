@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Kereta Api</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header .logo h1 {
+            font-size: 24px;
+        }
+
+        header nav ul {
+            list-style-type: none;
+        }
+
+        header nav ul li {
+            display: inline;
+            margin-left: 20px;
+        }
+
+        header nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 18px;
+        }
+
+        header nav ul li a:hover {
+            color: #f4a261;
+        }
+
+        .home-image-container {
+            width: 100%;
+            height: 400px;
+        }
+
+        .home-image-slide {
+            display: flex;
+            width: 200%; 
+            height: 100%;
+            animation: geser 50s linear infinite; 
+        }
+
+        .home-image {
+            width: 50%; 
+            height: 120%;
+        }
+
+        @keyframes geser {
+            0% {
+                transform: translateX(0); 
+            }
+            50% {
+                transform: translateX(-50%); 
+            }
+            100% {
+                transform: translateX(-100%); 
+            }
+        }
+
+        header nav ul li img {
+            width: 30px;
+            height: 30px;
+            vertical-align: middle;
+            margin-right: 10px;
+        }
+
+        .header-image {
+            width: 100%;
+            height: 400px;
+            background-image: url('krtasunset2.jpeg'); 
+            background-size: cover;
+            background-position: center;
+        }
+
+        .intro {
+            background-color: #fff;
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        .intro h2 {
+            font-size: 32px;
+            color: #333;
+        }
+
+        .intro p {
+            font-size: 18px;
+            color: #666;
+        }
+
+        .jadwal {
+            padding: 20px;
+            background-color: #fff;
+        }
+
+        .jadwal h2 {
+            text-align: center;
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #333;
+            color: white;
+        }
+
+        td {
+            background-color: #f9f9f9;
+        }
+
+        .fitur {
+            display: flex;
+            justify-content: space-around;
+            padding: 40px 20px;
+            background-color: #fff;
+        }
+
+        .fitur div {
+            text-align: center;
+            width: 30%;
+        }
+
+        .fitur div img {
+            width: 80px;
+            height: 80px;
+            margin-bottom: 20px;
+        }
+
+        .fitur div h3 {
+            font-size: 24px;
+            color: #333;
+        }
+
+        .fitur div p {
+            color: #666;
+        }
+
+        .btn-pemesanan {
+            display: block;
+            width: 200px;
+            padding: 10px;
+            margin: 20px auto;
+            text-align: center;
+            background-color: #3498db;
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+            border-radius: 5px;
+        }
+
+        .btn-pemesanan:hover {
+            background-color: #2980b9;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+        }
+
+        footer img {
+            width: 90%;
+            height: 100%;
+            object-fit: cover;
+            margin-top: 20px;
+        }
+
+        footer p {
+            margin-top: 10px;
+            font-size: 19px;
+        }
+
+        .foto-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.foto-item {
+    text-align: center;
+    width: 18%;
+}
+
+.foto-image img {
+    width: 100%;
+    height: 300px; 
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.foto-item p a {
+    text-decoration: none;
+    color: #3498db;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.foto-item p a:hover {
+    color: #2980b9;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Kereta Api Indonesia</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#Beranda"><img src="beranda2.jpeg" alt="">Beranda</a></li>
+                <li><a href="#Jadwal"><img src="jadwal2.jpeg" alt="">Jadwal</a></li>
+                <li><a href="#Tiket"><img src="tiket2.jpeg" alt="">Tiket</a></li>
+                <li><a href="#Kontak"><img src="kontak2.jpeg" alt="">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="home-image-container">
+        <div class="home-image-slide">
+            <img src="krtasunset2.jpeg" alt="" class="home-image">
+            <img src="krta2.jpeg" alt="" class="home-image">
+            <img src="krta3.jpeg" alt="" class="home-image">
+            <img src="krta4.jpeg" alt="" class="home-image">
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <section class="intro">
+        <h2>Selamat datang di Kereta Api Indonesia</h2>
+        <p>Temukan jadwal kereta api dan rencanakan perjalanan Anda dengan mudah. Nikmati perjalanan yang nyaman dan cepat dengan kami.</p>
+    </section>
+
+    <section class="Jadwal">
+        <h2>Jadwal Kereta Api</h2>
+        <table>
+            <tr>
+                <th>Kereta</th>
+                <th>Stasiun Asal</th>
+                <th>Stasiun Tujuan</th>
+                <th>Jam Berangkat</th>
+                <th>Jam Tiba</th>
+            </tr>
+            <tr>
+                <td>Argo Parahyangan</td>
+                <td>Bandung</td>
+                <td>Jakarta</td>
+                <td>06:00</td>
+                <td>08:00</td>
+            </tr>
+            <tr>
+                <td>Gajayana</td>
+                <td>Malang</td>
+                <td>Jakarta</td>
+                <td>08:30</td>
+                <td>13:30</td>
+            </tr>
+            <tr>
+                <td>Eksekutif</td>
+                <td>Surabaya</td>
+                <td>Bandung</td>
+                <td>10:00</td>
+                <td>14:30</td>
+            </tr>
+        </table>
+    </section>
+
+    <section class="fitur">
+        <div>
+            <img src="revarsi.jpeg" alt="Fitur 1">
+            <h3>Reservasi Mudah</h3>
+            <p>Pesan tiket dengan mudah menggunakan platform kami, kapan saja, di mana saja.</p>
+        </div>
+        <div>
+            <img src="keamanan.jpeg" alt="Fitur 2">
+            <h3>Keamanan Terjamin</h3>
+            <p>Perjalanan aman dan nyaman dengan fasilitas terbaik di setiap kereta.</p>
+        </div>
+        <div>
+            <img src="WhatsApp Image 2024-12-06 at 10.50.43.jpeg" alt="Fitur 3">
+            <h3>Jadwal Tepat Waktu</h3>
+            <p>Kami memastikan setiap perjalanan tiba tepat waktu sesuai jadwal.</p>
+        </div>
+    </section>
+
+    <section class="foto-container">
+        <div class="foto-item">
+            <div class="foto-image">
+                <img src="dewantara.jfif" alt="">
+            </div>
+            <p style="text-align: center;"><a href="cv.wisnu.HTML">Lihat Detail</a></p>
+        </div>
+        <div class="foto-item">
+            <div class="foto-image">
+                <img src="ftnisa.jpg" alt="">
+            </div>
+            <p style="text-align: center;"><a href="anisa_kolaborasi/index.html">Lihat Detail</a></p>
+        </div>
+        <div class="foto-item">
+            <div class="foto-image">
+                <img src="him.jpeg" alt="">
+            </div>
+            <p style="text-align: center;"><a href="cvFathur.html#kontak">Lihat Detail</a></p>
+        </div>
+        <div class="foto-item">
+            <div class="foto-image">
+                <img src="ftsasya.jpg" alt="">
+            </div>
+            <p style="text-align: center;"><a href="cv sasya/index.html">Lihat Detail</a></p>
+        </div>
+        <div class="foto-item">
+            <div class="foto-image">
+                <img src="fthanifa.jpg" alt="">
+            </div>
+            <p style="text-align: center;"><a href="cvhanifah.html">Lihat Detail</a></p>
+        </div>
+    </section>
+    
+    <a href="TiketPemesanan.html" class="btn-pemesanan">Pesan Sekarang</a>
+
+    <footer>
+        <img src="ftkel1.jpeg" alt="">
+        <p>&copy; 2024 KeretaGo. Semua hak cipta dilindungi.</p>
+    </footer>
+</body>
+</html>

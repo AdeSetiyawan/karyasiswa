@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Skills</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+  body {
+  background-color: #000;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.skills-container {
+  padding: 50px 0;
+}
+
+.skill {
+  display: inline-block;
+  margin: 20px;
+}
+
+.circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 5px solid #333;
+  position: relative;
+  background: conic-gradient(
+    #ffd700 calc(var(--percentage) * 1%),
+    #333 calc(var(--percentage) * 1%)
+  );
+}
+
+.circle::after {
+  content: attr(data-percentage) '%';
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+p {
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+</style>
+<body>
+  <div class="skills-container">
+    <div class="skill">
+      <div class="circle" data-percentage="95"></div>
+      <p>HTML & CSS</p>
+    </div>
+    <div class="skill">
+      <div class="circle" data-percentage="80"></div>
+      <p>Bootstrap</p>
+    </div>
+    <div class="skill">
+      <div class="circle" data-percentage="75"></div>
+      <p>JavaScript</p>
+    </div>
+    <div class="skill">
+      <div class="circle" data-percentage="60"></div>
+      <p>Photoshop</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

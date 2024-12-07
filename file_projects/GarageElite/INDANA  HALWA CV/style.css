@@ -1,0 +1,176 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2bc94;
+    color: #333;
+}
+
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+nav {
+    background-color: #333;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+nav ul li a:hover {
+    color: #98bae3;
+}
+
+#hobikontak {
+    display: flex;
+    width: 100vw;
+}
+
+#hobikontak div {
+    width: 60%;
+    display: inline-block;
+}
+
+header {
+    background-color: #15273c;
+    color: rgb(254, 251, 251);
+    text-align: center;
+    padding: 40px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+
+header img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 10px solid white;
+    margin-top: 10px;
+}
+
+
+header h2 {
+    font-size: 24px;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+
+.section {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.section h2 {
+    color: #020408;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.section p, .section ul, .section li {
+    line-height: 1.6;
+}
+
+
+.progress-bar {
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    height: 20px;
+    width: 100%;
+    margin-top: 5px;
+}
+
+.progress-bar span {
+    display: block;
+    height: 100%;
+    border-radius: 5px;
+    background-color: #365475;
+}
+
+.portfolio {
+    gap: 10px; 
+
+}
+
+.portfolio {
+    align-items: center;  
+    gap: 20px;             
+}      
+
+.Portfolio .foto{
+    max-width: 200px;
+
+}
+
+.foto {
+    display: flex;
+    flex-direction: column;
+}
+
+.section ul {
+    padding-left: 20px;
+}
+
+.section ul li {
+    margin-bottom: 10px;
+}
+
+.section img{
+    width: 200px;
+}
+
+
+.contact-info {
+    width: auto;
+    height: 50px;
+    padding: 1em;
+}
+
+.isi-ngisor {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    margin-top: 20px;
+}

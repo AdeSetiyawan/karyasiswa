@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Biodata Diri</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #7a81d5;
+      margin: 0;
+      padding: 0;
+    }
+
+   
+    header {
+      background-color: #ddb944;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+   
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      background-color: #4caf50;
+    }
+
+    nav ul li {
+      margin: 0 15px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 10px;
+    }
+
+    nav ul li a:hover {
+      background-color: white;
+      color: #4caf50;
+      border-radius: 5px;
+    }
+
+    
+    .container {
+      max-width: 900px;
+      margin: 30px auto;
+      padding: 20px;
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .profile-header img {
+      border-radius: 8px;
+    }
+
+    .content-section {
+      display: none;
+      margin-top: 20px;
+    }
+    #kontak:target,
+    #profil:target,
+    #pengalaman:target,
+    #pendidikan:target,
+    #hasilkarya:target,
+    #kemampuan:target {
+      display: block;
+    }
+
+    body:not(:has(:target)) #kontak {
+      display: block;
+    }
+
+    /* Persentase Kemampuan */
+    .skill-bar {
+      margin: 10px 0;
+    }
+
+    .skill-name {
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    .progress {
+      width: 100%;
+      background-color: #ddd;
+      border-radius: 5px;
+      overflow: hidden;
+    }
+
+    .progress-bar {
+      height: 20px;
+      text-align: center;
+      line-height: 20px;
+      color: white;
+      background-color: #4caf50;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Biodata Diri</h1>
+    <nav>
+      <ul>
+        <li><a href="#kontak">Kontak</a></li>
+        <li><a href="#profil">profil</a></li>
+        <li><a href="#pengalaman">Pengalaman</a></li>
+        <li><a href="#pendidikan">Pendidikan</a></li>
+        <li><a href="#hasilkarya">Hasil Karya</a></li>
+        <li><a href="#kemampuan">Kemampuan</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section id="profil" class="content-section">
+      <h1>Profil</h1>
+      <p>Saya memiliki pengalaman membuat barang apa pun. Saya juga  lumanyan berpengalaman dalam bidang desain . Selain itu, saya menggambar  nirmana 2D selama 1 minggu dengan fokus pada bidang silindris.</p>
+      <p> Saya adalah pelajar yang sekolah diSkanja
+          nama panjang saya adalah Adit Novian Jaya Pratama biasa dipanggil Adit saya tinggal di Janggan Jatiroto RT05 RW02 saya dirumah bersama ibu ayah dan adik saya
+   lalu saya bersekolah SMP di SMP N 1 JATIROTO dan saya mendapat teman baru  menjadi lebih tertutup 
+  saya disini mengambil jurusan PPLG (Pengembangan Perangkat Lunak dan Gim).Disini saya mendapat banyak perubahan seprti pendidikan karakter dan teman-teman disini juga berbeda dari ketika saya masih SMP. Itu tadi
+  penjelasan singkat tentang pengalaman hidup saya.
+  </section>
+    <!-- Kontak -->
+    <section id="kontak" class="content-section">
+      <div class="profile-header">
+
+        <img src="./img/WhatsApp Image 2024-12-05 at 12.20.04.jpeg" alt="profil" width="290px" height="240px" />
+        <h4>Nama: Adit Novian Jaya Pratama</h4>
+        <p>Sekolah: SMK N1 JATIROTO</p>
+        <p>Kelas: XIPPLG 2</p>
+        <p>Tempat Tanggal Lahir: Wonogiri 20 November 2008</p>
+        <p>Alamat: Janggan Jatiroto RT 05 RW 02</p>
+        <p>Cita - Cita: Pengusaha</p>
+        <p>Hobi: Mancing, Modifikasi Motor</p>
+      </div>
+    </section>
+
+    <!-- Pengalaman -->
+    <section id="pengalaman" class="content-section">
+      <h2>Pengalaman</h2>
+      <p>
+        Saya mengikuti hardware dengan memperbaiki komputer,pc, dan laptop
+         kegiatan ekstrakurikuler seperti TechnoArt.
+      </p>
+      <p>
+        Saya juga berpengalaman dalam merakit komputer dan memperbaiki perangkat keras.
+      </p>
+    </section>
+
+    <section id="pendidikan" class="content-section">
+        <h2>Pendidikan</h2>
+        <p>SD N1 JATIROTO</p>
+        <p>SMP N1 JATIROTO</p>
+        <p>SMK N1 JATIROTO</p>
+      </section>
+
+      <section id="hasilkarya" class="content-section">
+        <h1>Hasil Karya</h1>
+        <p style="text-align: center;" nirmana><img src="./img/Gambar WhatsApp 2024-12-06 pukul 09.48.33_805c0301.jpg" width="700px" height="500px" alt="NIRMANA"></p>
+        <p><img src="" width="" height=""></p>
+        <p><img src="" width="" height=""></p>
+       </section>
+
+    <!-- Kemampuan -->
+    <section id="kemampuan" class="content-section">
+      <h2>Kemampuan</h2>
+      <div class="skill-bar">
+        <div class="skill-name">Hardware Repair</div>
+        <div class="progress">
+          <div class="progress-bar" style="width: 65%;">65%</div>
+        </div>
+      </div>
+      <div class="skill-bar">
+        <div class="skill-name">Programming (HTML, CSS)</div>
+        <div class="progress">
+          <div class="progress-bar" style="width: 70%;">70%</div>
+        </div>
+      </div>
+      <div class="skill-bar">
+        <div class="skill-name">Design grafis</div>
+        <div class="progress">
+          <div class="progress-bar" style="width: 40%;">40%</div>
+        </div>
+      </div>
+      <div class="skill-bar">
+        <div class="skill-name">Canva</div>
+        <div class="progress">
+          <div class="progress-bar" style="width: 70%;">70%</div>
+        </div>
+      </div>
+      <div class="skill-bar">
+        <div class="skill-name">Net Beans</div>
+        <div class="progress">
+          <div class="progress-bar" style="width: 75%;">75%</div>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

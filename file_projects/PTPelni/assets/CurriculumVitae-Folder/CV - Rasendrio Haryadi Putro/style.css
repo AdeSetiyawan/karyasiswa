@@ -1,0 +1,510 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: "Poppins-Thin";
+  src: url(/assets/CurriculumVitae-Folder/font/Poppins-Thin.ttf);
+}
+
+@font-face {
+  font-family: "Poppins-ThinItalic";
+  src: url(/assets/CurriculumVitae-Folder/font/Poppins-ThinItalic.ttf);
+}
+
+@font-face {
+  font-family: "Poppins-Regular";
+  src: url(/assets/CurriculumVitae-Folder/font/Poppins-Regular.ttf);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: rgb(255, 255, 255);
+  font-family: "Poppins-Regular";
+}
+
+h1 {
+  font-family: "Poppins-Thin";
+}
+
+h2 {
+  font-family: "Poppins-Thin";
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #736bff;
+  padding: 20px;
+  gap: 25em;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-left: 20px;
+}
+
+.nav-links a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 5px 10px;
+  transition: all 0.3 ease;
+  border-radius: 8px;
+}
+
+.nav-links a:hover {
+  background-color: #856bf0;
+}
+
+main {
+  background-image: url(/assets/CurriculumVitae-Folder/image/background-fuji-1.jpg);
+  /* filter ini untuk membuat agar tulisan tidak ikut berubah warna */
+  /* filter: grayscale(75%); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.intro {
+  padding: 2em;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+}
+
+.intro h2 {
+  color: white;
+  font-size: 70px;
+}
+
+.intro .title {
+  text-align: justify;
+  color: #ffffff;
+}
+
+.intro .title h1 {
+  font-size: 40px;
+  font-weight: 900;
+}
+
+.intro .title h1 span {
+  color: rgb(6, 38, 85);
+  text-decoration: underline;
+}
+
+.intro .title p {
+  font-size: 20px;
+}
+
+/* Artikel Utama */
+article {
+  background-color: #5e55f6; /* Warna latar belakang */
+  padding: 50px 1em; /* Menambahkan padding untuk jarak dari pinggir */
+  display: flex;
+  justify-content: center; /* Agar isi artikel berada di tengah */
+  align-items: center;
+}
+
+.isi-article {
+  display: flex; /* Flexbox untuk menata teks dan gambar secara horizontal */
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px; /* Membatasi lebar maksimum konten */
+  width: 100%;
+  gap: 20px; /* Menambahkan jarak antara teks dan gambar */
+}
+
+/* Bagian Teks */
+.text-section {
+  flex: 1; /* Memberikan ruang yang proporsional */
+  max-width: 600px; /* Membatasi lebar maksimum teks */
+}
+
+.isi-article p {
+  text-align: justify;
+  line-height: 1.6;
+  color: white;
+}
+
+article h2 {
+  color: white;
+  font-size: 2.5em; /* Ukuran font responsif */
+  margin-bottom: 10px;
+}
+
+article h3 {
+  color: rgb(6, 38, 85);
+  font-size: 2em;
+  font-family: "Poppins-Thin", sans-serif;
+  margin-bottom: 20px;
+}
+
+/* Bagian Gambar */
+.image-section {
+  flex: 1; /* Memberikan ruang yang proporsional */
+  display: flex;
+  justify-content: center;
+}
+
+article img {
+  max-height: 650px; /* Membatasi tinggi maksimum gambar */
+  width: auto; /* Menyesuaikan lebar agar proporsi tetap */
+  border-radius: 10px; /* Menambahkan sudut membulat */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); /* Efek bayangan */
+}
+
+/* Media Queries untuk Responsif */
+@media (max-width: 768px) {
+  .isi-article {
+    flex-direction: column; /* Mengatur layout menjadi vertikal di layar kecil */
+    text-align: center;
+  }
+
+  .text-section,
+  .image-section {
+    max-width: 100%;
+  }
+
+  article img {
+    max-height: 400px; /* Menyesuaikan ukuran gambar di layar kecil */
+  }
+}
+
+/* .skills {
+  margin-top: 20px;
+}
+
+.skills h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.8em;
+  color: #444;
+}
+
+.skills-box {
+  padding: 115px;
+  background: #f9f9f9;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.skill {
+  margin-bottom: 15px;
+}
+
+.skill p {
+  margin: 0 0 5px;
+  font-size: 1.2em;
+}
+
+.progress-bar {
+  background-color: #e0e0e0;
+  border-radius: 4px;
+  overflow: hidden;
+  position: relative;
+  height: 20px;
+}
+
+.progress {
+  height: 100%;
+  border-radius: 4px;
+}
+
+.progress.html {
+  background-color: #d94417;
+}
+
+.progress.css {
+  background-color: #03a9f4;
+}
+
+.progress.java {
+  background-color: #cbd334;
+}
+
+.progress.canva {
+  background-color: #b62ece;
+}
+
+.skill span {
+  float: right;
+  font-weight: bold;
+  margin-top: -25px;
+  margin-right: 10px;
+} */
+
+.skills {
+  text-align: center;
+  padding: 2em 1em;
+}
+
+.content-skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Pusatkan elemen secara horizontal */
+  gap: 2em;
+}
+
+.skill-item {
+  display: flex;
+  align-items: center; /* Pusatkan secara vertikal */
+  justify-content: center; /* Pusatkan secara horizontal */
+  gap: 2em;
+}
+
+.skill-circle {
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+
+.skill-circle svg {
+  width: 100%;
+  height: 100%;
+  transform: rotate(-90deg);
+}
+
+.skill-circle circle {
+  fill: none;
+  stroke-width: 8;
+  stroke-linecap: round;
+}
+
+.skill-circle circle:first-child {
+  stroke: #e6e6e6;
+}
+
+.skill-circle circle:last-child {
+  stroke: #09ff00;
+  stroke-dasharray: 226;
+  stroke-dashoffset: calc(226 - (226 * var(--percent)) / 100);
+}
+
+.skill-circle .percent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #444;
+}
+
+.skill-image img {
+  max-width: 150px;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .skill-item {
+    flex-direction: column; /* Buat lingkaran dan gambar jadi vertikal */
+    gap: 1em;
+  }
+
+  .skill-image img {
+    max-width: 100px;
+  }
+}
+
+#my-work {
+  background-color: #6258c7;
+  color: white;
+  padding: 50px 20px;
+}
+
+#my-work h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.work-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.work-grid {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.work-item {
+  flex: 1;
+  max-width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: white;
+  color: black;
+  overflow: hidden;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.work-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.work-item img {
+  width: 100%;
+  height: auto;
+}
+
+.work-info {
+  padding: 10px;
+}
+
+.work-info h3 {
+  margin: 10px 0;
+}
+
+.work-info p {
+  font-size: 14px;
+  color: #555;
+}
+
+/* .projek {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3em;
+  padding: 115px 0 0 0;
+}
+
+.card {
+  position: relative;
+  width: 350px;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.card .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 213, 35, 0.6);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.card .overlay .text {
+  font-size: 20px;
+  font-weight: bold;
+  color: #010718;
+  text-transform: uppercase;
+}
+
+.card:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+.card:hover img {
+  transform: scale(1.1);
+}
+
+.card:hover .overlay {
+  opacity: 1;
+}
+
+section {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+section.visible {
+  opacity: 1;
+  transform: translateY(0);
+} */
+
+.my-award {
+  background-color: #746ae0;
+  color: white;
+  text-align: center;
+  padding: 50px 1em; /* Menambahkan padding untuk jarak dari pinggir */
+  justify-content: center; /* Agar isi artikel berada di tengah */
+  align-items: center;
+}
+
+.isi-award {
+  display: flex;
+  padding: 1em;
+  padding: 50px 1em; /* Menambahkan padding untuk jarak dari pinggir */
+  display: flex;
+  justify-content: center; /* Agar isi artikel berada di tengah */
+  align-items: center;
+}
+
+.isi-award img {
+  height: 350px;
+  width: 500px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 1em;
+}
+
+.footer {
+  background-color: #282c34;
+  color: white;
+  text-align: center;
+  padding: 1em;
+  height: 150px;
+  justify-content: center;
+  width: auto;
+}
+
+.isi-footer {
+  padding: 1em;
+}
+
+.isi-footer a {
+  color: #00bfff;
+  text-decoration: none;
+}
+
+.isi-footer a:hover {
+  text-decoration: underline;
+}

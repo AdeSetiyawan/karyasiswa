@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Company Profile</title>
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #036eb8;
+            color: #036eb8(234, 100%, 37%);
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; 
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+    background-color: #036eb8;
+    color: rgb(128, 44, 44);
+    padding: 0px 0;
+    display: flex;
+    justify-content: center;  
+    align-items: center;
+    position: relative;  
+}
+
+.logo {
+    position: absolute;  
+    top: 5px; 
+    left: 10px;  
+    width: 50px; 
+    height: 50px;  
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-left: 0px;
+           padding-left: 120px;  
+           text-align: center;  
+        }
+
+        nav {
+           position: absolute; 
+           right: 0; 
+           top: 50%;  
+           transform: translateY(-50%); 
+        }
+
+        nav ul {
+           list-style-type: none;
+           display: flex;
+           margin: 0;
+        }
+
+        nav ul li {
+            margin: 0 10px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2em;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .section {
+            padding: 40px 0;
+            background-color: #fff;
+            margin-top: 20px;
+        }
+
+        h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 1.1em;
+            line-height: 1.6;
+        }
+
+        .service h3 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+        .image-gallery {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr); 
+            gap: 25px;
+            margin-top: 10px;
+            justify-items: center; 
+        }
+
+
+        .image-gallery img {
+            width: 60%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px #036eb8(0, 0, 0, 0.1);
+        }
+
+        .company-header {
+             background-color: #f4f4f4; 
+             padding: 40px 0;
+             text-align: center;  
+        }
+
+        .company-header h2 {
+            font-size: 2.5em;
+            color: #036eb8; 
+            margin-bottom: 10px;
+        }
+
+        .company-header p {
+            font-size: 1.2em;
+            color: #036eb8;
+            max-width: 800px; 
+            margin: 0 auto;  
+        }
+
+        .profile-section {
+            margin-top: 40px;
+            padding: 40px 0;
+            background-color: #036eb8;
+        }
+
+        .profile-list {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr); 
+            gap: 20px;
+        }
+
+        .profile {
+            text-align: center;
+            background-color: #f4f4f4;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .profile img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 15px;
+        }
+
+        .profile h3 {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+
+        .profile p {
+            font-size: 1em;
+            color: #555;
+        }
+        footer {
+            background-color: #494949;
+            color: white;
+            text-align: center;
+            padding: 0px 0;
+            margin-top: auto; 
+            width: 100%;
+        }        
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <table style="width: 100%; border: none;">                
+                <tr>
+                    <td style="width: 10%; padding: 10px;">
+                        <img src="Desain tanpa judul.png" alt="Logo" class="logo">
+                </tr>
+            </table>
+
+            <nav>
+                <ul>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#profile-section">Our Team</a></li>
+                    <li><a href="#contact">Contact</a></li>                    
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <table>
+        <tr>
+            <td><img src="Media(1).png" alt=""></td>
+        </tr>
+    </table>    
+
+    <section id="company-header" class="company-header">
+        <div class="container">
+            <h2>Welcome to Aschara Style</h2>
+            <p>Dari Setiap Desain yang Elegan, Kami Hadirkan Pilihan yang Membuat Anda Tampil Memukau Setiap Saat.</p>
+        </div>
+    </section>
+    
+    <section class="image-gallery">
+        <img src="dres.jpg" alt="Image 1">
+        <img src="heels.jpg" alt="Image 2">
+        <img src="aksesori.jpg" alt="Image 3">
+        <img src="prfum.jpg" alt="Image 4">
+        <img src="dompet.jpg" alt="Image 5">
+        <img src="tas.jpg" alt="Image 6">
+        <img src="kam.jpg" alt="Image 7">
+        <img src="dress.jpg" alt="Image 8">
+    </section>
+
+    <section id="about" class="section">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>Aschara Style adalah sebuah brand fashion yang mengedepankan keindahan, desain, modern dan elegansi yang timpless. Dengan koleksi yang memadukan 
+                kreatifitas dan tren terkini, Aschara Style menghadirkan pakaian yang tak hanya menonjolkan gaya, tetapi juga kenyamanan dan kualitas. Setiap desain
+                dibuat dengan perhatian pada detail dan material berkualitas tinggi, menjadikan setiap item, koleksi tidak hanya sebuah pakaian tetapi juga pernyataan 
+                gaya hidup. Brand ini menargetkan individu yang percaya diri, modern, dan memiliki selera tinggi dalam berpakaian.</p>
+        </div>
+    </section>  
+
+    <section id="services" class="section" style="background-image: url('NEW\ COLLECTION.png'); background-size: cover; background-position: center;">
+        <div class="container">
+            <h2 style="color: white; text-align: center;"></h2>
+            <p style="color: white; text-align: center;"></p>
+        </div>
+    </section>
+    
+    <section id="profile-section" class="section">
+        <div class="container">
+            <h2>Meet Our Team</h2>
+            <div class="profile-list">
+                <div class="profile">
+                    <img src="adel2.jpg.jfif" alt="Profile 1">
+                    <h3>Adelia Dwi Hapsari</h3>
+                    <p><a href="CVAdel.html" target="_blank">Profile</a></p>
+                </div>
+                <div class="profile">
+                    <img src="ftarin.jpeg" alt="Profile 2">
+                    <h3>Arinda Putri Anjani</h3>
+                    <p><a href="C:\Kolaborasi\CVarinda.html" target="_blank">Profile</a></p>
+                </div>
+                <div class="profile">
+                    <img src="profilc.jpeg" alt="Profile 3">
+                    <h3>Chealsea Apri Sabbillilah</h3>
+                    <p><a href="CVChealsea.html">Profile</a></p>
+                </div>
+                <div class="profile">
+                    <img src="shared image(2).jpg" alt="Profile 4">
+                    <h3>Ismah Hasna Fadhilah</h3>
+                    <p><a href="CVHasna.html" target="_blank">Profile</a></p>
+                </div>
+                <div class="profile">
+                    <img src="PROFILSIN.png" alt="Profile 5">
+                    <h3>Sinta Elma Aulia</h3>
+                    <p><a href="CVSinta.html" target="_blank">Profile</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>Email: aschara@company.com</p>
+            <p>Phone: +62
+            </p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Aschara Style. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
+

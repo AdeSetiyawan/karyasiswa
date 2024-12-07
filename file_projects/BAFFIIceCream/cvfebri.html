@@ -1,0 +1,317 @@
+<html>
+ <head>
+  <title>
+   Curriculum Vitae - febry putri darmayani
+  </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        .header {
+            background-color: #126e90;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+        .header p {
+            margin: 0;
+            font-size: 18px;
+        }
+        .nav {
+            background-color: #f5f5f5;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .nav a {
+            margin: 0 15px;
+            color: #126e90;
+            text-decoration: none;
+            font-size: 16px;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+        .left-column, .right-column {
+            flex: 1;
+            padding: 20px;
+        }
+        .left-column {
+            max-width: 300px;
+        }
+        .right-column {
+            flex: 2;
+        }
+        .profile-pic {
+            text-align: center;
+        }
+        .profile-pic img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+        }
+        .section-title {
+            font-size: 24px;
+            color: #126e90;
+            margin-bottom: 10px;
+        }
+        .skill-bar {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .skill-bar span {
+            flex: 1;
+        }
+        .skill-bar .bar {
+            flex: 3;
+            height: 10px;
+            background-color: #ddd;
+            margin-left: 10px;
+            position: relative;
+        }
+        .skill-bar .bar::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            background-color: #126e90;
+        }
+        .skill-bar .bar.canva::after {
+            width: 50%;
+        }
+        .skill-bar .bar.netbeans::after {
+            width: 70%;
+        }
+        .skill-bar .bar.visualstudiocode::after {
+            width: 50%;
+        }
+        .skill-bar .bar.replit::after {
+            width: 58%;
+        }
+        .skill-bar .bar.javascript::after {
+            width: 70%;
+        }
+        .skill-bar .bar.html::after {
+            width: 80%;
+        }
+        .skill-bar .bar.cpp::after {
+            width: 60%;
+        }
+        .contact-info {
+            background-coloR:#126e90;
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .contact-info p {
+            margin: 5px 0;
+        }
+        .contact-info a {
+            color: white;
+            text-decoration: none;
+        }
+        .footer {
+            background-color: #126e90;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+            .left-column, .right-column {
+                max-width: 100%;
+            }
+        }
+  </style>
+ </head>
+ <body>
+  <div class="nav">
+   <a href="# Beranda">
+    Beranda
+   </a>
+   <a href="# Persentase Skil">
+    Persentase Skill
+   </a>
+   <a href="# Bahasa">
+    Bahasa
+   </a>
+   <a href="# kontak">
+    kontak
+   </a>
+   <a href="#biodata">
+    biodata
+   </a>
+   <a href="#pendidikan">
+    Pendidikan
+   </a>
+   <a href="#pengalaman">
+    pengalaman
+   </a>
+   <a href="#portofolio">
+    portofolio
+   </a>
+  </div>
+  <div class="header">
+   <p>
+    Curriculum Vitae
+   </p>
+   <h1>
+    febry putri darmayani
+   </h1>
+  </div>
+  <div class="container">
+   <div class="left-column">
+    <div class="profile-pic">
+     <img alt="febryputridarmayani" height="150" src="pfebri.jpg" width="150"/>
+    </div>
+    <div class="section" id="Persentase Skill"></div>
+    <div class="section">
+     <h2 class="section-title">
+      Presentase Skill
+     </h2>
+     <div class="skill-bar">
+      <span>
+       Canva
+      </span>
+      <div class="bar canva">
+      </div>
+     </div>
+     <div class="skill-bar">
+      <span>
+       NetBeans
+      </span>
+      <div class="bar netbeans">
+      </div>
+     </div>
+     <div class="skill-bar">
+      <span>
+       VisualStudioCode
+      </span>
+      <div class="bar visualstudiocode">
+      </div>
+     </div>
+     <div class="skill-bar">
+      <span>
+       Replit
+      </span>
+      <div class="bar replit">
+      </div>
+     </div>
+     <div class="section" id="Bahasa"></div>
+     <h2 class="section-title">
+      Bahasa
+     </h2>
+     <div class="skill-bar">
+      <span>
+       JavaScript
+      </span>
+      <div class="bar javascript">
+      </div>
+     </div>
+     <div class="skill-bar">
+      <span>
+       HTML
+      </span>
+      <div class="bar html">
+      </div>
+     </div>
+     <div class="skill-bar">
+      <span>
+       C++
+      </span>
+      <div class="bar cpp">
+      </div>
+     </div>
+    </div>
+    <div class="contact-info" id="kontak"></div>
+    <div class="section" id="kontak">
+  <h2 class="section-title">
+    kontak
+  </h2>
+     <p>kontak</p>
+     <p>
+      Telepon: +62 813-2875-1660
+     </p>
+     <p>
+      Email: febryputridarmayani@gmail.com
+     </p>
+     <p>
+      Alamat: Dawungan, Jatiroto,Wonogiri
+     </p>
+    </div>
+   </div>
+   <div class="right-column">
+    <div class="section"id="biodata">
+     <h2 class="section-title">
+      Biodata
+     </h2>
+     <p>
+      hallo nama saya Febry putri darmayani biasa dipanggil febry,usia saya saat ini sudah menginjak 17 tahun. Saya anak pertama dari dua bersaudara.saat ini saya duduk dibangku SMK dan saya mengambil jurusan pengembangan perangkat lunak atau biasa disebut PPLG
+     </p>
+    </div>
+    <div class="section" id="pendidikan">
+     <h2 class="section-title">
+      Pendidikan
+     </h2>
+     <ul>
+      <li>
+       2014-2019 SDN  2 GUNO
+      </li>
+      <li>
+       2019-2022 SMPN 2 JATIROTO
+      </li>
+      <li>
+       2022-2025 SMKN 1 JATIROTO
+      </li>
+     </ul>
+    </div>
+    <div class="section"id="pengalaman">
+     <h2 class="section-title">
+      Pengalaman
+     </h2>
+     <ul>
+      <li>
+       Membuat web minuman (KK pplg A)
+      </li>
+      <li>
+       Membuat apk perpustakaan (KK pplg B)
+      </li>
+      <li>
+       Membuat gambar nirmana, membuat gambar hewan dan benda menggunakan teknik arsir, membuat poster biodata diri(MP pplg)
+      </li>
+     </ul>
+    </div>
+    <div class="section"id="portofolio">
+     <h2 class="section-title">
+      Portofolio
+     </h2>
+     <img alt="" height="100" src="nirmanafebri.jpg" width="200"/>
+     <img alt="Screenshot of a web application for a drink shop" height="100" src="kfebri.jpg" width="200"/>
+     <img alt="Screenshot of a web application for a drink shop" height="100" src="k2febri.jpg" width="200"/>
+    </div>
+    <a href="https://drive.google.com/drive/folders/1G2J4qCR_tKU9H-wdDlaaws8RKeGFE1gT?usp=sharing">Klik Disini untuk melihat projek saya</a>
+    </div>
+   </div>
+  </div>
+  <div class="footer">
+   <p>
+    copyright @cv FEBRY 2024
+   </p>
+  </div>
+ </body>
+</html>

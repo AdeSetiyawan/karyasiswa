@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #F4F6F8;
+        }
+
+        .container {
+            display: flex;
+            width: 100%;
+            min-height: 100vh;
+            padding: 20px;
+            justify-content: center;
+        }
+
+        .header {
+            width: 100%;
+            text-align: center;
+            background: linear-gradient(135deg, #6D8DFF, #29B6F6); 
+            color: #fff;
+            padding: 50px 0;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .header h1 {
+            font-size: 28px;
+            text-transform: uppercase;
+            font-family: 'Helvetica Neue', sans-serif;
+        }
+
+        .header h2 {
+            font-size: 16px;
+            margin-top: 5px;
+            font-style: italic;
+            font-family: 'Georgia', serif;
+        }
+
+        .left {
+            width: 35%;
+            background: linear-gradient(135deg, #39C7EB, #6D8DFF);
+            color: #FEFFFF;
+            padding: 30px;
+            text-align: center;
+            border-right: 2px solid #1E3D59;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+            position: relative;
+        }
+
+        .left img {
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+
+        .section {
+            margin-bottom: 30px;
+        }
+
+        .section h3 {
+            font-size: 22px;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            color: #ffffff;
+            border-bottom: 2px solid #D1D1D1;
+            padding-bottom: 5px;
+        }
+
+        .section p,
+        .section ul li {
+            color: #f4f4f4;
+            font-size: 16px;
+        }
+
+        .right {
+            width: 65%;
+            padding: 30px;
+            background: linear-gradient(135deg, #1e88e5, #81d4fa); 
+            border-left: 2px solid #1E3D59;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .right h3 {
+            font-size: 22px;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            color: #1E3D59;
+            border-bottom: 2px solid #4F4F4F;
+            padding-bottom: 5px;
+        }
+
+        .right p {
+            margin-bottom: 20px;
+            font-size: 16px;
+            color: #333333;
+        }
+
+        .section ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .section ul li {
+            margin-bottom: 8px;
+            color: #fdfcfc; 
+        }
+
+        .photo-container {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 30px;
+        }
+
+        .photo-container img {
+            width: 45%;
+            max-width: 300px;
+            height: auto;
+            border-radius: 10px;
+            object-fit: cover;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .progress-bar {
+            background-color: #ddd;
+            border-radius: 5px;
+            height: 20px;
+            margin: 10px 0;
+        }
+
+        .progress-bar div {
+            height: 100%;
+            border-radius: 5px;
+            text-align: center;
+            color: white;
+            padding-right: 5px;
+            line-height: 20px;
+        }
+
+        .canva { width: 51.47%; background-color: #333333; }
+        .netbeans { width: 45%; background-color: #375bdd; }
+        .replit { width: 35.42%; background-color: #b90c0c; }
+        .vscode { width: 20%; background-color: rgb(61, 47, 47); }
+        .javascript { width: 45%; background-color: rgb(85, 56, 18); }
+        .cplusplus { width: 35.42%; background-color:rgb(58, 33, 33); }
+        .html { width: 20%; background-color: rgb(129, 78, 177); }
+        .css { width: 20%; background-color:rgb(123, 145, 45); }
+
+        .right .section:nth-of-type(3) ul li{
+            color: #333333;
+        }
+        .view-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #0e0e0d;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+        .view-button:hover {
+            background-color: #1E88E5;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Resa Nur Fitriani Oktavia</h1>
+    </div>
+
+    <div class="container">
+        <div class="left">
+            <img src="profil.jpg" alt="Foto Profil" height="30px" width="30%">
+            <div class="section">
+                <h3>Kontak</h3>
+                <p>085346913260</p>
+                <p>ftrni20@gmail.com</p>
+            </div>
+            <div class="section">
+                <h3>Pendidikan</h3>
+                <ul>
+                    <li>TK PERTIWI IX</li>
+                    <li>SDN KRANDEGAN</li>
+                    <li>SMP N 3 JATISRONO</li>
+                    <li>SMK N 1 JATIROTO</li>
+                </ul>
+            </div>
+            <div class="section">
+                <h3>Hobi</h3>
+                <ul>
+                    <li>Baca Novel</li>
+                    <li>Menulis</li>
+                    <li>Mendengarkan Musik</li>
+                </ul>
+            </div>
+            <a href="file:///C:/Users/LAB%20RPL%20AIO105/Downloads/RICHEESE-FACTORY_PK19/RICHEESE-FACTORY_PK19/kelompok_19.html" class="view-button">Kembali</a>
+        </div>
+
+        <div class="right">
+            <div class="photo-container">
+                <img src="CV 1.jpeg" alt="">
+                <img src="CV 2.jpeg" alt="">
+            </div>
+            <div class="section">
+                <h3>Profil</h3>
+                <p>
+                    Hai nama saya Resa Nur Fitriani Oktavia.
+                    Saya lahir di Wonogiri pada tanggal 26 Oktober 2007.
+                    Saya adalah anak ke 2 dari 2 bersaudara.
+                    Saat ini saya bersekolah di SMK N 1 JATIROTO dengan jurusan PPLG.
+                    Di jurusan ini terdapat beberapa bahasa pemrograman,dan bahasa pemrograman yang saya anggap paling mudah ialah C++
+                </p>
+            </div>
+            <div class="section">
+                <h3>Pengalaman</h3>
+                <ul>
+                    <li>Membuat beberapa situs web</li>
+                    <li>Mempelajari bahasa pemrograman C++, HTML, CSS, dan JavaScript</li>
+                    <li>Membuat satu aplikasi yang memiliki fitur transaksi</li>
+                    <li>Membuat poster dan infografis</li>
+                    <li>Membuat presentasi di Canva</li>
+                    <li>Menulis dokumen di Microsoft Word</li>
+                    <li>Mengolah data di Microsoft Excel</li>
+                </ul>
+            </div>
+            <div class="section">
+                <h3>Kemampuan</h3>
+                <div class="progress-bar">
+                    <div class="canva">Canva 51.47%</div>
+                </div>
+                <div class="progress-bar">
+                    <div class="netbeans">Netbeans 45%</div>
+                </div>
+                <div class="progress-bar">
+                    <div class="replit">Replit 35.42%</div>
+                </div>
+                <div class="progress-bar">
+                    <div class="vscode">VSCode 20%</div>
+                </div>
+                <div class="progress-bar">
+                    <div class="javascript">JavaScript 45%</div>
+                </div>
+                <div class="progress-bar">
+                    <div class="cplusplus">C++ 35.42%</div>
+                </div>
+                <div class="progress-bar">
+                    <div class="html">HTML 20%</div>
+                </div>
+                <div class="progress-bar">
+                    <div class="css">CSS 20%</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

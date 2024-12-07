@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Golden Crust</title>
+
+     <style>
+        *{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: rgb(8, 6, 6);
+
+}
+
+nav{
+    display: flex;
+    width: 85%;
+    margin:auto;
+    padding: 10px 0;
+    align-items: center;
+    justify-content: space-around;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: rgb(251, 250, 250);
+    font-weight: bold;
+}
+
+nav ul li a:hover{
+    color: red;
+
+}
+.line {
+      height: 3px;
+      background: #ffe23c;
+      margin: 20px 0;
+    }
+    
+
+    header {
+    background-color: #f8f8f8;
+    padding: 10px 20px;
+}
+
+.img{
+    width: 1300;
+}
+
+.about-us {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 20px;
+    max-width: 1300px;
+    margin: 0 auto;
+    background-color: #f8f8f8;
+}
+
+.about-us .text {
+    flex: 1;
+    padding-right: 20px;
+    color: #000000;
+    background-color: #f8f8f8;
+}
+
+.about-us h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    background-color: #f8f8f8;
+}
+
+.about-us p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    background-color: #f8f8f8;
+}
+
+.about-us .image {
+    flex: 1;
+    text-align: right;
+    background-color: #ffffff;
+}
+
+.about-us .image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+/* Vision and Mission Section */
+.vision-mission {
+    display: flex;
+    align-items: stretch;
+    height: 100vh;
+}
+
+.image {
+    flex: 1;
+    background-color: #e8e8e8;
+}
+
+.image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.content {
+    flex: 1;
+    background-color: #ffeb3b;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+
+.content .text {
+    z-index: 2;
+    position: relative;
+    background-color: #ffeb3b;
+}
+
+.content h2 {
+    font-size: 1.8rem;
+    margin: none;
+    background-color: #ffeb3b;
+}
+
+.content p {
+    font-size: 1.2rem;
+    margin: none;
+    line-height: 1.8;
+    background-color: #ffeb3b;
+}
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 20px;
+    color: #e8e8e8;
+}
+
+.hero-text {
+    max-width: 50%;
+}
+
+.hero-text h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.hero-text p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.button {
+    display: inline-block;
+    background-color: #ffd700;
+    color: #000000;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #ffc107;
+}
+
+.hero-images {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.hero-images img {
+    width: 300px;
+    height: auto;
+    border-radius: 20px;
+    justify-content: space-between;
+}
+.footer-bottom {
+  text-align: center;
+  padding: 10px 0;
+  border-top: 1px solid #444;
+  background-color: #ff0202;
+  padding: 20px;
+}
+
+.footer-bottom h2 {
+  margin: 0;
+  font-size: 20px;
+  color: #ffffff;
+ background-color: #ff0202;
+}
+   </style>
+     
+     
+</head>
+<body>
+    <nav>
+        <img src="c:\Users\LAB KOMPUTER B\Downloads\Bright Orange illustrates Food Chicken Logo (Logo).png" width="100" height="100" class="logo">
+        <ul>
+            <li><a href="file:///E:/PWPB_Ikhwanu_XI_PPLG_1/pwpb%20hanisyaa/projek%20kolaborasi/menu.html">OUR MENU</a></li>
+            <li><a href="file:///E:/PWPB_Ikhwanu_XI_PPLG_1/pwpb%20hanisyaa/projek%20kolaborasi/promo.html">PROMO</a></li>
+            <li><a href="#">FOLLOW US</a></li>
+            <li><a href="#">CONTACT</a></li>            
+        </ul>
+    </nav>
+     <div class="line"></div>
+
+     <header>
+        <nav>
+            <ul>
+                <li><a href="#about">about us</a></li>
+                <li><a href="#visi misi">vision & mission</a></li>
+                <li><a href="#career">career</a></li>            
+            </ul>
+        </nav>
+    </header>
+
+    <div class="img">
+        <img src="c:\Users\LAB KOMPUTER B\Downloads\logo teh (Presentasi).png" width="1350">
+    <section class="about-us">
+
+
+        <div class="text">
+            <section id="about"></section>
+            <h1>about us</h1>
+            <p>Golden Crust adalah produk yang berfokus pada penyajian ayam dengan kualitas terbaik, dipadukan dengan bumbu spesial dan proses pemasakan yang penuh perhatian. Kami hadir untuk memanjakan lidah para pecinta ayam dengan berbagai menu lezat yang tidak hanya menggugah selera tetapi juga membuat setiap gigitan menjadi pengalaman yang tak terlupakan. Kami percaya bahwa ayam yang dimasak dengan bahan berkualitas akan menciptakan rasa yang sempurna.
+               Golden Crust menawarkan berbagai variasi menu yang dapat dinikmati oleh semua kalangan. Kami berkomitmen untuk selalu menjaga kualitas, kebersihan, dan kelezatan setiap sajian ayam yang kami hadirkan, serta memberikan pelayanan yang ramah dan profesional kepada setiap pelanggan. Kami ingin memastikan setiap hidangan yang disajikan dapat membawa kebahagiaan bagi Anda dan keluarga.
+                </p>
+        </div>
+        <div class="image">
+            <img src="c:\Users\LAB KOMPUTER B\Downloads\Ungu Dan Kuning Modern Promo Makanan Facebook Post.png" alt="Product Display">
+        </div>
+    </section>
+
+    <section class="vision-mission">
+        <div class="image">
+            <img src="c:\Users\LAB KOMPUTER B\Downloads\Bright Orange illustrates Food Chicken Logo (Logo).png" alt="Richeese Factory Sign">
+        </div>
+        <div class="content">
+
+            <div class="text">
+                <section id="visi misi">
+                <h2>Visi</h2>
+                <p>Menjadi pilihan utama dalam industri kuliner ayam dengan menghadirkan cita rasa yang asli, berkualitas tinggi, dan inovatif, serta memberikan pengalaman makan yang tak terlupakan bagi pelanggan di seluruh dunia.</p>
+                <h2>Misi</h2>
+                    <p>1. Menyajikan ayam dengan bahan terbaik dan proses memasak yang teliti untuk menghasilkan rasa yang lezat dan memuaskan bagi setiap pelanggan.</p>
+                    <p>2. Terus berinovasi dalam menciptakan varian menu ayam yang unik, memadukan cita rasa tradisional dengan inovasi kuliner modern yang dapat dinikmati oleh berbagai kalangan.</p>
+                    <p>3. Menjaga standar kebersihan yang tinggi serta kualitas produk yang konsisten, untuk memastikan setiap hidangan yang disajikan selalu aman dan enak.</p>              
+                </section>  
+            </div>     
+            </section>
+
+            <main>
+                <div class="hero">
+                    <div class="hero-text">
+                        <section id="career">
+                        <h1>Bergabung Bersama Kami</h1>
+                        <p>Di Golden Crust, kami lebih dari sekedar bisnis. Kami adalah komunitas tempat Anda berlatih keterampilan hidup dan sebagai wadah untuk mengejar serta mewujudkan impianmu.</p>
+                        <a href="#" class="button">Ke atas</a>
+                    </div>
+                    <div class="hero-images">
+                        <img src="c:\Users\LAB KOMPUTER B\Downloads\WhatsApp Image 2024-12-04 at 10.29.58.jpeg" alt="Team" class="team-image">
+                        <img src="c:\Users\LAB KOMPUTER B\Downloads\WhatsApp Image 2024-12-04 at 10.29.59.jpeg" alt="Staff" class="staff-image">         
+                    </div>
+                </section>
+                </div>
+            </main>
+
+            <div class="footer-bottom">
+                <h2>@Golden Crust 2024</h2>
+</body>
+</html>

@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop Now</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .header {
+            width: 100%;
+            background-color: #fbb5cf;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2rem;
+        }
+
+        .shop-container {
+            max-width: 1200px;
+            margin: 20px auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .product {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            text-align: center;
+        }
+
+        .product img {
+            width: 60%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .product-info {
+            padding: 15px;
+        }
+
+        .product-info h3 {
+            font-size: 1.2rem;
+            margin: 10px 0;
+        }
+
+        .product-info p {
+            color: #555;
+            margin: 5px 0 15px;
+        }
+
+        .product-info .price {
+            font-size: 1.1rem;
+            font-weight: bold;
+            color: #fbb5cf;
+        }
+
+        .product-info button {
+            background-color: #fbb5cf;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            font-size: 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        .product-info button:hover {
+            background-color: #fbb5cf;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Shop Now</h1>
+        <p>Explore our amazing products!</p>
+    </div>
+
+    <div class="shop-container">
+        <!-- Product 1 -->
+        <div class="product">
+            <img src="sweater st.jpg" alt="Product 1">
+            <div class="product-info">
+                <h3>sweater cardigan cute</h3>
+                <p>High-quality product for everyday use.</p>
+                <p class="price">Rp. 50.000 - Rp. 100.000</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="product">
+            <img src="sweater 2.jpg" alt="Product 2">
+            <div class="product-info">
+                <h3>sweater cardigan cute</h3>
+                <p>Durable and reliable for any situation.</p>
+                <p class="price">Rp. 50.000 - Rp. 100.000</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="product">
+            <img src="sky sweater.jpeg" alt="Product 3">
+            <div class="product-info">
+                <h3>sweater cardigan cute</h3>
+                <p>Stylish and modern design for you.</p>
+                <p class="price">Rp. 50.000 - Rp. 100.000</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+
+        <!-- Product 4 -->
+        <div class="product">
+            <img src="mountain jacket.jpeg" alt="Product 4">
+            <div class="product-info">
+                <h3>mountain jacket</h3>
+                <p>Perfect for gifting your loved ones.</p>
+                <p class="price">Rp. 50.000 - Rp. 100.000</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+
+        <!-- Product 5 -->
+        <div class="product">
+            <img src="jaket 2.jpg" alt="Product 4">
+            <div class="product-info">
+                <h3>mountain jacket</h3>
+                <p>Perfect for gifting your loved ones.</p>
+                <p class="price">Rp. 50.000 - Rp. 100.000</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+
+        <!-- Product 6 -->
+        <div class="product">
+            <img src="black mamba jacket.jpeg" alt="Product 4">
+            <div class="product-info">
+                <h3>mountain jacket</h3>
+                <p>Perfect for gifting your loved ones.</p>
+                <p class="price">Rp. 50.000 - Rp. 100.000</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+
+        <!-- Product 7 -->
+        <div class="product">
+            <img src="nb.jpg" alt="Product 1">
+            <div class="product-info">
+                <h3>shoes NB white</h3>
+                <p>High-quality product for everyday use.</p>
+                <p class="price">Rp. 50.000 - Rp. 100.000</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+
+        <!-- Product 8 -->
+        <div class="product">
+            <img src="Air Jordan 1 Retro High OG - 'Black Toe'.jpg" alt="Product 2">
+            <div class="product-info">
+                <h3>AIR JORDAN red black</h3>
+                <p>Durable and reliable for any situation.</p>
+                <p class="price">Rp. 50.000 - Rp. 100.000</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+
+        <!-- Product 9 -->
+        <div class="product">
+            <img src="Puma.jpg" alt="Product 3">
+            <div class="product-info">
+                <h3>puma pink black</h3>
+                <p>Stylish and modern design for you.</p>
+                <p class="price">Rp. 50.000 - Rp. 100.000</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+
+        <!-- Product 10 -->
+        <div class="product">
+            <img src="backpack simple.jpg" alt="Product 4">
+            <div class="product-info">
+                <h3>backpack white</h3>
+                <p>Perfect for gifting your loved ones.</p>
+                <p class="price">Rp. 50.000 - Rp. 100.000</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+
+        <!-- Product 11 -->
+        <div class="product">
+            <img src="backpack maroon.jpg" alt="Product 4">
+            <div class="product-info">
+                <h3>backpack maroon</h3>
+                <p>Perfect for gifting your loved ones.</p>
+                <p class="price">Rp. 50.000 - Rp. 100.000</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+
+        <!-- Product 12 -->
+        <div class="product">
+            <img src="backpack blue.jpg" alt="Product 4">
+            <div class="product-info">
+                <h3>backpack blue</h3>
+                <p>Perfect for gifting your loved ones.</p>
+                <p class="price">Rp. 50.000 - Rp. 100.000</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+
+   

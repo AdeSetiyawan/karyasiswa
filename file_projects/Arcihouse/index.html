@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arcihouse</title>
+    <link rel="shortcut icon" href="image/favicon.png" type="image/x-icon" />
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+
+      @font-face {
+        font-family: mont-bold;
+        src: url(font/Mont-HeavyDEMO.otf);
+      }
+      @font-face {
+        font-family: mont-light;
+        src: url(font/Mont-ExtraLightDEMO.otf);
+      }
+      table {
+        border-collapse: collapse;
+        width: 100%;
+      }
+      tr,
+      td {
+        margin: 0;
+        padding: 1.5em;
+      }
+
+      #nav-row {
+        background-color: #734d46;
+      }
+      #nav-logo {
+        margin-left: 3em;
+      }
+      * {
+        font-family: mont-light;
+      }
+      h2 {
+        font-family: mont-bold;
+      }
+      #header-td {
+        padding: 0;
+      }
+      #header-section {
+        height: 83vh;
+        background-color: #cbaa95;
+      }
+      #header-section tr,
+      #header-section td {
+        padding: 0;
+      }
+      #header-section #title {
+        padding-left: 5em;
+        padding-top: 3em;
+      }
+      #header-image-td {
+        vertical-align: bottom;
+      }
+      .header-button {
+        margin-top: 3em;
+        margin-right: 1em;
+        padding: 0.7em;
+        background-color: #a67469;
+        color: white;
+        border: 0;
+        border-radius: 5px;
+      }
+      img[alt="orang"] {
+        width: 30vw;
+        position: absolute;
+        top: 4.5em;
+      }
+      img[alt="house-modern"] {
+        width: 30vw;
+      }
+      #header-section span {
+        font-size: 20px;
+      }
+      #text-2 table {
+        width: 35%;
+      }
+
+      #content {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      #content p {
+        width: 70vw;
+        text-align: center;
+      }
+
+      #projects-tr,
+      #projects-tr td {
+        padding: 0;
+      }
+      #projects {
+        height: 100vh;
+        background-color: #a67469;
+      }
+      #projects td {
+        width: 33%;
+      }
+      #projects h2 {
+        margin-left: 3em;
+        color: white;
+      }
+      img[alt="photo"] {
+        width: 80%;
+      }
+      #projects button {
+        font-size: larger;
+        text-decoration: underline;
+        padding: 0.7em;
+        background-color: transparent;
+        color: white;
+        border: 0;
+        border-radius: 5px;
+      }
+
+      #review-tr,
+      #review-tr > td {
+        padding: 0;
+      }
+      #review {
+        height: 100vh;
+        background-color: #a67469;
+        color: white;
+      }
+      #review #title-td {
+        background-image: url(image/text-bg.png);
+        background-size: cover;
+        color: white;
+        font-size: large;
+      }
+      #review img {
+        border-radius: 50%;
+      }
+
+      #founders-profile-tr {
+        padding: 0;
+      }
+      #founders-profile {
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+      }
+      img[alt="profile"] {
+        width: 10vw;
+        vertical-align: middle;
+        margin-right: 2em;
+      }
+      #founders-profile table {
+        background-color: #734d46;
+      }
+      #founders-profile h2 {
+        color: white;
+        font-size: 40px;
+      }
+      #founders-profile a {
+        font-size: 30px;
+        font-family: mont-bold;
+        color: #cbaa95;
+        text-decoration-color: rgb(255, 255, 255);
+        display: inline-block;
+      }
+
+      #contact {
+        height: 100vh;
+      }
+      #contact img {
+        width: 40%;
+      }
+      img[alt="social-media"] {
+        width: 80px;
+      }
+
+      #footer {
+        width: 100%;
+        background-color: #734d46;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <!-- navigation -->
+      <tr id="nav-row">
+        <td style="padding: 0.5em">
+          <img
+            src="image/Blue Minimalist Castle Palace Logo.png"
+            alt="logo"
+            height="30em"
+            id="nav-logo"
+          />
+        </td>
+        <td>
+          <a href="#content" style="text-decoration: none; color: white"
+            >About</a
+          >
+        </td>
+        <td>
+          <a href="#projects" style="text-decoration: none; color: white"
+            >Projects</a
+          >
+        </td>
+        <td>
+          <a
+            href="#founders-profile"
+            style="text-decoration: none; color: white"
+            >Founders</a
+          >
+        </td>
+        <td>
+          <a href="#review" style="text-decoration: none; color: white"
+            >Review</a
+          >
+        </td>
+        <td>
+          <a href="#contact" style="text-decoration: none; color: white"
+            >Contact</a
+          >
+        </td>
+      </tr>
+
+      <!-- header -->
+      <tr>
+        <td colspan="6" id="header-td">
+          <table id="header-section">
+            <tr>
+              <td id="title">
+                <h1>Arcihouse</h1>
+                <h2>Sedaya Kedah Kagungan Papan</h2>
+                <a href="#contact"
+                  ><button class="header-button">Contact Us</button></a
+                >
+                <a href="#projects"
+                  ><button class="header-button">Our Projects</button></a
+                >
+              </td>
+              <td>
+                <img src="image/orang.png" alt="orang" />
+              </td>
+            </tr>
+            <tr>
+              <td id="header-image-td">
+                <img src="image/house-modern.png" alt="house-modern" />
+              </td>
+              <td id="text-2">
+                <h2>We have built house, mosque, church, and more</h2>
+                <table>
+                  <tr>
+                    <td>
+                      <span>Pritzker Architecture Prize</span>
+                    </td>
+                    <td>
+                      <img
+                        src="image/Medal_of_Pritzker_Architecture_Prize_(front).gif"
+                        alt="pritzker_prize"
+                        width="35px"
+                      />
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+      <!-- content -->
+      <tr>
+        <td colspan="6">
+          <article id="content">
+            <p>
+              <q>
+                Telah didirikan sejak tahun 2007, Arcihouse Architecture telah
+                membangun berbagai bangunan baik rumah sipil, rumah ibadah,
+                maupun gedung kantor. Arcihouse dibentuk oleh 5 orang mahasiswa
+                arsitektur menjelang wisuda mereka. <br />
+                Mulanya merupakan projek untuk skripsi, namun setelah lulus
+                mereka terus mengembangkan Arcihouse hingga sebesar saat ini
+                dengan prinsip yang sama : "Sedaya Kedah Kagungan Papan".
+                Prinsip ini dipilih karena Tempat tinggal adalah salah satu
+                kebutuhan dasar manusia, sehingga tidak boleh ada orang yang
+                tunawisma di negeri kemanusiaan ini. <br />
+                Untuk itu, Arcihouse menekan harga desain, dan kerap tidak
+                memungut biaya untuk desain fasilitas umum.
+              </q>
+            </p>
+          </article>
+        </td>
+      </tr>
+
+      <!-- projects -->
+      <tr id="projects-tr">
+        <td colspan="6">
+          <table id="projects">
+            <tr>
+              <td><h2>Our Projects</h2></td>
+              <td><img src="image/chateu-fujisaw.jpg" alt="photo" /></td>
+              <td>
+                <img src="image/Notre-Dame-de-Paris-France.jpg" alt="photo" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <img
+                  src="image/The World's Most Beautiful Mosques.jpg"
+                  alt="photo"
+                />
+              </td>
+              <td><img src="image/download.jpg" alt="photo" /></td>
+              <td>
+                <a
+                  href="https://en.wikipedia.org/wiki/List_of_buildings_and_structures_in_Singapore"
+                  ><button>Full Projects</button></a
+                ><a
+                  href="https://en.wikipedia.org/wiki/List_of_architecture_awards"
+                  ><button>Certificates</button></a
+                >
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+      <!-- founders -->
+      <tr id="founders-profile-tr">
+        <td colspan="6" id="founders-profile">
+          <table>
+            <tr>
+              <td>
+                <h2>Founders</h2>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="CV_Ikhwanu_XI_PPLG_1/index.html">
+                  <img src="image/iwan.png" alt="profile" />
+                  Ikhwanu Robik Saputra
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="CV_Anggun_XI_PPLG_2/index.html">
+                  <img src="image/anggun.png" alt="profile" />
+                  Anggun Damayanti
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="CV_Putri_XI_PPLG_2/1_CV.html">
+                  <img src="image/putri.png" alt="profile" />
+                  Elysia Anindya C.P
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="CV_Kirana_XI_PPLG_2/index.html">
+                  <img src="image/kirana.png" alt="profile" />
+                  Kirana Almaura R
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="CV_Roofiif_XI_PPLG_3/index.html">
+                  <img src="image/sotip.png" alt="profile" />
+                  Roofiif Zaidan
+                </a>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+      <!-- review -->
+      <tr id="review-tr">
+        <td colspan="6">
+          <table id="review">
+            <tr>
+              <td id="title-td"><h3>Client Feedback</h3></td>
+            </tr>
+            <tr>
+              <td>
+                <table>
+                  <tr>
+                    <td>
+                      <img src="image/wahyudi.jpg" alt="photo" />
+                    </td>
+                    <td>
+                      <h4>Wahyudi, Pemilik Rumah</h4>
+                      <q>
+                        Saya sangat senang dengan hasil kerja Archihouse!
+                        Prinsip 'Sedaya Kedah Kagungan Papan' mereka benar-benar
+                        terasa. Rumah yang mereka desain tidak hanya modern,
+                        tapi juga nyaman dan aman. Sekarang, saya merasa lebih
+                        tenang dan terlindungi di rumah baru kami.
+                      </q>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <img
+                        src="image/WhatsApp Image 2024-12-04 at 10.43.17_25f3c5b5.jpg"
+                        alt="photo"
+                      />
+                    </td>
+                    <td>
+                      <h4>Haryanto, Dosen Arsitektur UWAH</h4>
+                      <q>
+                        Sebagai seorang akademisi di bidang arsitektur, saya
+                        sangat mengapresiasi filosofi yang diterapkan oleh
+                        Archihouse, yaitu 'Semua harus memiliki atap'. Mereka
+                        menggabungkan prinsip-prinsip dasar arsitektur dengan
+                        inovasi dan kepekaan terhadap kebutuhan klien. Setiap
+                        proyek yang mereka kerjakan tidak hanya berfokus pada
+                        estetika, tapi juga pada kenyamanan dan perlindungan
+                        penghuninya. Archihouse berhasil menciptakan ruang yang
+                        harmonis dan berkelanjutan, yang menjadi contoh baik
+                        dalam penerapan teori arsitektur di dunia nyata.
+                      </q>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <img src="image/sri-mulyani.jpg" alt="photo" />
+                    </td>
+                    <td>
+                      <h4>Sri Mulyani, Analis Finansial</h4>
+                      <q>
+                        Sebagai seorang ekonom, saya sangat menghargai
+                        pendekatan Archihouse yang tidak hanya fokus pada
+                        desain, tetapi juga pada efisiensi dan keberlanjutan
+                        biaya. Prinsip 'Semua harus memiliki atap' mereka
+                        membawa dampak positif, karena mereka menciptakan ruang
+                        yang fungsional dan hemat biaya. Proyek yang mereka
+                        kerjakan selalu memperhatikan keseimbangan antara
+                        kualitas, biaya, dan nilai jangka panjang. Archihouse
+                        benar-benar memahami pentingnya investasi yang bijak
+                        dalam dunia properti.
+                      </q>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+      <!-- contact -->
+      <tr>
+        <td colspan="3" id="contact">
+          <center>
+            <img src="image/favicon.png" alt="logo" />
+            <br />
+            <h3>Sedaya Kedah Kagungan Papan</h3>
+          </center>
+        </td>
+        <td colspan="3">
+          <a href=""
+            ><img src="image/Untitled design (5).png" alt="social-media"
+          /></a>
+          <a href=""
+            ><img src="image/Untitled design (6).png" alt="social-media"
+          /></a>
+          <a href=""
+            ><img src="image/Untitled design (7).png" alt="social-media"
+          /></a>
+          <a href=""
+            ><img src="image/Untitled design (8).png" alt="social-media"
+          /></a>
+        </td>
+      </tr>
+
+      <tr>
+        <td colspan="6" id="footer">
+          <center>Copyright &copf;2024 Arcihouse Architecture</center>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>

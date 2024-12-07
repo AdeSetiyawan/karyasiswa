@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resume Renata Suta Japal</title>
+    <style>
+      body {
+        font-family: "Arial", sans-serif;
+        background-color: #f4f7f6;
+        color: #333;
+        margin: 0;
+        padding: 0;
+        line-height: 1.6;
+      }
+      .container {
+        width: 80%;
+        max-width: 800px;
+        margin: 30px auto;
+        background: linear-gradient(to bottom right, #ffffff, #3498db);
+        padding: 20px;
+        border-radius: 12px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+      h1,
+      h2,
+      h3 {
+        color: #2c3e50;
+        margin: 0;
+        margin-bottom: 10px;
+      }
+      h1 {
+        font-size: 26px;
+        font-weight: bold;
+      }
+      h2 {
+        font-size: 18px;
+        color: #7f8c8d;
+        margin-bottom: 20px;
+      }
+      h3 {
+        font-size: 22px;
+        color: #3498db;
+        margin: 20px 0 15px;
+        border-bottom: 2px solid #3498db;
+        display: inline-block;
+        padding-bottom: 5px;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 20px;
+      }
+      td,
+      th {
+        padding: 10px;
+        border: 1px solid #ddd;
+        text-align: left;
+        vertical-align: top;
+      }
+      td {
+        font-size: 14px;
+        color: #555;
+      }
+      th {
+        background-color: #3498db;
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 14px;
+        letter-spacing: 1px;
+      }
+      .profile-pic {
+        text-align: center;
+      }
+      .profile-pic img {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        object-fit: cover;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+      }
+      .progress-container {
+        background-color: #eaeaea;
+        border-radius: 20px;
+        overflow: hidden;
+        width: 100%;
+        height: 20px;
+        margin: 8px 0;
+      }
+      .progress-bar {
+        height: 100%;
+        font-weight: bold;
+        text-align: right;
+        padding-right: 8px;
+        color: white;
+        font-size: 12px;
+        line-height: 20px;
+        border-radius: 20px 0 0 20px;
+      }
+      .progress-bar[data-color="gold"] {
+        background-color: #f1c40f;
+      }
+      .progress-bar[data-color="blue"] {
+        background-color: #3498db;
+      }
+      .progress-bar[data-color="red"] {
+        background-color: #e74c3c;
+      }
+      .progress-bar[data-color="teal"] {
+        background-color: #1abc9c;
+      }
+      @keyframes fillProgressBar {
+        0% {
+          width: 0%;
+        }
+      }
+      .progress-bar {
+        animation: fillProgressBar 6s ease-in-out forwards;
+        display: block;
+        height: 20px;
+        border-radius: 20px 0 0 20px;
+        font-weight: bold;
+        text-align: right;
+        padding-right: 8px;
+        color: white;
+        line-height: 20px;
+        background-color: #eaeaea;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+      .progress-bar[data-color="gold"] {
+        background-color: #f1c40f;
+      }
+      .progress-bar[data-color="blue"] {
+        background-color: #3498db;
+      }
+      .progress-bar[data-color="red"] {
+        background-color: #e74c3c;
+      }
+      .progress-bar[data-color="teal"] {
+        background-color: #1abc9c;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Profile Section -->
+      <table>
+        <tr>
+          <td rowspan="2" class="profile-pic">
+            <img src="pp.jpeg" alt="Foto Profil Renata Suta Japal" />
+          </td>
+          <td class="profile-text">
+            <h1>Renata Suta Japal</h1>
+            <h2>Siswa SMKN 1 Jatroto</h2>
+          </td>
+        </tr>
+      </table>
+
+      <!-- Profil -->
+      <h3>Profil</h3>
+      <p>
+        Saya lulusan MTs tahun 2023 yang sedang belajar desain . Saya
+        bersemangat untuk membuat desain yang bermanfaat bagi banyak orang.
+      </p>
+
+      <!-- Edukasi -->
+      <h3>Edukasi</h3>
+      <table>
+        <tr>
+          <td><strong>MTs Guppi</strong></td>
+          <td>SMKN 1 Jatroto</td>
+        </tr>
+      </table>
+      <!-- Tabel Persentase -->
+      <h3>Keahlian</h3>
+      <table>
+        <tr>
+          <th>aplikasi</th>
+          <th>Persentase</th>
+        </tr>
+        <tr>
+          <td>Replit (Dasar)</td>
+          <td>
+            <div class="progress-container">
+              <div class="progress-bar" data-color="gold" style="width: 90%">
+                90%
+              </div>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>Canva</td>
+          <td>
+            <div class="progress-container">
+              <div class="progress-bar" data-color="blue" style="width: 62%">
+                62%
+              </div>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>vscode</td>
+          <td>
+            <div class="progress-container">
+              <div class="progress-bar" data-color="red" style="width: 70%">
+                70%
+              </div>
+            </div>
+          </td>
+        </tr>
+
+        <tr>
+          <td>netbeans</td>
+          <td>
+            <div class="progress-container">
+              <div class="progress-bar" data-color="teal" style="width: 93%">
+                93%
+              </div>
+            </div>
+          </td>
+        </tr>
+        <table></table>
+        <tr>
+          <h3>bahasa pemrograman yang di kuasai</h3>
+          <table> 
+          <th>bahasa pemrograman</th>
+          <th>Persentase</th>
+        </tr>
+        <tr>
+          <td>C++(Dasar)</td>
+          <td>
+            <div class="progress-container">
+              <div class="progress-bar" data-color="gold" style="width: 90%">
+                90%
+              </div>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>HTML(Dasar)</td>
+          <td>
+            <div class="progress-container">
+              <div class="progress-bar" data-color="blue" style="width: 70%">
+                70%
+              </div>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>javascrip</td>
+          <td>
+            <div class="progress-container">
+              <div class="progress-bar" data-color="red" style="width: 93%">
+                93%
+              </div>
+            </div>
+          </td>
+        </tr>
+      </table>
+      <!-- Pengalaman -->
+      <h3>Pengalaman</h3>
+      <table>
+        <tr>
+          <td><strong>Pramuka</strong></td>
+          <td>(2021-2022)</td>
+        </tr>
+        <tr>
+          <td><strong>Ekstra Tari</strong></td>
+          <td>(Agustus 2023 - Januari 2024)</td>
+        </tr>
+        <tr>
+          <td><strong>Ekstra Band</strong></td>
+          <td>(Mei 2024 - Desember 2024)</td>
+        </tr>
+      </table>
+
+      <!-- Bahasa -->
+      <h3>Bahasa</h3>
+      <table>
+        <tr>
+          <td>Inggris, Indonesia</td>
+        </tr>
+      </table>
+
+      <!-- Kontak -->
+      <h3>Kontak</h3>
+      <table>
+        <tr>
+          <td><strong>Telepon:</strong></td>
+          <td>082134917429</td>
+        </tr>
+        <tr>
+          <td><strong>Email:</strong></td>
+          <td>rrqjapal@gmail.com</td>
+        </tr>
+        <tr>
+          <td><strong>Alamat:</strong></td>
+          <td>Sawit RT2 RW1</td>
+        </tr>
+      </table>
+      <h3>Tugas tugas saya</h3>
+      <table>
+        <tr>
+          <center>
+            <td>
+              <a
+                style="color: #555"
+                href="https://drive.google.com/drive/folders/120doJrtQLUliXXHLeIcziQVv0Oe6gwtv?usp=drive_link"
+                >Click disini</a
+              >
+            </td>
+          </center>
+        </tr>
+      </table>
+      <h3>Portofolio saya</h3>
+      <table>
+        <tr>
+          <center>
+            <td>
+              <a style="color: #555" href="/kelmpok/cv_renata/portofolio.html"
+                >Click disini</a
+              >
+            </td>
+          </center>
+        </tr>
+      </table>
+      <h3>company profile</h3>
+      <table>
+        <tr>
+          <center>
+            <td>
+              <a style="color: #555" href="/kelmpok/company_profile/index.html"
+                >Click disini</a
+              >
+            </td>
+          </center>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>

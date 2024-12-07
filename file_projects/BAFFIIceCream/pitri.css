@@ -1,0 +1,137 @@
+body {
+    font-family: Arial, sans-serif; 
+    margin: 0; 
+    padding: 0; 
+    background-color: #e0c5c5; /* Menetapkan warna latar belakang */
+}
+
+/* Kontainer utama untuk menyusun bagian kiri dan kanan */
+.container {
+    width: 50%; 
+    margin: 20px auto; 
+    display: flex; 
+}
+
+/* Penataan untuk bagian kiri */
+.left {
+    width: 60%; 
+    padding: 20px; 
+    background-color: #f1b1b1; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Penataan untuk bagian kanan */
+.right {
+    width: 250%; 
+    padding: 20px; 
+    margin-left: 20px; 
+    background-color: #f1b1b1; 
+    border-radius: 8px; 
+    box-shadow: 0 5px 9px rgba(0, 0, 0, 0.1); 
+}
+
+/* Penataan untuk gambar profil */
+.profile-img {
+    width: 200px; 
+    height: 200px;
+    border-radius: 200%; 
+    margin-bottom: 30px; 
+}
+
+/* Penataan untuk nama */
+.name {
+    font-size: 24px; 
+    font-weight: bold;
+    color: #000000; 
+}
+
+/* Penataan untuk bagian Tentang Saya */
+.about-me {
+    font-size: 16px; 
+    color: #080808; 
+    margin-bottom: 20px; 
+}
+
+/* Penataan umum untuk setiap bagian (bio, pendidikan, pengalaman, dll.) */
+.bio, .education, .experience, .skills, .languages, .hobbies, .contact {
+    margin-bottom: 20px; 
+}
+
+/* Membuat judul bagian menjadi tebal */
+.bio span, .education span, .experience span, .skills span, .languages span, .hobbies span, .contact span {
+    font-weight: bold; 
+}
+
+/* Penataan untuk kontainer progress bar */
+.progress-bar {
+    background-color: #e0e0e0; 
+    overflow: hidden;  
+    border-radius: 5px;
+}
+
+/* Penataan untuk progress bar itu sendiri */
+.progress {
+    height: 20px; 
+    background-color: #da7c75; 
+    text-align: center; 
+    color: white; 
+}
+
+/* Bagian Portofolio */
+.portfolio {
+    margin-bottom: 30px;
+}
+
+.portfolio-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    gap: 20px; /* Menambahkan jarak antara gambar dan teks */
+}
+
+.portfolio-img {
+    width: 150px; /* Ukuran gambar portofolio */
+    height: 150px; /* Memastikan gambar berbentuk kotak */
+    object-fit: cover; /* Memastikan gambar tidak terdistorsi dan terpotong secara proporsional */
+    border-radius: 8px; /* Menambahkan sudut membulat pada gambar */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Memberikan bayangan untuk efek 3D */
+}
+
+.portfolio-item p {
+    font-size: 16px;
+    color: #555; /* Warna teks deskripsi portofolio */
+}
+
+/* Responsivitas: Menyusun gambar dan teks secara vertikal pada layar kecil */
+@media (max-width: 768px) {
+    .portfolio-item {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .portfolio-img {
+        margin-bottom: 10px;
+    }
+}
+
+/* Penataan tautan Google Drive */
+.drive-link {
+    color: #0553a7; 
+    text-decoration: none; 
+}
+
+/* tautan Google Drive */
+.drive-link:hover {
+    text-decoration: underline; 
+}
+
+footer {
+    background-color: #f1b1b1;
+    color: white;
+    text-align: center;
+    padding: 1px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}

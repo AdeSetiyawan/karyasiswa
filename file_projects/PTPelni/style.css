@@ -1,0 +1,264 @@
+/* Global styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+/* Header section */
+header {
+  background-image: url(/assets/Background\ Web\ Pelni.\ Company\ Profile.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 450px;
+  width: auto;
+}
+.logoatas {
+  padding: 1em;
+}
+
+/* Navigation */
+.nav {
+  display: flex;
+  justify-content: center;
+  background-color: #003f7f;
+  padding: 15px 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 3;
+}
+
+.nav a {
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.nav a:hover {
+  background-color: #0056b3;
+}
+
+/* Services Section */
+/* .services {
+      display: flex;
+      justify-content: center;
+      background-color: #f9f9f9;
+      padding: 40px 20px;
+    }
+
+    .service {
+      flex: 1;
+      max-width: 300px;
+      text-align: center;
+      margin: 0 15px;
+    }
+
+    .service img {
+      border: 2px solid #0056b3;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+
+    .service h3 {
+      font-size: 20px;
+      margin: 10px 0;
+    }
+
+    .service p {
+      font-size: 14px;
+      color: #555;
+    }
+ */
+
+/* .services {
+  padding: 1em;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.content-serv {
+  display: flex;
+}
+
+.serv {
+  padding: 1em;
+  border-radius: 15px 15px;
+  
+} */
+
+.intro {
+  height: 500px;
+  padding: 5em;
+}
+
+.tentang {
+  height: 250px;
+  width: auto;
+  background-color: #0056b3;
+  text-align: center;
+  color: white;
+  padding: 1em;
+}
+
+.sejarah {
+  padding: 1em;
+  border-radius: 15px 15px;
+  background-color: #ffffff;
+  margin: 5px;
+  text-align: justify;
+  justify-content: left;
+  color: black;
+}
+
+.layanan {
+  text-align: center;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 1em;
+}
+
+.isi-layanan {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.isi-layanan img {
+  align-items: center;
+  text-align: justify;
+  justify-content: center;
+  height: 300px;
+  width: 350px;
+  border-radius: 15px 15px;
+  border: 5px solid black;
+}
+
+.isi-layanan p {
+  padding: 10px;
+}
+
+.isi-1,
+.isi-2 {
+  border-radius: 15px 15px;
+  padding: 1em;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+/* Vision and Mission Section */
+.vision-mission {
+  background-color: #0056b3;
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.vision-mission h2 {
+  font-size: 26px;
+  margin-bottom: 20px;
+}
+
+.vision-mission .content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.vision,
+.mission {
+  flex: 1;
+  max-width: 300px;
+  margin: 10px 20px;
+  border: 5px solid white;
+  border-radius: 15px 15px;
+  padding: 1em;
+}
+
+.vision h3,
+.mission h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  text-decoration: underline;
+}
+
+.vision p,
+.mission p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.dev {
+  background-color: #004894;
+  color: white;
+  text-align: center;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.isi-dev {
+  align-items: center;
+  background-color: rgba(0, 255, 255, 0.186);
+  border-radius: 15px 15px;
+  display: flex;
+  width: auto;
+  padding: 1em;
+}
+
+.dev-org {
+  align-items: center;
+  width: auto;
+  padding: 1em;
+  border-radius: 15px 15px;
+  margin-left: 1.5px;
+  margin-right: 1.5px;
+}
+
+.dev-org img {
+  height: 350px;
+  width: 250px;
+  background-color: rgba(255, 255, 255, 0.266);
+  border-radius: 15px 15px;
+}
+
+/* Footer */
+.footer {
+  background-color: #003f7f;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.footer p {
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+.footer a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}

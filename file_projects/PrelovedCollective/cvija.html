@@ -1,0 +1,352 @@
+
+<html>
+ <head>
+  <title>
+   Company Profile
+  </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f4f4f4;
+        }
+        .container {
+            display: flex;
+            max-width: 900px;
+            width: 100%;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .left {
+            background-color: #8e6e9e;
+            color: white;
+            padding: 20px;
+            width: 35%;
+            box-sizing: border-box;
+        }
+            .left img {
+                width: 50%;
+                    height: 200px;
+                    border-radius: 50%;
+                    margin-left: 80px;
+            }
+        .left h2 {
+            font-size: 1.5em;
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+        }
+        .left h2 i {
+            margin-right: 10px;
+        }
+        .left p {
+            font-size: 0.9em;
+            line-height: 1.6;
+        }
+        .left .skills, .left .languages, .left .contact {
+            margin-top: 20px;
+        }
+        .left .skills .skill, .left .languages .language {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .left .skills .skill .bar, .left .languages .language .bar {
+            background-color: white;
+            height: 10px;
+            width: 70%;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+        .left .skills .skill .bar div, .left .languages .language .bar div {
+            height: 100%;
+            background-color: #4a4a4a;
+        }
+        .left .contact .contact-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .left .contact .contact-item i {
+            margin-right: 10px;
+        }
+        .right {
+            padding: 20px;
+            width: 65%;
+            box-sizing: border-box;
+        }
+        .right h1 {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+        .right h2 {
+            font-size: 1.2em;
+            color: #4a4a4a;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #4a4a4a;
+            padding-bottom: 5px;
+        }
+        .right .section {
+            margin-bottom: 20px;
+        }
+        .right .section h3 {
+            font-size: 1.1em;
+            margin-bottom: 10px;
+            border-bottom: 2px solid #4a4a4a;
+            padding-bottom: 5px;
+        }
+        .right .section .item {
+            margin-bottom: 10px;
+        }
+        .right .section .item h4 {
+            font-size: 1em;
+            margin-bottom: 5px;
+        }
+        .right .section .item p {
+            font-size: 0.9em;
+            color: #4a4a4a;
+        }
+        .right .portfolio img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+            .left, .right {
+                width: 100%;
+            }
+        }
+  </style>
+ </head>
+ <body>
+  <div class="container">
+   <div class="left">
+    <img alt="Profile picture" height="150" src="foto.jpeg" width="150"/>
+    <h2>
+     <i class="fas fa-user">
+     </i>
+     Tentang Saya
+    </h2>
+    <p>
+     Saya lahir di Wonogiri pada 15 September 2008. Saya sekarang sedang menempuh pendidikan di SMKN 1 JATIROTO. Saya sudah kelas 11 jurusan yang saya ambil yaitu PPLG (Pengembangan Perangkat Lunak dan Gim). Sebagai pribadi yang bercita-cita tinggi, saya memiliki tujuan untuk menjadi wanita mandiri, seorang sosok yang kuat, mampu berdiri sendiri, dan tidak bergantung pada orang lain. Hal ini tercermin dari sifat saya yang penuh semangat dalam mengejar mimpi dan terus berusaha mengembangkan potensi diri.
+    </p>
+    <div class="skills">
+     <h2>
+      <i class="fas fa-cogs">
+      </i>
+      Kemampuan
+     </h2>
+     <div class="skill">
+      <span>
+       Canva
+      </span>
+      <div class="bar">
+       <div style="width: 90%;">
+       </div>
+      </div>
+     </div>
+     <div class="skill">
+      <span>
+       Replit
+      </span>
+      <div class="bar">
+       <div style="width: 80%;">
+       </div>
+      </div>
+     </div>
+     <div class="skill">
+      <span>
+       Netbeans
+      </span>
+      <div class="bar">
+       <div style="width: 70%;">
+       </div>
+      </div>
+     </div>
+     <div class="skill">
+      <span>
+       VSC
+      </span>
+      <div class="bar">
+       <div style="width: 60%;">
+       </div>
+      </div>
+     </div>
+    </div>
+    <div class="languages">
+     <h2>
+      <i class="fas fa-language">
+      </i>
+      Bahasa
+     </h2>
+     <div class="language">
+      <span>
+       C++
+      </span>
+      <div class="bar">
+        <div style="width: 80%;">
+        </div>
+       </div>
+     </div>
+     <div class="language">
+      <span>
+       Java
+      </span>
+      <div class="bar">
+        <div style="width: 70%;">
+        </div>
+       </div>
+     </div>
+     <div class="language">
+      <span>
+       HTML
+      </span>
+      <div class="bar">
+        <div style="width: 60%;">
+        </div>
+       </div>
+     </div>
+    </div>
+    <div class="contact">
+     <h2>
+      <i class="fas fa-address-book">
+      </i>
+      Kontak
+     </h2>
+     <div class="contact-item">
+      <i class="fas fa-phone">
+      </i>
+      <span>
+       +123-456-7890
+      </span>
+     </div>
+     <div class="contact-item">
+      <i class="fas fa-envelope">
+      </i>
+      <span>
+       ijagnz@gmail.com
+      </span>
+     </div>
+     <div class="contact-item">
+      <i class="fas fa-map-marker-alt">
+      </i>
+      <span>
+       123 Anywhere St., Any City
+      </span>
+     </div>
+    </div>
+   </div>
+   <div class="right">
+    <h1>
+     QUEISHAH IZZA GINA RAMADHANI
+    </h1>
+    <h2>
+     Company Profile
+    </h2>
+    <div class="section">
+     <h3>
+      <i class="fas fa-briefcase">
+      </i>
+      Pengalaman
+     </h3>
+     <div class="item">
+      <h4>
+       MEMBUAT CRUD
+      </h4>
+      <p>
+       Membuat aplikasi kasir restoran
+      </p>
+     </div>
+     <div class="item">
+      <h4>
+       MEMBUAT WEBSITE LANDING PAGE
+      </h4>
+      <p>
+       Membuat website produk perusahaan
+      </p>
+     </div>
+    </div>
+    <div class="section">
+     <h3>
+      <i class="fas fa-graduation-cap">
+      </i>
+      Pendidikan
+     </h3>
+     <div class="item">
+      <h4>
+       (2013-2014) PAUD KASIH BUNDA II
+      </h4>
+     </div>
+     <div class="item">
+      <h4>
+       (2014-2015) TK INDRIA
+      </h4>
+     </div>
+     <div class="item">
+      <h4>
+       (2015-2020) SD SDN 1 SUGIHAN
+      </h4>
+     </div>
+     <div class="item">
+      <h4>
+       (2020-2023) SMP SMP N 2 JATIROTO
+      </h4>
+     </div>
+     <div class="item">
+      <h4>
+       (2020-2023) SMK SMK N 1 JATIROTO
+      </h4>
+     </div>
+    </div>
+    <div class="section portfolio">
+     <h3>
+      <i class="fas fa-file-alt">
+      </i>
+      Portofolio
+     </h3>
+     </div>
+    <img alt="Portfolio image of a landscape with hills and sky" height="150" src="nirmaa.jpeg" width="150"/>
+    <img alt="Portfolio image of a landscape with hills and sky" height="150" src="LOGIN.jpeg" width="150"/>
+    <img alt="Portfolio image of a landscape with hills and sky" height="150" src="WhatsApp Image 2024-12-06 at 08.37.29.jpeg" width="150"/>
+    <br>
+    <a href="https://drive.google.com/folderview?id=1R9TFyzqpDIPEtl6-8on91gdV-iyT2cTl">Klik Disini</a>
+    <li><strong>link<a href="PreLovedCollective.html"> company profil </a></strong></li>
+        </center>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+    <tr height="100px">
+        <td colspan="3">
+            <center>
+                <small>
+                 Copyright &copy; 2024
+                    <strong>QUEISHAH</strong>
+                </small>
+            </center>
+        </td>
+      </tr>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>

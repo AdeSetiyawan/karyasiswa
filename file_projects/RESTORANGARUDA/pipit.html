@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+        }
+        .container {
+            display: flex;
+            max-width: 1000px;
+            margin: 20px auto;
+            background-color: rgb(250, 250, 250);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            align-items: stretch; /* Meratakan tinggi kedua sisi */
+        }
+        .left, .right {
+            padding: 20px;
+            box-sizing: border-box;
+            width: 50%;
+        }
+        .left {
+            background-color: #2c3e50;
+            color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between; /* Membuat konten merata */
+        }
+        .left img {
+            width: 50%;
+            border-radius: 50%;
+            display: block;
+            margin: 0 auto;
+        }
+        .right {
+            background-color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between; /* Membuat konten merata */
+        }
+        h2, h3 {
+            font-size: 24px;
+            margin-top: 20px;
+            position: relative;
+        }
+        h2::after, h3::after {
+            content: '';
+            display: block;
+            width: 100%;
+            height: 2px;
+            background-color: #ffffff;
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+        }
+        .skills .skill, .languages p {
+            margin-bottom: 10px;
+        }
+        .skills .skill .bar {
+            background-color: #ffffff;
+            border-radius: 10px;
+            overflow: hidden;
+            height: 10px;
+            margin-top: 5px;
+        }
+        .skills .skill .bar div {
+            height: 10px;
+            border-radius: 10px;
+        }
+        .canva { width: 70%; background-color: #f39c12; }
+        .replit { width: 70%; background-color: #f39c12; }
+        .netbeans { width: 40%; background-color: #f39c12; }
+        .vscode { width: 50%; background-color: #f39c12; }
+        .portfolio img {
+            width: 100%;
+            border-radius: 10px;
+            margin-top: 10px;
+        }
+        .footer {
+            text-align: center;
+            font-size: 12px;
+            color: #7f8c8d;
+            margin-top: 20px;
+        }
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+            .left, .right {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <img src="fotopipit.jpg" alt="">
+            <h2>Tentang saya</h2>
+            <p>Saya adalah seorang remaja berusia 17 tahun yang bertekad menjadi wanita mandiri. Saya memanfaatkan waktu luang dengan mencari kesibukan yang bermanfaat dan juga memberi waktu bagi dirinya untuk beristirahat. Dengan hobi memasak dan bermain badminton, saya tidak hanya mengasah keterampilan kuliner, tetapi juga menjaga kesehatan dan kebugaran tubuh. saya percaya bahwa dengan kedisiplinan dan semangat, saya dapat mencapai kemandirian dan meraih impian-impian besar dalam hidup saya.</p>
+            <div class="skills">
+                <h3>KEMAMPUAN</h3>
+                <div class="skill">
+                    <p>Canva</p>
+                    <div class="bar"><div class="canva"></div></div>
+                </div>
+                <div class="skill">
+                    <p>Replit</p>
+                    <div class="bar"><div class="replit"></div></div>
+                </div>
+                <div class="skill">
+                    <p>NetBeans</p>
+                    <div class="bar"><div class="netbeans"></div></div>
+                </div>
+                <div class="skill">
+                    <p>VS Code</p>
+                    <div class="bar"><div class="vscode"></div></div>
+                </div>
+            </div>
+            <div class="languages">
+                <h3>Bahasa</h3>
+                <p>HTML</p>
+                <p>Java</p>
+                <p>C++</p>
+            </div>
+        </div>
+        <div class="right">
+            <h1>PIPIT FAJARANI</h1>
+            <div class="contact">
+                <h3>KONTAK</h3>
+                <p><i class="fas fa-phone"></i> +62 85225977364</p>
+                <p><i class="fas fa-envelope"></i> pipitfajarani@gmail.com</p>
+                <p><i class="fas fa-map-marker-alt"></i> Dawe kidul rt02/rw04,Ngelo,Jatiroto</p>
+            </div>
+            <div class="education">
+                <h3>PENDIDIKAN</h3>
+                <p>TK CEMPAKA (2014-2015)</p>
+                <p>SD NEGERI 1 NGELO (2015-2020)</p>
+                <p>SMP NEGERI 2 JATIROTO (2020-2023)</p>
+                <p>SMK NEGERI 1 JATIROTO (2023-2026)</p>
+            </div>
+            <div class="experience">
+                <h3>PENGALAMAN</h3>
+                <p>MEMBUAT CRUD - Membuat aplikasi kamar hotel</p>
+                <p>MEMBUAT WEBSITE LANDING PAGE - Membuat website produk perusahaan</p>
+            </div>
+            <div class="portfolio">
+                <h3>PORTOFOLIO</h3>
+                <img src="fotopipit.jpg" alt="Portfolio 1">
+                
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        &copy; copyright@pipitfrni
+    </div>
+</body>
+</html>

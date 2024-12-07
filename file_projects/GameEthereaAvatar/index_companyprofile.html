@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+    <style>
+        body {
+          margin: 0;
+          font-family: Arial, sans-serif;
+          background: linear-gradient(to bottom, #021849, #708ce7);
+          color: white;
+        }
+        header-logo {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 10px 20px;
+          background: #030303;
+        }
+        header-logo {
+          font-size: 20px;
+          font-weight: bold;
+        }
+        .text-header {
+          display: flex; 
+          justify-content: space-between;
+          align-items: center;
+          background: linear-gradient(to bottom, #004aad, #cb6ce6);
+          padding: 20px;
+          color: white;
+          font-family: Arial, sans-serif;
+        }
+         .logo img {
+          height: 70px; 
+          margin-right: 50px; 
+        }
+        header nav a {
+          margin-left: 20px;
+          color: #fff;
+          text-decoration: none;
+          font-size: 16px;
+        }
+        header nav a:hover {
+          text-decoration: underline;
+        }
+        .hero {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          padding: 50px 20px;
+          background:linear-gradient(to bottom, #004aad, #cb6ce6);
+        }
+        .hero-section {
+          display: flex; 
+          justify-content: space-between;
+          align-items: center;
+          background: linear-gradient(to bottom, #004aad, #cb6ce6);
+          padding: 20px;
+          color: white;
+          font-family: Arial, sans-serif;
+        }
+        .hero-text {
+          max-width: 50%;;
+        }
+        .hero-text h1 {
+          font-size: 32px;
+          margin-bottom: 20px;
+        }
+        .hero-text p {
+          font-size: 16px;
+          margin-bottom: 20px;
+        }
+        .download-button {
+          display: inline-block;
+          background-color: #3d34db; 
+          color: white;
+          padding: 8px 16px; 
+          font-size: 14px;
+          border: none;
+          border-radius: 5px; 
+          text-decoration: none;
+          cursor: pointer;
+          transition: background-color 0.3s ease;
+        }
+        .download-button:hover {
+          background-color: #5a57a6; 
+        }
+        .hero-image {
+          max-width: 45%;
+        }
+        .hero-image img {
+          width: 100%;
+          height: auto; 
+        }
+        .section {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          padding: 50px 20px;
+          background:linear-gradient(to bottom, #004aad, #cb6ce6);
+        }
+        .section {
+          display: flex; 
+          justify-content: space-between;
+          align-items: center;
+          background: linear-gradient(to bottom, #004aad, #cb6ce6);
+          padding: 20px;
+          color: white;
+          font-family: Arial, sans-serif;
+        }
+        .section-text {
+          max-width: 50%;;
+        }
+        .section-text h1 {
+          font-size: 40px;
+          margin-bottom: 20px;
+        }
+        .section-text p {
+          font-size: 40px;
+          margin-bottom: 40px;
+        }
+        .section-image {
+          max-width: 50%;
+        }
+        .section-image img {
+          width: 100%;
+          height: auto; 
+        }
+        .games, .teams {
+          padding: 50px 20px;
+          text-align: center;
+        }
+        .games img, .teams img {
+          width: 100px;
+          margin: 10px;
+        }
+        .contact {
+          padding: 50px 20px;
+          background: linear-gradient(to bottom, #004aad, #cb6ce6);
+          color: white;
+        }
+        .contact form {
+          display: flex;
+          flex-direction: column;
+          max-width: 400px;
+          margin: 0 auto;
+        }
+        .contact form input, .contact form textarea {
+          margin: 10px 0;
+          padding: 10px;
+          border: none;
+          border-radius: 5px;
+        }
+        .contact form button {
+          padding: 10px;
+          background: #ff007b;
+          color: white;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+        }
+       
+      </style>
+    </head>
+   
+    <div class="header-logo">
+  <table width="100%" border="0" cellpadding="10">
+    <div class="text-header ">
+    <center>
+        <tr>
+            <td><center>
+                <img src="logo.png" heigth="600px" width="100px" alt="" align="left">
+            </td></center>
+            <td><center>
+                <a href="#detail"><h3>detail</h3></a>
+                <td><center>
+                    <a href="#menu"><h3>menu</h3></a>
+            </center></td>
+            <td><center>
+                <a href="#profil"><h3>teams</h3></a>
+        </center></td>
+            <td><center>
+                <a href="#kontak"><h3>kontak</h3></a>
+            </center></td>
+        </tr> 
+</table>
+    <table width="100%" border="0" cellpadding="10">
+      <tr>
+        <td colspan="6" style="padding: 0; text-align: center; vertical-align: middle;">
+          <video autoplay muted loop id="myVideo" style="max-width: 100%; height: auto;">
+            <source src="header2.mp4" type="video/mp4">
+          </video>
+        </td>
+      </tr>
+</table>
+<table width="100%" border="0" cellpadding="10">
+    <tr>
+        <td colspan="D">
+            <h1>MASUK KE DUNIA PERTUALANGAN YANG SERU</h1>
+            <p>
+                unduh game kami sekarang dan buktikan keberanianmu! Tantang temanmu dan buktikan siapa yang paling jago</p>
+            <p>download sekarang juga!!!!!!
+            </p>
+      <a href="#" class="download-button">DOWNLOAD NOW</a>
+    </div>
+        <td>
+            <img src="orang.png" width="800px" height="600px" alt="">
+        </td>
+        
+        <hr>
+        </td>
+    </tr>
+      </tr>
+  </table>
+  <table width="100%" border="0" cellpadding="10">
+    <tr>
+        <td>
+            <img src="pictorang.png" width="750px" height="600px" alt="">
+        </td>
+        <td colspan="D">
+        <h1>ETHEREA</h1>
+        <p>
+            Masuki dunia Etherea, sebuah permainan yang memadukan seni, fantasi, dan keindahan visual untuk menciptakan pengalaman yang benar-benar memukau. Di Etherea, Anda dapat menciptakan avatar impian Anda, menjelajahi dunia penuh keajaiban, dan menemukan harmoni antara kreativitas dan petualangan.
+
+            Etherea adalah tempat di mana keindahan estetis dan kreativitas menjadi inti dari perjalanan Anda. Apakah Anda siap untuk mewujudkan mimpi dalam dunia yang penuh cahaya dan imajinasi?
+        </p>
+        <p>
+          Fitur Utama:</p>
+ 
+<p>Kustomisasi Tanpa Batas: Rancang avatar Anda dengan detail luar biasa menggunakan gaya estetis seperti warna pastel, ornamen magis, dan elemen futuristik. Pilih dari beragam pakaian, aksesori, hingga efek khusus yang memukau.</p>
+ 
+<p>Dunia Fantasi yang Memukau: Jelajahi Etherea, dari hutan bercahaya dengan air terjun kristal hingga istana terapung di langit. Setiap sudut dunia memiliki cerita dan pesona unik untuk ditemukan.</p>
+ 
+<p>Ekspresi Seni dan Kreativitas: Bangun galeri seni virtual Anda, ciptakan karya digital, atau berpartisipasi dalam kompetisi seni dengan pemain lain.</p>
+ 
+<p>Koneksi Sosial: Berinteraksi dengan pemain dari seluruh dunia di lokasi-lokasi tematik, berbagi kreasi, atau ikuti acara komunitas eksklusif.</p>
+ 
+<p>Petualangan Aesthetic: Ikuti misi santai yang melibatkan pencarian artefak magis, memulihkan harmoni dunia, atau mendekorasi ruang pribadi Anda sesuai dengan gaya Anda.</p>
+ 
+ 
+<p>Etherea adalah tempat di mana keindahan estetis dan kreativitas menjadi inti dari perjalanan Anda. Apakah Anda siap untuk mewujudkan mimpi dalam dunia yang penuh cahaya dan imajinasi
+        </p>
+        <hr>
+        </td>
+    </tr>
+  </table>
+
+<table width="100%" border="0" cellpadding="10">
+  <tr>
+      <td id="GAMES" colspan="1"><center><h2>GAMES</h2></center></td>
+  </tr>
+</table>
+<table width="100%" border="0" cellpadding="10">
+    <tr align="center">
+        <td>
+            <img src="kantor.png" alt="donat" width="150px" height="100px">
+            <figcaption>50mb</figcaption>
+        </td>
+        <td>
+          <img src="dokter.png" alt="donat" width="150px" height="100px">
+         
+          <figcaption>70mb</figcaption>
+      </td>
+      <td>
+             <img src="proyek.png" alt="donat" width="150px" height="100px">
+            
+             <figcaption>100mb</figcaption>
+        </td>
+        <td>
+            <img src="mumi.png" alt="donat" width="150px" height="100px">
+            
+            <figcaption>100mb</figcaption>
+        </td>
+        <td>
+            <img src="penyihir.png" alt="donat" width="150px" height="100px">
+            
+            <figcaption>45mb</figcaption>
+        </td>
+        <td>
+            <img src="ARMY.png" alt="donat" width="150px" height="100px">
+            
+            <figcaption>60mb</figcaption>
+        </td>
+      </tr>
+  </table>
+  <table width="100%" border="0" cellpadding="10">
+    <tr>
+  <tr>
+    <td id="profil" colspan="1"><center><h2>Teams</h2></center></td>
+</tr>
+  <table width="100%" border="0" cellpadding="10">
+    <tr align="center">
+        <td>
+            <img src="2.png" width="350px" height="250px">
+            <li><a href="CV_Syahdah.html">SYAHDAH YAHYA SUBHIYAH</a></li>
+           
+        </td>
+        <td>
+          <img src="11.png"  width="350px" height="250px">
+          <li><a href="imanda.html">IMANDA QURROTA AINI</a></li>
+         
+      </td>
+      <td>
+             <img src="4.png" width="350px" height="250px">
+             <li><a href="raisya.html">RAISYA SALSABILA</a></li>
+        </td>
+        <td>
+            <img src="3.png"  width="350px" height="250px">
+            <li><a href="maylani.html">MAYLANI DIYAN CANTIKA</a></li>
+          
+        </td>
+        <td>
+            <img src="5.png" width="350px" height="250px">
+           
+            <li><a href="choirunnisa.html">CHOIRUNNISA IZZATHY RAMADHANI HIDAYAT</a></li>
+        </td>
+<table width="100%" border="0" cellpadding="10">
+
+  <td colspan="1"><center>
+    <table width="100%" border="0" cellpadding="10">
+  <tr>
+  <h2>Kontak Informasi</h2>
+  </center></td>
+  </tr>
+  </table>
+  
+  <table  width="100%" border="0" cellpadding="10">
+    
+  <tr>
+   
+  <td id="kontak" colspan="3">
+    <div class="contact">
+     <h3> Jl. RAYA SUDIRMAN</h3>
+     <p>Jakarta Selatan</p>
+     </div>
+  </td>
+  <td colspan="3">
+    <div class="contact">
+     <h3> HUBUNGI</h3>
+     <p>08123456789</p>
+     <p> Instagram: ETHEREAOFFICIAL_</p>
+    </div>
+  </td>
+  <td colspan="3">
+    <div class="contact">
+      <form action="#" method="post">
+        <input type="text" name="nama" placeholder="Nama">
+        <input type="text" name="nomor" placeholder="Nomor Telepon">
+        <textarea name="pesan" placeholder="Pesan"></textarea>
+        <button type="submit">Kirim</button>
+      </form>
+    </div>
+  </td>
+  </tr>
+  </table>
+  
+  <table width="100%" border="0" cellpadding="10">
+  <tr>
+  <td colspan="6">
+     <center>
+         <small>
+             Coppyright &copy; 2024
+             <strong>
+                 ETHEREA |
+             </strong>
+             <small>
+                 All rights reserved | Owned by ethereavatar
+             </small>
+         </small>
+     </center>
+  </td>
+  </tr>
+  </table>
+  </body>
+  </html>

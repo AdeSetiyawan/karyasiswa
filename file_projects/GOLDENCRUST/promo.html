@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Golden Crust</title>
+
+     <style>
+
+/* Page transition */
+.page-transition {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ffeb3b; /* Warna transisi */
+    z-index: 9999;
+    pointer-events: none;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: transform 0.6s ease-in-out;
+}
+
+.page-transition.active {
+    transform: scaleY(1);
+}
+
+
+        *{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: rgb(8, 6, 6);
+
+}
+
+header {
+    background-color: #ffcc00;
+    padding: 1rem;
+    text-align: center;
+    padding: 0;
+    
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav{
+    display: flex;
+    width: 85%;
+    margin:auto;
+    padding: 10px 0;
+    align-items: center;
+    justify-content: space-around;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: rgb(251, 250, 250);
+    font-weight: bold;
+}
+
+nav ul li a:hover{
+    color: red;
+
+}
+.promotions {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    padding: 2rem;
+    background-color: #000000;
+}
+
+.promo-item {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;    
+    transition: transform 0.3s;
+}
+
+
+.promo-item img {
+    max-width: 100%;
+    border-radius: 8px;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.promo-item:hover {
+  transform: scale(1.05);
+}
+
+.promo-item:hover img {
+  transform: scale(1.1);
+}
+
+.promo-item h2 {
+    color: #ff5722;
+    font-size: 1.2rem;
+}
+
+.promo-item p {
+    font-size: 0.9rem;
+    color: #fffcfc;
+}
+
+.promo-item strong {
+    color: #000;
+}
+.line {
+      height: 2px;
+      background: #ffe23c;
+      margin: 20px 0;
+    }
+
+    .footer-bottom {
+  text-align: center;
+  padding: 10px 0;
+  border-top: 1px solid #444;
+  background-color: #ff0202;
+  padding: 20px;
+}
+
+.footer-bottom h2 {
+  margin: 0;
+  font-size: 20px;
+  color: #ffffff;
+ background-color: #ff0202;
+}
+   </style>
+     
+     
+</head>
+<body>
+    <div class="page-transition" id="page-transition"></div>
+
+    <nav>
+        <img src="Bright Orange illustrates Food Chicken Logo (Logo).png" width="100" height="100" class="logo">
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="menu.html">OUR MENU</a></li>
+            <li><a href="promo.html">PROMO</a></li>
+            <li><a href="follow.html">FOLLOW US</a></li>
+            <li><a href="position.html">CONTACT</a></li>         
+        </ul>
+    </nav>
+
+    <div class="line"></div>
+    <header>
+        <h1>Golden Crust Promotions</h1>
+    </header>
+    
+     <main>
+        <div class="promotions">
+            <div class="promo-item">
+                <img src="Ungu Dan Kuning Modern Promo Makanan Facebook Post.png" alt="Combo Fried Chicken">
+                <h2>Combo Fried Chicken</h2>
+                <p>Cheesemates, order Combo Fried Chicken dan dapatkan GRATIS Side Dish.</p>
+                <p><strong>Harga: Rp 42.727</strong></p>
+            </div>
+            <div class="promo-item">
+                <img src="Kuning Oranye dan Merah Retro Pengumuman Promo Spesial dan Diskon Instagram Post .png" alt="Promo Combo Makan Ber-4">
+                <h2>Promo Combo Makan Ber-4</h2>
+                <p>Makan lebih hemat dengan Combo Ber-4 di Richeese Factory!</p>
+                <p><strong>Harga: Rp 139.999</strong></p>
+            </div>
+            <div class="promo-item">
+                <img src="Postingan Instagram Promo Spesial Modern Warna Hijau Putih Pasir.png" alt="Combo Chicken Steak">
+                <h2>Combo Chicken Steak</h2>
+                <p>Pasti belum kamu coba Combo Chicken Katsu, Cheesemates!</p>
+                <p><strong>Harga mulai Rp 20.000-an</strong></p>
+            </div>
+        </div>
+    </main>
+
+    <div class="footer-bottom">
+        <h2>@Golden Crust 2024</h2>
+        
+        <script>
+            // Pilih semua tautan di menu navigasi dan tombol
+            document.querySelectorAll('nav ul li a, .button').forEach(link => {
+                link.addEventListener('click', (e) => {
+                    const targetUrl = link.getAttribute('href'); // Ambil URL tujuan
+        
+                    // Cek apakah link adalah anchor link internal (dimulai dengan #)
+                    if (targetUrl.startsWith('#')) {
+                        e.preventDefault(); // Cegah tindakan default tautan
+                        const targetElement = document.querySelector(targetUrl); // Cari elemen target berdasarkan ID
+        
+                        if (targetElement) {
+                            // Scroll ke elemen target secara halus
+                            targetElement.scrollIntoView({ behavior: 'smooth' });
+                        }
+                    } else {
+                        // Jika bukan anchor link (navigasi antar halaman)
+                        e.preventDefault(); // Cegah tindakan default tautan
+        
+                        // Aktifkan efek transisi
+                        const pageTransition = document.getElementById('page-transition');
+                        pageTransition.classList.add('active');
+        
+                        // Pindahkan ke halaman tujuan setelah animasi selesai
+                        setTimeout(() => {
+                            window.location.href = targetUrl;
+                        }, 600); // Harus sesuai dengan durasi CSS transition (0.6s)
+                    }
+                });
+            });
+        </script>
+        
+  
+</body>
+</html>

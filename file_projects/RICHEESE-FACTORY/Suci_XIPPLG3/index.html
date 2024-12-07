@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Layout</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 80;
+            margin: 20px auto;
+            background: #fff;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            
+            text-align: center;
+            background-color: #f8c6c7;
+            padding: 50px;
+            border-radius: 8px;
+            position: relative;
+            
+            
+        }
+        .header img {
+            width: 120px;           
+            height: 150px;        
+            border-radius: 0%;      
+            position: absolute;     
+            top: 10px;              
+            left: 40px;     
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 24px;
+            font-family:'Times New Roman', Times, serif
+        }
+        .header h2 {
+            margin: 5px 0 0;
+            font-size: 18px;
+            font-weight: normal;
+        }
+
+            .header h3 {
+                font-size: large;
+            }
+            
+            
+        
+        table {
+            width: 100%;
+            height: auto; 
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        td {
+            border: 1px solid #ddd;
+            padding: 20px;
+            vertical-align: top;
+            
+        }
+        .left-col {
+            background-color: #fef7e5;
+            width: 30%;
+            font-family: monospace;
+        }
+      .skill-bar {
+             width: 100%;
+             height: 20px;
+             background-color: #ddd;
+             border-radius: 10px;
+             margin: 5px 0;
+        }
+    .skill-progress {
+            height: 100%;
+            border-radius: 10px;
+            text-align: center;
+            color: white;
+            font-weight: bold
+}
+        
+
+
+        
+        .right-col {
+            width: 50%;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .photo-gallery {
+            margin-top: 35px;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+ 
+        .photo-gallery img {
+            width: 35%;
+            border-radius: 10px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+            object-fit: cover;
+        }
+ 
+
+
+        .section-title {
+            font-weight: bold;
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        
+        <div class="header">
+            <img src="potoprofil.jpeg" alt="Profile Picture">
+            <h1>SUCI UMI KULTSUM <hr> </h1>
+            
+        </div>
+
+        
+        <table>
+            <tr>
+                
+                <td class="left-col">
+                    <div class="section-title">Tentang Saya</div>
+                    <p>
+
+                        Saya dari SMK N 1 JATIRORO.Jurusan Pengembangan Perangkat Lunak dan GIM Saya adalah seseorang yang 
+                        selalu bersemangat untuk belajar dan berkembang.
+                        Dengan latar belakang ini , saya memiliki keterampilan yang kuat dalam
+                        misalnya pengembangan web, Saya percaya bahwa setiap tantangan adalah peluang untuk berkembang,
+                        dan saya senantiasa mencari cara untuk memberikan kontribusi positif dalam setiap tim yang saya ikuti
+            <hr>
+            <div class="skills">
+               <h3> KEAHLIAN</h3> 
+                <p> <strong>Aplikasi:</strong></p>
+                <p>Canva</p>
+                <div class="skill-bar">
+                    <div class="skill-progress" style="width: 23%; background-color: #a37374;">23%</div>
+                </div>
+
+                <p>Netbeans</p>
+                <div class="skill-bar">
+                    <div class="skill-progress" style="width: 55%; background-color: #a37374;">55%</div>
+
+                 <p>Replit</p>
+                 <div class="skill-bar">
+                        <div class="skill-progress" style="width:30%; background-color: #a37374;">30% </div> 
+
+                 <p>JStudio Visual</p>
+                 <div class="skill-bar">
+                            <div class="skill-progress" style="width:60%; background-color: #a37374;">60% </div> 
+
+                            <p> <strong>Bahasa Pemograman:</strong></p>
+                            <p> JavaScript</p>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 55%;background-color: #a37374;">55% </div>
+                                <p> c++ </p>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 30%;background-color: #a37374;">30% </div>
+
+                                <p> Html </p>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 60%;background-color: #a37374;">60% </div>
+                          </div>
+                          <br>
+                          
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+        
+        
+
+                </td>
+                
+
+    
+
+                
+                <td class="right-col">
+
+                    <div class="section-title"style="margin-top: 20px;">BIODATA </div>
+                 
+                
+                    <p> Nama                 :  SUCI UMI KULTSUM                    </p>
+                    <p> Tempat/Tanggal Lahir :  Wonogiri,29 Juni 2007               </p>
+                    <p> Alamat               :  Wates rt o1 rw 07,Pengkol,Jatiroto  </p>
+                    <p> Agama                :  Islam                               </p>
+                    <p> Jenis Kelamin        :  Perempuan                           </p>              
+                    <p> Status               :  Pelajar                             </p>
+                    <p> Kewarga Negaraan     :  WNI                                 </p>
+                    <p> Nomer Telpon         :  0878-9014-6238                      </p>  
+                 <hr>
+
+
+                    <div class="section-title">PENDIDIKAN</div>
+                   
+                      <p> TK WATES           : 2013-2014</p> 
+                      <p> SDN 1 PENGKOL      : 2014-2020</p> 
+                      <p> SMPN 2 JATIROTO    : 2020-2023</p> 
+                      <p> SMKN 1 JATIRORO    : 2023-sekarang</p> 
+                    <hr>
+                <div class="section-title"> PENGALAMAN</div>
+                <p>
+                  1 . Membuat aplikasi  <br>
+                  2 . Proyek Pribadi di Bidang Pengembangan Perangkat Lunak<BR>
+                  <br>
+                  
+                </p>
+
+                <div class="section-title">HOBI</div>
+                <p>
+                - Memasak<br>
+                - Membaca Novel<br>
+                - Olahraga
+                <div class="photo-gallery">
+                    <p class="section-title"> Portfolio</p>
+                  <img src="webteh.jpeg" alt="Experience Photo 1">
+                  
+                  <img src="gui.jpeg" alt="Experience Photo 2">
+                  <div>
+                 <a href="https://drive.google.com/folderview?id=12nVyjh-gR-cFnlbTMkG-gf7Ny2tg1OGX "> VIEWPOTOFOLIO</a>
+    </div>
+              </div>
+                
+                </p>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

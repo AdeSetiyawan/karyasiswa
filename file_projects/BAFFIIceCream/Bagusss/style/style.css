@@ -1,0 +1,686 @@
+* {
+  bottom: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 64px;
+  z-index: 9;
+}
+
+nav {
+  position: relative;
+  display: flex;
+  width: 100%;
+  background-color: #090911;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 2.5em;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+nav a img {
+  height: 20px;
+}
+
+nav a:first-child {
+  margin-right: auto;
+}
+
+nav a:hover {
+  background-color: #0029f3;
+}
+
+.about {
+  height: 100vh;
+  background-image: url("../img/Frame\ 2\ \(4\).png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-img {
+  position: relative;
+  bottom: 0;
+  height: 100%;
+  width: 45%;
+}
+
+.main-img img {
+  position: absolute;
+  height: 90vh;
+}
+
+.main-text {
+  width: 670px;
+  text-align: justify;
+  color: white;
+}
+
+.hello {
+  font-size: 1.7rem;
+}
+
+.main-text h1 {
+  font-size: 5rem;
+  color: skyblue;
+}
+
+.main-text h1 span {
+  display: block;
+  font-size: 2.7rem;
+  color: white;
+}
+
+.main-text .about-me {
+  font-size: 1.2rem;
+  margin-top: 1em;
+  line-height: 1.2;
+  margin-bottom: 2em;
+}
+
+.btn-a {
+  position: relative;
+  text-decoration: none;
+  background-color: #0029f3;
+  color: white;
+  padding: 10px 20px;
+  font-weight: 600;
+  border-radius: 20px;
+}
+
+.btn-a:hover {
+  background-color: #16af5b;
+}
+
+.skill {
+  background-color: #fff;
+  padding: 50px 0 0 0;
+}
+
+.skill .h2 {
+  margin-top: 2em;
+}
+
+.skill h2 {
+  color: #090911;
+  font-size: 2.5em;
+  font-weight: 900;
+  text-align: center;
+}
+
+.skill-bar {
+  margin-top: 4em;
+  gap: 3em;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.skillbar {
+  width: 300px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: o 30px 60px rgba(0, 0, 0, 2);
+}
+
+.skillbar .percent {
+  position: relative;
+  width: 150px;
+  height: 150px;
+}
+
+.skillbar .percent svg {
+  position: relative;
+  width: 150px;
+  height: 150px;
+}
+
+.skillbar .percent svg circle {
+  width: 150px;
+  height: 150px;
+  fill: none;
+  stroke-width: 10;
+  stroke: #000;
+  transform: translate(5px, 5px);
+  stroke-dasharray: 440;
+  stroke-dashoffset: 440;
+  stroke-linecap: round;
+}
+
+.skillbar .percent svg circle:nth-child(1) {
+  stroke-dashoffset: 0;
+  stroke: #f3f3f3;
+}
+.skillbar .percent svg circle:nth-child(2) {
+  stroke-dashoffset: calc(440 - (440 * 94) / 100);
+  stroke: #0158ca;
+}
+
+.skillbar .percent .number {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #000000;
+}
+
+.skillbar .percent .number h2 {
+  font-size: 48px;
+}
+
+.skillbar .percent .number h2 span {
+  font-size: 24px;
+}
+
+.skillbar .text {
+  padding: 30px 0 0 0;
+  color: #000;
+  font-weight: 700;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5em;
+  letter-spacing: 1px;
+}
+
+.skillbar2 {
+  width: 300px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: o 30px 60px rgba(0, 0, 0, 2);
+}
+
+.skillbar2 .percent {
+  position: relative;
+  width: 150px;
+  height: 150px;
+}
+
+.skillbar2 .percent svg {
+  position: relative;
+  width: 150px;
+  height: 150px;
+}
+
+.skillbar2 .percent svg circle {
+  width: 150px;
+  height: 150px;
+  fill: none;
+  stroke-width: 10;
+  stroke: #000;
+  transform: translate(5px, 5px);
+  stroke-dasharray: 440;
+  stroke-dashoffset: 440;
+  stroke-linecap: round;
+}
+
+.skillbar2 .percent svg circle:nth-child(1) {
+  stroke-dashoffset: 0;
+  stroke: #f3f3f3;
+}
+.skillbar2 .percent svg circle:nth-child(2) {
+  stroke-dashoffset: calc(440 - (440 * 45) / 100);
+  stroke: #0158ca;
+}
+
+.skillbar2 .percent .number {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #000000;
+}
+
+.skillbar2 .percent .number h2 {
+  font-size: 48px;
+}
+
+.skillbar2 .percent .number h2 span {
+  font-size: 24px;
+}
+
+.skillbar2 .text {
+  padding: 30px 0 0 0;
+  color: #000;
+  font-weight: 700;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5em;
+  letter-spacing: 1px;
+}
+
+.skillbar3 {
+  width: 300px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: o 30px 60px rgba(0, 0, 0, 2);
+}
+
+.skillbar3 .percent {
+  position: relative;
+  width: 150px;
+  height: 150px;
+}
+
+.skillbar3 .percent svg {
+  position: relative;
+  width: 150px;
+  height: 150px;
+}
+
+.skillbar3 .percent svg circle {
+  width: 150px;
+  height: 150px;
+  fill: none;
+  stroke-width: 10;
+  stroke: #000;
+  transform: translate(5px, 5px);
+  stroke-dasharray: 440;
+  stroke-dashoffset: 440;
+  stroke-linecap: round;
+}
+
+.skillbar3 .percent svg circle:nth-child(1) {
+  stroke-dashoffset: 0;
+  stroke: #f3f3f3;
+}
+.skillbar3 .percent svg circle:nth-child(2) {
+  stroke-dashoffset: calc(440 - (440 * 85) / 100);
+  stroke: #0158ca;
+}
+
+.skillbar3 .percent .number {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #000000;
+}
+
+.skillbar3 .percent .number h2 {
+  font-size: 48px;
+}
+
+.skillbar3 .percent .number h2 span {
+  font-size: 24px;
+}
+
+.skillbar3 .text {
+  padding: 30px 0 0 0;
+  color: #000;
+  font-weight: 700;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5em;
+  letter-spacing: 1px;
+}
+
+.skill .span a {
+  text-decoration: none;
+  color: #ffffff;
+  position: relative;
+  display: flex;
+  background-color: #283458;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+.skillbar .percent svg circle:nth-child(2) {
+  stroke-dashoffset: calc(440 - (440 * 94) / 100);
+  stroke: #03a9f4;
+  opacity: 10;
+  animation: animate-circle 3s cubic-bezier(0, 0.23, 1, 0.1);
+}
+.skillbar2 .percent svg circle:nth-child(2) {
+  stroke-dashoffset: calc(440 - (440 * 45) / 100);
+  stroke: #03a9f4;
+  opacity: 10;
+  animation: animate-circle 3s cubic-bezier(0, 0.23, 1, 0.1);
+}
+.skillbar3 .percent svg circle:nth-child(2) {
+  stroke-dashoffset: calc(440 - (440 * 85) / 100);
+  stroke: #03a9f4;
+  opacity: 10;
+  animation: animate-circle 3s cubic-bezier(0, 0.23, 1, 0.1);
+}
+
+@keyframes animate-circle {
+  0% {
+    opacity: 0;
+    stroke-dashoffset: 440;
+  }
+  30% {
+    opacity: 0.3;
+    stroke-dashoffset: 200;
+  }
+  80% {
+    opacity: 0.8;
+    stroke-dashoffset: 100;
+  }
+  100% {
+    opacity: 10;
+  }
+}
+
+.project {
+  background-color: #0B132A;
+  height: 100%;
+  padding: 6em 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.project h2 {
+  color: #f3f3f3;
+  margin-bottom: 1.5em;
+  font-size: 2.2em;
+  font-weight: 900;
+  text-align: center;
+}
+
+.card-container {
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3em;
+}
+
+.card {
+  position: relative;
+  width: 400px;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.9);
+}
+
+.card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.card-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.card-text {
+  color: white;
+  font-size: 16px;
+  text-align: center;
+  padding: 0 10px;
+}
+
+.card-text a {
+  text-decoration: none;
+  color: rgb(165, 165, 165);
+}
+
+.card p span {
+  font-weight: 900;
+  display: flex;
+}
+
+.card:hover .card-image {
+  transform: scale(1.1);
+}
+
+.card:hover .card-overlay {
+  opacity: 1;
+}
+
+.Time-line {
+  background: url("../img/backgooun-tl.png") no-repeat center fixed;
+  background-size: cover;
+  color: #fff;
+  padding: 2em;
+  width: 100%;
+}
+
+.Time-line::before {
+  content: "";
+  background: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  position: fixed;
+}
+
+.Time-line h2 {
+  color: #ffffff;
+  font-size: 2.5em;
+  font-weight: 900;
+  margin: 50px;
+  text-align: center;
+}
+
+.Time-line .title p {
+  color: #0158ca;
+  font-size: 1.3em;
+  letter-spacing: 2px;
+}
+
+.timeline {
+  margin: 5em auto;
+  max-width: 34.15em;
+}
+
+.Timelines {
+  width: 100%;
+}
+
+.Timelines .one {
+  max-width: 34em;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  position: relative;
+}
+
+.one div {
+  border: 2px solid #888;
+  border-radius: 1em;
+  padding: 1.5em;
+}
+
+.one p {
+  line-height: 27px;
+  color: #ccc;
+}
+
+.one:nth-child(odd) {
+  border-left: 3px solid #888;
+  padding-left: 3em;
+  transform: translateX(17em);
+}
+
+.one:nth-child(even) {
+  border-right: 3px solid #888;
+  padding-right: 3em;
+  transform: translateX(-16.8em);
+}
+
+.one:nth-child(odd)::before,
+.one:nth-child(even)::before {
+  content: "";
+  background: #888;
+  width: 3em;
+  height: 3px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.one:nth-child(odd)::before {
+  left: 0;
+}
+
+.one:nth-child(even)::before {
+  right: 0;
+}
+
+.footer {
+  background-color: #1a2940;
+  color: #fff;
+}
+
+.c-text {
+  text-decoration: underline;
+  padding-left: 2rem;
+  font-weight: 700;
+  font-size: 1.5em;
+  padding: 20px;
+}
+
+.footer-content {
+  padding: 1em 4rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.text {
+  flex: 1;
+  max-width: 25%;
+}
+
+.text h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.text p {
+  font-size: 1em;
+  line-height: 1.5;
+  margin: 0.5rem 0;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 45%;
+}
+
+.contact-form h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.footer-content .bottomnav a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.footer-content .bottomnav a:hover {
+  text-decoration: underline;
+}
+
+.footer-content .bottomnav p {
+  padding: 1em;
+}
+
+.contact-form form {
+  width: 450px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.8rem;
+  border: none;
+  border-radius: 5px;
+  opacity: 70%;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #e4e3e3;
+}
+
+.contact-form textarea {
+  height: 100px;
+}
+
+button.btn-a {
+  position: relative;
+  text-decoration: none;
+  background-color: #0029f3;
+  color: white;
+  padding: 10px 20px;
+  font-weight: 600;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+}
+
+button.btn-a:hover {
+  background-color: #16af5b;
+}
+
+#contact-message{
+  color: white; 
+  margin-top: 20px;
+}

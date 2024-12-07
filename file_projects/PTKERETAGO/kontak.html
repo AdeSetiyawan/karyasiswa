@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PT Kereta Api Indonesia</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #fff;
+        }
+
+        .header {
+            background-color: #f4f4f4;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .logo-section img {
+            max-width: 200px;
+        }
+
+        .sub-logos {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 10px;
+            color: #000;
+        }
+
+        .sub-logos span {
+            font-weight: bold;
+            color: #333;
+        }
+
+        main {
+            background-color: #00205b;
+            padding: 30px;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .information {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+        }
+
+        .info-section, .contact-section {
+            width: 45%;
+        }
+
+        .info-section ul, .contact-section ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .info-section li, .contact-section li {
+            margin-bottom: 10px;
+        }
+
+        .info-section a, .contact-section li {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .footer {
+            background-color: #f39c12;
+            text-align: center;
+            padding: 20px;
+            color: #fff;
+        }
+
+        .footer-links {
+            margin-bottom: 10px;
+        }
+
+        .footer-links img {
+            width: 120px;
+            margin: 0 10px;
+        }
+
+        /* Styles for the form */
+        .form-container {
+            background-color: #333;
+            padding: 50px;
+            border-radius: 8px;
+            width: 300px;
+            margin: 20px auto;
+        }
+
+        .form-container label {
+            color: #fff;
+            font-size: 14px;
+            margin-bottom: 8px;
+            display: block;
+        }
+
+        .form-container input[type="text"],
+        .form-container input[type="email"],
+        .form-container textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 12px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+            background-color: #fff;
+            color: #333;
+        }
+
+        .form-container button[type="submit"] {
+            background-color: #f39c12;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        .form-container button[type="submit"]:hover {
+            background-color: #e67e22;
+        }
+
+        .form-container .link-button {
+            background-color: #2980b9;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 4px;
+            text-align: center;
+            display: block;
+            margin-top: 10px;
+        }
+
+        .form-container .link-button:hover {
+            background-color: #3498db;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="logo-section">
+            <img src="logo.jpeg" alt="">
+        </div>
+        <nav class="sub-logos">
+            <span>GO Services</span>
+            <span>GO Bandara</span>
+            <span>GO Commuter</span>
+            <span>GO Wisata</span>
+            <span>GO Logistik</span>
+            <span>GO Properti</span>
+        </nav>
+    </header>
+    <main>
+        <section class="information">
+            <div class="info-section">
+                <h3>INFORMASI</h3>
+                <ul>
+                    <li><a href="#">Tentang Kami</a></li>
+                    <li><a href="#">Publikasi</a></li>
+                    <li><a href="#">Karir</a></li>
+                    <li><a href="#">Lelang</a></li>
+                    <li><a href="#">Keterbukaan Informasi Publik</a></li>
+                    <li><a href="#">Heritage</a></li>
+                    <li><a href="#">TJSL</a></li>
+                    <li><a href="#">Hubungan Investor</a></li>
+                    <li><a href="#">GCG</a></li>
+                    <li><a href="#">Sustainability</a></li>
+                </ul>
+            </div>
+            <div class="contact-section">
+                <h3>KONTAK KAMI</h3>
+                <ul>
+                    <li>Kantor Pusat: Jalan Jatiroto-Jatisrono</li>
+                    <li>Office Phone: 088901230945</li>
+                    <li>Email: keretago@go.id</li>
+                    <li>Contact Center: 123 / 099</li>
+                    <li>Layanan Pelanggan: go@go.id</li>
+                </ul>
+            </div>
+        </section>
+
+        <h3>Kontak Kami</h3>
+        <form action="#" method="POST" class="form-container">
+            <label for="name">Nama Lengkap</label>
+            <input type="text" id="name" name="name" required placeholder="Masukkan Nama Anda">
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required placeholder="Masukkan Email Anda">
+
+            <label for="message">Pesan</label>
+            <textarea id="message" name="message" rows="4" required placeholder="Tuliskan Pesan Anda"></textarea>
+
+            <a href="http://127.0.0.1:5500/terimakasih.html" class="link-button">Kirim Pesan</a>
+            
+        </form>
+    </main>
+
+    <footer class="footer">
+        <p>© PT KeretaGo, All Rights Reserved</p>
+    </footer>
+</body>
+</html>

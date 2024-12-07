@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <table
+            width="100%"cellspacing="0" cellpadding ="10">
+            <td colspan="2" height="30px" align="center">  
+                <nav>
+                <button><a href="#data-pribadi">Data pribadi</a>&emsp;</button>
+                <button> <a href="#container">profil</a>&emsp;</button>
+                <button> <a href="#kontak">pendidikan</a>&emsp;</button>
+                <button> <a href="#kontak">keahlian</a>&emsp;</button>
+                <button> <a href="#kontak">pengalaman</a>&emsp;</button>
+                </nav>
+            </td>
+        </tr>
+    <style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+    }
+    .container {
+        max-width: 900px;
+        margin: 20px auto;
+        background: rgb(198, 196, 203);
+        display: flex;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+    .left {
+        width: 35%;
+        background-color: #073c71;
+        color: rgb(255, 255, 255);
+        padding: 20px;
+        text-align: center;
+    }
+    .left img {
+        width: 180px;
+        height: 190px;
+        border-radius: 60%;
+        margin-bottom: 20px;
+    }
+    .left h1 {
+        font-size: 24px;
+        margin: 0;
+    }
+    .left h2 {
+        font-size: 18px;
+        font-weight: normal;
+        font-style: italic;
+        margin: 5px 0 20px;
+    }
+    .left p {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+    .left .contact, .left .hobbies {
+        margin-top: 30px;
+    }
+    .left .contact h3, .left .hobbies h3 {
+        font-size: 16px;
+        margin-bottom: 10px;
+        text-transform: uppercase;
+    }
+    .left .contact p, .left .hobbies p {
+        margin: 5px 0;
+        font-size: 14px;
+    }
+    .right {
+        width: 65%;
+        padding: 20px;
+    }
+    .right h3 {
+        font-size: 18px;
+        margin-bottom: 15px;
+        color: #2b3d4f;
+        text-transform: uppercase;
+    }
+    .right .section {
+        margin-bottom: 20px;
+    }
+    .right .section h4 {
+        font-size: 16px;
+        margin: 10px 0;
+        color: #555;
+    }
+    .right .section p {
+        font-size: 14px;
+        margin: 5px 0;
+        line-height: 1.5;
+    }
+    ul {
+        padding-left: 20px;
+    }
+    ul li {
+        font-size: 14px;
+        margin-bottom: 5px;
+    }
+    .progress-bar {
+        width: 100%;           
+        height: 30px;          
+        background-color: #e0e0e0;  
+        border-radius: 5px;  
+        overflow: hidden;
+    }
+    .progress-bar span {
+        display: block;        
+        height: 100%;        
+        background-color: #51cc55; 
+        transition: width 0.2s ease-in-out; 
+    }
+    .button-container {
+        text-align: center;
+        margin-top: 20px;
+    }
+    .button-container button {
+        background-color: #16395d;
+        color: white;
+        padding: 10px 20px;
+        font-size: 16px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+    .button-container button:hover {
+        background-color: #1a4a74;
+    }
+    .section-id {
+        padding-top: 60px; 
+    }
+</style>
+    <body> 
+            <table  width="100%"cellspacing="0" cellpadding ="10">               
+                <td colspan="2" height="30px" align="center">
+                    <h5 style="color: rgb(0, 0, 0);">@Risma Anggraini</h5>
+                </td>
+            </tr>
+            <div class="container">
+                <div class="left">
+                    <img src="profile.jpeg" alt="">  
+            <center><h1>Risma anggraini</h1></center> 
+            <center>  <h2>pelajar</h2></center>
+            <p>Perkenalkan nama saya Risma, saya merupakan anak pertama dari 2 bersaudara, usia saya 16.Th, saya lahir di pemalang pada tanggal 2 januari, saya lahir di pemalang di kota asal ibu saya, dan saya di besarkan di wonogiri di kota asal ayah saya</p>   
+            <div class="contact">
+                <h3>Kontak</h3>
+                <p>📞 +123-456-7890</p>
+                <p>📍 Jajar tepus RT 01/RW 04</p>
+                <p>🌐 rismaanggraini0201@gmail.com</p>
+            </div>  
+            <br> 
+            <h3>Portofolio</h3>
+            <img src="portofolio.jpeg" alt="" style="width: 190px; height: 190px; object-fit: cover;">  
+            <p>Nirmana</p> 
+                </div>
+        <div class="right">
+            <div id="data-pribadi" class="section section-id">
+                <h3>Data Pribadi</h3>
+                <p>Tempat, Tanggal Lahir: pemalang, 2 januari 2008</p>
+                <p>Jenis Kelamin: perempuan</p>
+                <p>Agama: Islam</p>
+                <p>Kewarganegaraan: Indonesia</p>
+                <p>Status: pelajar</p>
+            </div>
+            <div id="kontak" class="section">
+                <h3>Pendidikan</h3>
+                <ul>
+                    <li>TK Pertiwi  (2013)</li>
+                    <li>SDN 1 Ngrompak (2014-2020)</li>
+                    <li>SMPN 3 Jatisrono (2020-2023)</li>
+                    <li>SMKN 1 Jatiroto (2023-2025)</li>
+                </ul>
+            </div>
+            <div class="section">
+                <h3>Keahlian</h3>
+                <ul>
+                    <li>Pengembangan Perangkat Lunak Dan Gim (PPLG)</li>
+                </ul>
+            </div>
+            <div class="section">
+                <h3>Pengalaman</h3>
+                <p>Replit: 46%</p>
+                <div class="progress-bar">
+                    <span style="width: 46%;"></span>
+                </div>
+                <p>Visual Studio Code: 52%</p>
+                <div class="progress-bar">
+                    <span style="width: 52%;"></span>
+                </div>
+                <p>Canva: 5%</p>
+                <div class="progress-bar">
+                    <span style="width: 5%;"></span>
+                </div>
+                <p>NetBeans: 15%</p>
+                <div class="progress-bar">
+                    <span style="width: 15%;"></span>
+                </div>
+                <br>
+            <div class="section">
+                <h3>bahasa pemrogaman</h3>
+                <p>c++: 46%</p>
+                <div class="progress-bar">
+                    <span style="width: 46%;"></span>
+                </div>
+                <p>HTML: 52%</p>
+                <div class="progress-bar">
+                    <span style="width: 52%;"></span>
+                </div>
+                <p>JAVA: 15%</p>
+                <div class="progress-bar">
+                    <span style="width: 15%;"></span>
+                </div>
+                <a href="../index.html">klik disini untuk kembali ke cp</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

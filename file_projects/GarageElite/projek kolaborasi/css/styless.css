@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman';
+    
+}
+body{
+   
+    color: #F7F7F7;
+    
+}
+
+header {
+    background-color: #020408;
+    padding: 10px;
+    display: flex;
+    color: white;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+ 
+}
+header img{
+    margin-top: auto;
+    margin-bottom: auto;
+
+}
+nav {
+    display: flex;
+    gap: 1em;
+    width: 100%;
+    padding: 10px;
+    
+}
+
+nav a:first-child {
+    margin-right: auto;
+}
+
+a {
+    text-decoration: none;
+ font-size: 20px;
+    color: white;
+    
+    padding: 5px;
+}
+nav :hover{
+    color: #008CFF;
+}
+nav  :active{
+color: antiquewhite;
+}
+.why{
+    display: inline-block;
+    justify-content: center;
+    background-color: #1A1A1A;
+    color:rgb(255, 255, 255);
+    text-align: center;
+    width: 100%;
+    margin: 5px 0px;
+}
+.gambar{
+
+    display: flex;
+    gap: 0.5em;
+   margin-top: 5px;
+    flex-wrap: wrap;
+    background-color: #1A1A1A;
+    border-top: 2px solid;
+  
+   
+    
+}
+.gambar img{
+    border: 1px solid black;
+    border-radius: 16px;
+    transition:0.3 ease;
+    margin-top: 5px;
+
+}
+.gambar  :hover img{
+    transform: scale(1.02);
+}
+.penjelasan{
+    display: flex;
+    gap: 4em;
+}
+figcaption{
+    text-transform: capitalize;
+}
+.alamat{
+    text-transform: capitalize;
+    margin-top: 10px;
+    padding: 5px;
+    border-top: 1px solid;
+    display: flex;
+    justify-content: center;
+    color: black;
+}
+.medsos{
+padding: 5px;
+border-right: 0;
+display: flex;
+justify-content: center;
+
+}
+ul{
+    display: flex;
+    justify-content: flex-start;
+    gap: 2em;
+    padding: 5px;
+    border-top: 1px solid;
+}
+.why li{
+ 
+    border-right: 1px solid;
+    
+} 
+
+li:last-child{
+    border-right: 0px;
+}
+.medsos li{
+  display: flex;
+  justify-content: center;
+   
+}
+.cp{
+    display: flex;
+    justify-content: center;
+}
+.medsos img{
+    width: 25px;
+    height: 25px;
+margin-right: 5px;
+}
+.medsos, .cp{
+    background-color: white;
+    color: black;
+}

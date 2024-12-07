@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Golden Sea Grill</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+        nav {
+            background-color: #004d61;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            text-transform: uppercase;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #00bcd4;
+        }
+
+        header {
+            background-color: #004d61;
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+
+        header img {
+            inline-size: 100px; 
+            block-size: 100px; 
+            border-radius: 50%; 
+            margin-block-end: 10px;
+        }
+
+        h1 {
+            font-size: 36px;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        .container h2 {
+            color: #004d61;
+            font-size: 28px;
+            margin-block-start: 20px;
+        }
+
+        .container p {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        .menu-section {
+            margin-block-start: 40px;
+        }
+
+        .menu-item {
+            display: flex;
+            justify-content: space-between;
+            background-color: #ffffff;
+            padding: 10px;
+            margin-block-end: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Gambar menu */
+        .menu-item img {
+            inline-size: 150px;
+            block-size: 150px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-inline-end: 20px;
+        }
+
+        .menu-item h3 {
+            margin: 0;
+            font-size: 20px;
+            color: #333;
+        }
+
+        .menu-item p {
+            margin: 0;
+            color: #666;
+        }
+
+
+        footer {
+            background-color: #004d61;
+            color: white;
+            text-align: center;
+            padding: 10px;
+
+            inline-size: 100%;
+            inset-block-end: 0;
+        }
+        .facilities {
+            background-color: #ffffff;
+            padding: 20px;
+            margin-block-start: 40px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .facilities h3 {
+            color: #004d61;
+            font-size: 24px;
+            margin-block-end: 10px;
+        }
+
+        .facilities ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .facilities li {
+            font-size: 16px;
+            color: #333;
+            margin-block-end: 10px;
+            display: flex;
+            align-items: center;
+        }
+
+        .facilities li::before {
+            
+            /* content: "✔️"; */
+            margin-inline-end: 10px;
+            color: #00bcd4;
+        }
+
+        .social-media {
+            text-align: center;
+            background-color: #ffffff;
+            padding: 20px;
+            margin-block-start: 40px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .social-media h3 {
+            color: #004d61;
+            font-size: 24px;
+            margin-block-end: 10px;
+        }
+
+        .social-media p {
+            font-size: 16px;
+            color: #333;
+            margin-block-end: 15px;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .social-links a {
+            text-decoration: none;
+            font-size: 20px;
+            color: #004d61;
+            transition: color 0.3s;
+        }
+
+        .social-links a:hover {
+            color: #00bcd4;
+        }
+        .cv-section {
+    background-color: #ffffff;
+    padding: 20px;
+    margin-block-start: 40px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.cv-section h3 {
+    color: #004d61;
+    font-size: 24px;
+    margin-block-end: 10px;
+}
+
+.cv-section p {
+    font-size: 16px;
+    color: #333;
+}
+
+.cv-link {
+    font-size: 18px;
+    color: #00bcd4;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.cv-link:hover {
+    color: #00bcd4;
+
+}
+.owner-item {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 10px;
+    inline-size: 100px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.owner-item img {
+    inline-size: 100px;         
+    block-size: 100px;       
+    object-fit: cover;    
+    border-radius: 50%;   
+    margin-block-end: 10px;  
+    transition: transform 0.3s ease-in-out;
+}
+
+
+.owner-item h3 {
+    font-size: 16px;
+    color: #333;
+    margin: 0;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+
+.poto{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer p {
+    margin: 0;
+}
+
+    </style>
+</head>
+<body>
+
+    <header>
+        
+        <img src="logo cp.jpeg" alt="Golden Sea Grill Logo">
+        <h1>Golden Sea Grill Seafood</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#tentang">Tentang Kami</a></li>
+            <li><a href="#menuSP">Menu Spesial</a></li>
+            <li><a href="#fasilitas">Fasilitas</a></li>
+            <li><a href="#mediaSO">Ikuti Kami</a></li>
+        </ul>
+    </nav>
+
+    <div class="container" id="tentang">
+        <h2>Tentang Golden Sea Grill Seafood</h2>
+        <p>Golden Sea Grill Seafood adalah restoran yang mengusung konsep santapan laut segar dengan atmosfer yang nyaman dan elegan. Terletak di Jl. Parangtritis,Jogjakarta,
+             restoran ini menawarkan berbagai hidangan laut yang disajikan dengan sentuhan grill yang khas, 
+             memadukan cita rasa tradisional dengan inovasi modern.
+             Setiap hidangan di Golden Sea Grill Seafood disiapkan dengan bahan-bahan berkualitas tinggi yang diambil langsung dari sumber terpercaya,
+              menjamin kesegaran dan rasa yang tak tertandingi. Golden Sea Grill Seafood cocok untuk segala kesempatan,mulai dari makan malam romantis, 
+              perayaan keluarga, hingga acara bisnis. Suasana yang hangat dan pelayanan yang ramah akan membuat setiap kunjungan menjadi 
+              pengalaman kuliner yang tak terlupakan.</p>
+
+        
+        <div class="vision-mission">
+            <h3>Visi</h3>
+            <p>Menjadi restoran pilihan utama yang menyajikan hidangan laut terbaik, berfokus pada kualitas, kesegaran, dan pengalaman kuliner yang tak terlupakan.</p>
+
+            <h3>Misi</h3>
+            <p>1. Menyediakan hidangan laut segar berkualitas tinggi dengan cita rasa yang autentik dan inovatif.<br>
+            2. Menciptakan atmosfer restoran yang nyaman, ramah, dan menyenangkan untuk setiap pelanggan.<br>
+            3. Memberikan pelayanan yang profesional dan ramah, serta memenuhi harapan setiap pelanggan.</p>
+        </div>
+
+        <h2>Menu Spesial</h2>
+<center>
+        <div class="menu-section" id="menuSP">
+            
+            <div class="menu-item">
+                <img src="Grilled Lobster with Garlic Butter.jpg" alt="Grilled Lobster with Garlic Butter">
+                <div>
+                    <h3>Grilled Lobster with Garlic Butter</h3>
+                    <p>Lobster segar yang dipanggang dengan mentega bawang putih, disajikan dengan sayuran panggang dan nasi berbumbu.</p>
+                </div>
+                <p>Rp. 250,000</p>
+            </div>
+
+           
+            <div class="menu-item">
+                <img src="seafood pleter.jpg" alt="Seafood Platter">
+                <div>
+                    <h3>Seafood Platter</h3>
+                    <p>Paduan berbagai hidangan laut yang dipanggang dan disajikan dengan sambal khas dan saus seafood spesial.</p>
+                </div>
+                <p>Rp. 350,000</p>
+            </div>
+
+          
+            <div class="menu-item">
+                <img src="Grilled Fish Fillet.webp" alt="Grilled Fish Fillet">
+                <div>
+                    <h3>Grilled Fish Fillet</h3>
+                    <p>Ikan segar fillet yang dipanggang dengan bumbu rempah khas Golden Sea Grill, disajikan dengan mashed potatoes dan sayuran.</p>
+                </div>
+                <p>Rp. 180,000</p>
+            </div>
+
+            <div class="menu-item">
+                <img src="seafood paella2.jpeg" alt="Seafood Paella">
+                <div>
+                    <h3>Seafood Paella</h3>
+                    <p>Nasi berbumbu khas Spanyol dengan berbagai jenis hidangan laut seperti udang, kerang, dan cumi, disajikan dalam panci paella.</p>
+                </div>
+                <p>Rp. 275,000</p>
+            </div>
+     
+            <div class="menu-item">
+                <img src="nasgor seafood.jpg" alt="Nasi Goreng Seafood">
+                <div>
+                    <h3>Nasi Goreng Seafood</h3>
+                    <p>Nasi goreng spesial yang dipadukan dengan berbagai hidangan laut segar serta bumbu rempah yang menggugah selera.</p>
+                </div>
+                <p>Rp. 150,000</p>
+            </div>
+        </div>
+    </div>
+</center>
+       
+        <div class="facilities" id="fasilitas">
+            <h3>Fasilitas</h3>
+            <ul>
+                <li>Ruang Pribadi: Tersedia  ruangan pribadi untuk acara khusus atau pertemuan bisnis.</li>
+                <li>Wi-Fi Gratis: Nikmati koneksi internet cepat selama makan di restoran kami.</li>
+                <li>Parkir Luas: Area parkir yang cukup luas dan mudah diakses.</li>
+                <li>Catering dan Pemesanan Online: Tersedia layanan katering untuk acara spesial atau pemesanan take-out melalui website.</li>
+           
+    <div class="social-media" id="mediaSO">
+        <h3>Ikuti Kami</h3>
+        <p>Temukan kami di media sosial untuk update menu terbaru, promo spesial, dan acara menarik:</p>
+        <div class="social-links">
+            <a href="https://instagram.com/GoldenSeaGrill" target="_blank">Instagram</a>
+            <a href="https://facebook.com/GoldenSeaGrill" target="_blank">Facebook</a>
+            <a href="https://twitter.com/GoldenSeaGrill" target="_blank">Twitter</a>
+        </div>
+    </div>
+</div>
+</div>
+
+<center>
+    <h3>OWNER GOLDEN SEA GRILL SEAFOOD</h3>
+</center>
+
+<div class="poto">
+<div class="owner-item">
+    <a href="Nisrina-XI PPLG 2/cv.nisrina.html" target="_blank">
+        <img src="nsrina.jpeg" alt="Nisrina"></a>
+    <a href="Nisrina-XI PPLG 2/cv.nisrina.html" target="_blank"><h3>Nisrina</h3></a>
+</div>
+
+<div class="owner-item">
+    <a href="Arisca-XI PPLG 1/cv.Arisca.html" target="_blank">
+        <img src="CP_Arisca.jpeg" alt="Arisca"></a>
+    <a href="Arisca-XI PPLG 1/cv.Arisca.html" target="_blank"><h3>Arisca</h3></a>
+</div>
+
+<div class="owner-item">
+    <a href="Fina-XI PPLG 3/cv.fina.html" target="_blank">
+        <img src="fina.jpeg" alt="Fina"></a>
+    <a href="Fina-XI PPLG 3/cv.fina.html" target="_blank"><h3>Fina</h3></a>
+</div>
+
+<div class="owner-item">
+    <a href="Alfahry-XI PPLG 3/cv.alfahry.html" target="_blank">
+        <img src="fahry.jpg" alt="Alfahry"></a>
+    <a href="Alfahry-XI PPLG 3/cv.alfahry.html" target="_blank"><h3>Alfahry</h3></a>
+</div>
+
+<div class="owner-item">
+    <a href="Abid-XI PPLG 1/cv.abid.html" target="_blank">
+        <img src="abid.jpg" alt="Abid"></a>
+    <a href="Abid-XI PPLG 1/cv.abid.html" target="_blank"><h3>Abid</h3></a>
+</div>
+</div>
+
+    <footer>
+        <p>&copy; 2024 Golden Sea Grill. Semua hak cipta dilindungi.</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Dewi Pratiwi</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        .contact {
+            background-color: #ffcc80;
+            padding: 10px 20px;
+            text-align: center;
+            font-size: 14px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .contact a {
+            color: #b71c1c;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .contact a:hover {
+            text-decoration: underline;
+        }
+
+        .header {
+            background-color: #b71c1c;
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+            border-bottom: 5px solid #ffcc80;
+        }
+
+        .header h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            font-size: 20px;
+            margin-top: 5px;
+            font-style: italic;
+        }
+
+        .photo-container {
+            display: flex;
+            justify-content: center;
+            margin-top: -50px;
+        }
+
+        .photo-container img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 5px solid #ffcc80;
+            background-color: #fff;
+        }
+
+        .content {
+            margin: 20px auto;
+            padding: 20px;
+            max-width: 900px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .section {
+            margin-bottom: 30px;
+        }
+
+        .section h2 {
+            color: #e64a19;
+            font-size: 24px;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #ffcc80;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+
+        .about-me p,
+        .data-diri ul {
+            margin: 10px 0;
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        .data-diri ul li {
+            margin-bottom: 10px;
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .skills ul,
+        .experience ul,
+        .education ul,
+        .language ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .skills ul li,
+        .language ul li {
+            margin: 8px 0;
+            font-size: 16px;
+            display: flex;
+            align-items: center;
+        }
+
+        .skills ul li .skill-bar,
+        .language ul li .skill-bar {
+            flex: 1;
+            margin-left: 10px;
+            height: 10px;
+            background: #ddd;
+            position: relative;
+            border-radius: 5px;
+        }
+
+        .skills ul li .skill-bar span,
+        .language ul li .skill-bar span {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            background: #ff7043;
+            border-radius: 5px;
+        }
+
+        .portofolio-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .portofolio-item {
+            width: 250px;
+            text-align: center;
+            background: #f4f4f9;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .portofolio-item img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+         .portofolio-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .portofolio-item {
+            width: 250px;
+            text-align: center;
+            background: #f4f4f9;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .portofolio-item img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #b71c1c;
+            color: white;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="contact">
+        <a href="mailto:dewipratiwi2124@gmail.com">✉ dewipratiwi2124@gmail.com</a>
+        <a href="tel:+6285866266434">📞 +62 858 6626 6434</a>
+        <a href="#">📍 Nglorog, Mojopuro, Jatiroto</a>
+    </div>
+
+    <div class="header">
+        <h1>Dewi Pratiwi</h1>
+    </div>
+
+    <div class="photo-container">
+        <img src="WhatsApp Image 2024-12-05 at 19.27.00.jpeg" alt="Dewi Pratiwi">
+    </div>
+
+    <div class="content">
+        <div class="section about-me">
+            <h2>About Me</h2>
+            <p>
+                Saya adalah seorang siswi kelas 11 di SMKN 1 Jatiroto, jurusan PPLG (Pengembangan Perangkat Lunak dan Gim).
+                Saya memiliki minat besar dalam dunia desain grafis dan terus mengasah kreativitas saya melalui berbagai proyek desain.
+                Dengan semangat belajar yang tinggi, saya bertekad untuk mengembangkan kemampuan teknis dan artistik untuk menciptakan karya yang inspiratif dan inovatif.
+            </p>
+        </div>
+
+        <div class="section data-diri">
+            <h2>Data Diri</h2>
+            <ul>
+                <li><strong>Nama:</strong> Dewi Pratiwi</li>
+                <li><strong>TTL:</strong>Wnogiri, 28 Oktober 2008</li>
+                <li><strong>Alamat:</strong> Nglorog, Mojopuro, Jatiroto</li>
+                <li><strong>Jenis Kelamin:</strong> Prempuan</li>
+                <li><strong>Agaman:</strong> Islam</li>
+            </ul>
+        </div>
+
+        <div class="section skills">
+            <h2>My Skills</h2>
+            <ul>
+                <li>Canva
+                    <div class="skill-bar"><span style="width: 66%;"></span></div>
+                </li>
+                <li>Visual Studio Code
+                    <div class="skill-bar"><span style="width: 80%;"></span></div>
+                </li>
+                <li>NetBeans
+                    <div class="skill-bar"><span style="width: 91%;"></span></div>
+                </li>
+                <li>Replit
+                    <div class="skill-bar"><span style="width: 75%;"></span></div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="section language">
+            <h2>Language</h2>
+            <ul>
+                <li> Java
+                    <div class="skill-bar"><span style="width: 91%;"></span></div>
+                </li>
+                <li> Html
+                    <div class="skill-bar"><span style="width: 80%;"></span></div>
+                </li>
+                <li> Css
+                    <div class="skill-bar"><span style="width: 60%;"></span></div>
+                </li>
+                <li> C++
+                    <div class="skill-bar"><span style="width: 85%;"></span></div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="section experience">
+            <h2>Experience</h2>
+            <ul>
+                <li><strong>- Pengembangan aplikasi si Netbeands</strong></li>
+                <li><p>Pernah membuat aplikasi sederhana pakai JavaScript di NetBeans, fokusnya pada fitur-fitur dasar dan tampilan antarmuka yang mudah dipakai.</p></li>
+                <br>
+                <li><strong>- Pembuatan Website "Seafood Burned" di Visual Studio Code</strong></li>
+                <li><p>Merancang dan mengembangkan website restoran "Seafood Burned" dengan tampilan menarik dan desain responsif sebagai tugas akhir.</p></li>
+                <br>
+                <li><strong>- Desain Grafis dengan Canva</strong></li>
+                <li><p>Merancang berbagai poster kreatif menggunakan Canva, sambil mencoba bermain dengan elemen visual dan tipografi supaya hasilnya lebih menarik dan mudah dimengerti.</p></li>
+                <br>
+                <li><strong>- Membuat gambar Nirmana Dwimatra</li></strong></li>
+                <li><p>Membuat karya seni Nirmana Dwimatra dengan menggabungkan elemen garis, bentuk, dan warna untuk menghasilkan desain yang menarik dan estetik.</p></li>
+            </ul>
+        </div>
+
+        <div class="section education">
+            <h2>Education</h2>
+            <ul>
+                <li><strong>2013 - 2014: </strong>TK Mekar Sari</li>
+                <li><strong>2014 - 2020:</strong> SDN 3 Mojopuro</li>
+                <li><strong>2020 - 2023:</strong> SMPN 1 Jatiroto</li>
+                <li><strong>2023 - 2026:</strong> SMK N 1 Jatiroto</li>
+            </ul>
+        </div>
+
+        <div class="section portofolio">
+            <h2>Portofolio</h2>
+            <div class="portofolio-container">
+                <div class="portofolio-item">
+                    <img src="poster data diri.jpeg" alt="Project 1">
+                    <p>Poster Data Diri</p>
+                </div>
+                <div class="portofolio-item">
+                    <img src="Media (8).jpg" alt="Project 2">
+                    <p>Sketsa Hewan </p>
+                </div>
+                <div class="portofolio-item">
+                    <img src="Media (7).jpg" alt="Project 2">
+                    <p>Nirmana Dwimatra</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section portofolio">
+            <div class="portofolio-container">
+                <div class="portofolio-item">
+                    <img src="replite.jpeg" alt="Project 1">
+                    <p>Tugas Replit membuat Class Hewan</p>
+                </div>
+                <div class="portofolio-item">
+                    <img src="image (1).jpg" alt="Project 2">
+                    <p>Website "Seafood Burned"</p>
+                </div>
+                <div class="portofolio-item">
+                    <img src="image (1).png" alt="Project 2">
+                    <p>Aplikasi "Pramedia Book"</p>
+                </div>
+            </div>
+        </div>
+            <li><strong>lihat lebih banyak : <a href="https://drive.google.com/drive/folders/12jJn52tWKr7SZxi47t81M29hytES0ghi?usp=sharing">drive portfolio</a></strong></li>
+            <br>
+            <li><strong>link<a href="PreLovedCollective.html"> company profil </a></strong></li>
+    </div>
+
+    <div class="footer">
+        &copy; 2024 Dewi Pratiwi. All rights reserved.
+    </div>
+</body>
+</html>

@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum Vitae</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            max-width: 1000px;
+            margin: 20px auto;
+        }
+
+        /* Header Section */
+        .header {
+            display: flex;
+            flex-direction: column; 
+            align-items: center; 
+            justify-content: center;
+            background-color: #2c3e50;
+            color: rgb(255, 255, 255);
+            padding: 20px;
+            position: relative;
+        }
+
+        .profile-img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 50%; 
+            margin-bottom: 10px; 
+        }
+
+        .name-contact {
+            text-align: center; 
+        }
+
+        .name-contact h1 {
+            font-size: 24px;
+            margin-bottom: 5px;
+        }
+
+        .name-contact p {
+            font-size: 18px;
+        }
+
+        /* Content Section */
+        .content {
+            padding: 20px;
+            background-color: rgb(252, 253, 253);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        section {
+            margin-bottom: 20px;
+            width: 48%;
+            padding: 20px;
+            background-color: #ecf0f1;
+            border-radius: 8px;
+        }
+
+        section h2 {
+            font-size: 22px;
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        ul li {
+            margin-bottom: 8px;
+        }
+
+        .skill-bar {
+            height: 20px;
+            margin-bottom: 10px;
+            border-radius: 10px;
+            background-color: #ddd;
+        }
+
+        .skill-bar div {
+            height: 100%;
+            border-radius: 10px;
+            text-align: center;
+            color: white;
+            line-height: 20px;
+            font-weight: bold;
+        }
+
+
+        .photo-gallery {
+            margin-top: 35px;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+ 
+        .photo-gallery img {
+            width: 35%;
+            border-radius: 10px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+            object-fit: cover;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            font-weight: bold;
+        }
+
+        td {
+            background-color: #f9f9f9;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <div class="header">
+            <img src="WhatsApp Image 2024-12-05 at 10.10.31.jpeg" alt="Foto Profil" class="profile-img">
+            <div class="name-contact">
+                <h1>Maylani Diyan Cantika</h1>
+                <p>Curriculum Vitae</p>
+            </div>
+        </div>
+        
+        <!-- Content Section -->
+        <div class="content">
+            <section style="width: 100%; background-color: #f7f8fa;">
+                <h2>Data Diri</h2>
+                <table>
+                    <tr>
+                        <th>Nama</th>
+                        <td>Maylani Diyan Cantika</td>
+                    </tr>
+                    <tr>
+                        <th>Tempat,Tanggal lahir</th>
+                        <td>Wonogiri, 25 Mei 2000</td>
+                    </tr>
+                    <tr>
+                        <th>Alamat</th>
+                        <td>Pengkol</td>
+                    </tr>
+                    <tr>
+                        <th>Jenis kelamin</th>
+                        <td>Perempuan</td>
+                    </tr>
+                    <tr>
+                        <th>Kewarganegaraan</th>
+                        <td>Indonesia</td>
+                    </tr>
+                    <tr>
+                        <th>Status</th>
+                        <td>Pelajar</td>
+                    </tr>
+                </table>
+            </section>
+
+            <section style="width: 100%; background-color: #f7f8fa;">
+                <h2>Tentang saya</h2>
+                <p>Saya pelajar dengan ketertarikan dalam dunia pemrograman dan desain grafis. Saya selalu berusaha memanfaatkan setiap kesempatan untuk meningkatkan kemampuan kreatif saya, dengan fokus pada aplikasi praktis dan pengembangan diri. Dengan pengalaman menggunakan berbagai alat seperti Canva, NetBeans, dan Java.</p>
+
+                <br>
+                <hr>
+                
+                <h2>Riwayat Pendidikan</h2>
+                <table>
+                    <tr>
+                        <th>Sekolah</th>
+                        <th>Tahun</th>
+                    </tr>
+                    <tr>
+                        <td>TK JEMANI</td>
+                        <td>2013 - 2014</td>
+                    </tr>
+                    <tr>
+                        <td>SDN 3 PENGKOL</td>
+                        <td>2014 - 2019</td>
+                    </tr>
+                    <tr>
+                        <td>SMPN 2 JATIROTO</td>
+                        <td>2020 - 2023</td>
+                    </tr>
+                    <tr>
+                        <td>SMKN 1 JATIROTO</td>
+                        <td>2023 - Sekarang</td>
+                    </tr>
+                </table>
+                <br>
+                <hr> 
+
+                <h2>Hobi</h2>
+                <ul>
+                    <li>Membaca Novel</li>
+                    <li>Mendengarkan musik</li>
+                </ul>
+                <br>
+                <hr>           
+
+                <h2>Keahlian</h2>
+                <p>Aplikasi</p>
+                <div class="skill-bar">
+                    <div style="width: 61.84%; background-color: #042841;">Canva</div>
+                </div>
+                <div class="skill-bar">
+                    <div style="width: 50%; background-color:  #042841;">Net Beans</div>
+                </div>
+                <div class="skill-bar">
+                    <div style="width: 11.54%; background-color: #042841;">Replt</div>
+                </div>
+                <div class="skill-bar">
+                    <div style="width: 55%; background-color:  #042841">Jstudio</div>
+                </div>
+
+                <p>Jenis pemrograman</p>
+                <div class="skill-bar">
+                    <div style="width: 50%; background-color: #042841;">Java</div>
+                </div>
+                <div class="skill-bar">
+                    <div style="width: 11.54%; background-color: #042841;">C++</div>
+                </div>
+                <div class="skill-bar">
+                    <div style="width: 55%; background-color:  #042841;">HTML</div>
+                </div>
+
+                <br>
+                <hr> 
+
+
+
+
+                <div class="photo-gallery">
+                  <img src="jstudio.jpeg " alt="Experience Photo 1">
+                 
+                  <img src="Net beans.jpeg " alt="Experience Photo 2">
+
+
+                <section style="width: 100%; background-color: #f7f8fa; display: flex; justify-content: space-between; align-items: center; padding: 20px;">
+                    <div style="width: 48%;">
+                        <h1>Viuewportopolio</h1>
+                        <p>Ini adalah halaman Viuewportopolio. Klik link berikut:</p>
+                        <a href="https://drive.google.com/drive/folders/11xkc4FoaLI3fsxJPWvpy2tq1mzS0kSm9">Klik disini</a>
+                    </div>
+                
+                    <div style="width: 48%; text-align: right;">
+                        <h1> Company Profile </h1>
+                        <p>Ini adalah halaman Company Profile. Klik link berikut:</p>
+                        <a href="index_companyprofile.html">Klik disini</a>
+                    </div>
+                </section>
+                </section>
+
+                <br>
+                <hr> 
+                <footer style="display: flex; justify-content: center; align-items: center; padding: 20px; background-color: #2c3e50; color: white; position: relative; width: 100%; height: 100px;">
+                </footer>
+            </section>
+        </div>
+    </div>
+</body>
+</html>
+

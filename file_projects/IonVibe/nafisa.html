@@ -1,0 +1,400 @@
+<html>
+<head>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Resume</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        #project {
+            display: flex;
+            gap: 3em;
+        }
+        .navbar {
+            background-color: #b0c4de;
+            overflow: hidden;
+            text-align: center;
+        }
+        .navbar a {
+            display: inline-block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+        .navbar a:hover {
+            background-color: #a0b8d6;
+        }
+        .container {
+            width: 80%;
+            max-width: 1000px;
+            margin: 20px auto;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        .photo {
+            text-align: center;
+            padding: 20px;
+        }
+        .photo img {
+            border-radius: 50%;
+            width: 200px;
+            height: 200px;
+        }
+        .header {
+            background-color: #b0c4de;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 32px;
+        }
+        .header p {
+            margin: 5px 0;
+            font-size: 18px;
+        }
+        .section {
+            padding: 20px;
+        }
+        .section h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .section p {
+            margin: 10px 0;
+            line-height: 1.6;
+            font-size: 18px;
+        }
+        .skills, .experience {
+            margin-top: 100px;
+        }
+        .skills table, .experience table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .skills th, .skills td, .experience th, .experience td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+            font-size: 18px;
+        }
+        .skills th, .experience th {
+            background-color: #b0c4de;
+            color: white;
+        }
+        .skills .progress {
+            text-align: center;
+        }
+        .skills .progress span {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+            border-radius: 50%;
+            background-color: #b0c4de;
+            color: white;
+            font-size: 18px;
+        }
+        .experience .year {
+            background-color: #b0c4de;
+            color: white;
+            text-align: center;
+            vertical-align: top;
+            width: 20%;
+            font-size: 18px;
+        }
+        .experience .details {
+            width: 80%;
+        }
+        .experience .details ul {
+            padding-left: 20px;
+            margin: 0;
+        }
+        .experience .details ul li {
+            margin-bottom: 5px;
+            font-size: 18px;
+        }
+        .contact-form {
+            margin-top: 20px;
+        }
+        .contact-form label {
+            display: block;
+            margin-bottom: 5px;
+            font-size: 18px;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 18px;
+        }
+        .contact-form button {
+            background-color: #b0c4de;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+        .contact-form button:hover {
+            background-color: #a0b8d6;
+        }
+        .social-media {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .social-media a {
+            margin: 0 10px;
+            color: #b0c4de;
+            font-size: 24px;
+            text-decoration: none;
+        }
+        .social-media a:hover {
+            color: #a0b8d6;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 font-sans">
+    <div class="navbar">
+        <a href="#home">HOME</a>
+        <a href="#tentang-saya">TENTANG SAYA</a>
+        <a href="#keahlian saya">KEAHLIAN SAYA</a>
+        <a href="#pengalaman-kerja">PENGALAMAN DAN PENDIDIKAN SEBELUMNYA</a>
+        <a href="#contact">CONTACT</a>
+    </div>
+    <div class="container mx-auto bg-white mt-6 p-6 rounded-lg shadow-lg" id="home">
+        <div class="text-center">
+            <img alt="Profile picture of Nafisa Marcenia Purbaningrum" class="rounded-full mx-auto mb-4" height="220" src="akuu.jpg" width="220"/>
+            <h1 class="text-3xl font-bold">NAFISA MARCENIA PURBANINGRUM</h1>
+            <h2 class="text-xl text-gray-600">JUNIOR PROGRAMMER</h2>
+            <p class="text-gray-600">Email: nafisamarceniapurbaningrum@gmail.com | Telepon: 0812-5918-2522</p>
+            <p class="text-gray-600">Tempat, Tanggal Lahir: Wonogiri, 15 Maret 2008</p>
+            <p class="text-gray-600">Alamat: Pengkol Wates RT/RW 04/08 Jatiroto Wonogiri</p>
+        </div>
+        <div class="mt-6" id="tentang-saya">
+            <h2 class="text-2xl font-bold mb-4">Tentang Saya</h2>
+            <p class="text-gray-700">
+                Namaku Nafisa sering dipanggil Pisa. Anak tunggal dari kedua orang tuaku. 
+                Saat ini aku masih menjadi seorang pelajar di SMKN 1 JATIROTO dan mengambil salah satu jurusan yaitu Pengembangan Perangkat Lunak
+                Dan Gim (PPLG). 
+                Selama dikelas XIPPLG1 saya membuat banyak projek dari aplikasi Neatbeans dan Visual Code Studio.
+            </p>
+        </div>
+        <div class="mt-6" id="Makananku">
+            <h2 class="text-2xl font-bold mb-4">Makananku</h2>
+            <img alt="" height="220" src="fav.jpg" width="220"/>
+            <br>
+            <div class="mt-6" id="Minumanku">
+                <h2 class="text-2xl font-bold mb-4">Minumanku</h2>
+            <img alt="" height="220" src="esssss.jpg" width="220"/>
+            <br>
+            <h2 class="text-2xl font-bold mb-4">Bahasa</h2>
+            <ul class="list-disc list-inside text-gray-700">
+                <li>Indonesia</li>
+                <li>Jawa</li>
+            </ul>
+            <br>
+            <h2 class="text-2xl font-bold mb-4">Hoby</h2>
+            <ul class="list-disc list-inside text-gray-700">
+                <li>Menulis</li>
+                <li>Membaca</li>
+                <li>Berolahraga</li>
+
+            </ul>
+        </div>
+        <div class="mt-6" id="keahlian">
+            <h2 class="text-2xl font-bold mb-4">Keahlian Saya</h2>
+            <h2 class="text-2xl font-bold mb-4">Aplikasi</h2>
+            <table class="w-full border-collapse">
+                <thead>
+                    <tr class="bg-blue-300 text-white">
+                        <th class="border p-2">Skill</th>
+                        <th class="border p-2">Level</th>
+                        <th class="border p-2">Presentase</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="border p-2">Visual Studio Code</td>
+                        <td class="border p-2">Junior</td>
+                        <td class="border p-2 text-center">
+                            <span class="inline-block w-10 h-10 rounded-full bg-blue-300 text-white leading-10">69,23%</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="border p-2">Neatbeans</td>
+                        <td class="border p-2">Junior</td>
+                        <td class="border p-2 text-center">
+                            <span class="inline-block w-10 h-10 rounded-full bg-blue-300 text-white leading-10">87,7%</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="border p-2">Replit</td>
+                        <td class="border p-2">Junior</td>
+                        <td class="border p-2 text-center">
+                            <span class="inline-block w-10 h-10 rounded-full bg-blue-300 text-white leading-10">73,08%</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="border p-2">Canva</td>
+                        <td class="border p-2">Junior</td>
+                        <td class="border p-2 text-center">
+                            <span class="inline-block w-10 h-10 rounded-full bg-blue-300 text-white leading-10">26,67%</span>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="mt-6" id="additional-skills">
+            <h2 class="text-2xl font-bold mb-4">Bahasa Pemrograman</h2>
+            <table class="w-full border-collapse">
+                <thead>
+                    <tr class="bg-blue-300 text-white">
+                        <th class="border p-2">Skill</th>
+                        <th class="border p-2">Level</th>
+                        <th class="border p-2">Presentase</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="border p-2">HTML</td>
+                        <td class="border p-2">Junior</td>
+                        <td class="border p-2 text-center">
+                            <span class="inline-block w-10 h-10 rounded-full bg-blue-300 text-white leading-10">69,23%</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="border p-2">JAVA</td>
+                        <td class="border p-2">Junior</td>
+                        <td class="border p-2 text-center">
+                            <span class="inline-block w-10 h-10 rounded-full bg-blue-300 text-white leading-10">87,7%</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="border p-2">C++ </td>
+                        <td class="border p-2">Junior</td>
+                        <td class="border p-2 text-center">
+                            <span class="inline-block w-10 h-10 rounded-full bg-blue-300 text-white leading-10">73,08%</span>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="mt-6" id="pengalaman-kerja">
+            <h2 class="text-2xl font-bold mb-4">Pengalaman Dan Pendidikan Sebelumnya</h2>
+            <table class="w-full border-collapse">
+                <thead>
+                    <tr class="bg-blue-300 text-white">
+                        <th class="border p-2">Pengalaman</th>
+                        <th class="border p-2">Pendidikan Sebelumnya</th>
+                        <th class="border p-2">Tahun</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="border p-2 text-center"></td>
+                        <td class="border p-2">
+                            <strong>TK MENUR</strong>
+                            <ul class="list-disc list-inside">
+                                <li>Belajar dasar-dasar pendidikan</li>
+                            </ul>
+                        </td>
+                        <td class="border p-2 text-center">2013 - 2014</td>
+                    </tr>
+                    <tr>
+                        <td class="border p-2 text-center">PADA SAAT 17 AGUSTUS 2023</td>
+                        <td class="border p-2">
+                            <strong>SDN 2 PENGKOL</strong>
+                            <ul class="list-disc list-inside">
+                                <li>PADA SAAT KELAS 4 SAYA PERNAH MENGIKUTI KEGIATAN PESTA SIAGA</li>
+                                <li>SAAT KELAS 6 SAYA MENGIKUTI KEGIATAN PERKEMAHAN/PERPEGAK</li>
+                                <li>PADA KELAS 5 SAYA MENGIKUTI LOMBA LARI</li>
+                            </ul>
+                        </td>
+                        <td class="border p-2 text-center">2014 - 2020</td>
+                    </tr>
+                    <tr>
+                        <td class="border p-2 text-center">BERTUGAS: SEBAGAI PASUKAN 17</td>
+                        <td class="border p-2">
+                            <strong>SMPN 2 JATIROTO</strong>
+                            <ul class="list-disc list-inside">
+                                <li>SAYA MENGIKUTI KEGIATAN FUTSAL DAN PBB SAAT CLASSMEET</li>
+                            </ul>
+                        </td>
+                        <td class="border p-2 text-center">2020 - 2023</td>
+                    </tr>
+                    <tr>
+                        <td class="border p-2 text-center"></td>
+                        <td class="border p-2">
+                            <strong>SMKN 1 JATIROTO</strong>
+                            <ul class="list-disc list-inside">
+                                <li>JURUSAN PPLG (PERKEMBANGAN PERANGKAT LUNAK DAN GIM)</li>
+                            </ul>
+                        </td>
+                        <td class="border p-2 text-center">2023 - 2026</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="mt-6" id="contact">
+            <h2 class="text-2xl font-bold mb-4">Contact</h2>
+            <form>
+                <label class="block text-gray-700 mb-2" for="name">Nama:</label>
+                <input class="w-full p-2 border border-gray-300 rounded mb-4" id="name" name="name" required="" type="text"/>
+                <label class="block text-gray-700 mb-2" for="email">Email:</label>
+                <input class="w-full p-2 border border-gray-300 rounded mb-4" id="email" name="email" required="" type="email"/>
+                <label class="block text-gray-700 mb-2" for="phone">Nomor Telepon:</label>
+                <input class="w-full p-2 border border-gray-300 rounded mb-4" id="phone" name="phone" required="" type="tel"/>
+                <label class="block text-gray-700 mb-2" for="message">Pesan:</label>
+                <textarea class="w-full p-2 border border-gray-300 rounded mb-4" id="message" name="message" required="" rows="4"></textarea>
+                <button class="bg-blue-300 text-white p-2 rounded hover:bg-blue-400" type="submit">Kirim</button>
+            </form>
+        </div>
+        <h2 class="text-2xl font-bold mb-4">PROJEK SAYA</h2>
+        <div id="project">
+            <div>
+                <h2 class="text-xl text-gray-600">JAVA</h2>
+                <img alt="Java project screenshot" height="220" src="image.png" width="220"/>
+            </div>
+            <div>
+                <h2 class="text-xl text-gray-600">HTML</h2>
+                <img alt="HTML project screenshot" height="220" src="VCS.png" width="220"/>
+            </div>
+            <div>
+                <h2 class="text-xl text-gray-600">C++</h2>
+                <img alt="C++ project screenshot" height="220" src="repplit baru.jpg" width="220"/>
+            </div>
+            <div>
+                <h2 class="text-xl text-gray-600">CANVA</h2>
+                <img alt="Canva project screenshot" height="220" src="CANVANRU.jpg" width="220"/>
+            </div>
+        </div>
+        <div class="mt-6 text-center">
+            <a class="bg-blue-300 text-white p-2 rounded hover:bg-blue-400" href="https://drive.google.com/drive/folders/1vzY88nxGTRDhr7DRUzip07bcIG57YPJi?usp=sharing" target="_blank">Klik disini untuk membuka link</a>
+        </div>
+        <div class="mt-6 text-center">
+            <h2 class="text-2xl font-bold mb-4">Social Media</h2>
+            <a class="text-blue-300 text-2xl mx-2 hover:text-blue-400" href="https://www.instagram.com/lapisaanjy?igsh=MXZlem11NDJ4aWtxaA==" target="_blank">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a class="text-blue-300 text-2xl mx-2 hover:text-blue-400" href="https://www.tiktok.com/@psspissck?_t=8rskb1A6iS9&amp;_r=1" target="_blank">
+                <i class="fab fa-tiktok"></i>
+            </a>
+            <a class="text-blue-300 text-2xl mx-2 hover:text-blue-400" href="mailto:nafisamarceniapurbaningrum@gmail.com" target="_blank">
+                <i class="fas fa-envelope"></i>
+            </a>
+            <a class="text-blue-300 text-2xl mx-2 hover:text-blue-400" href="https://wa.me/qr/SRMAZCPCEIDFN1" target="_blank">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+        </div>
+        <br/>
+        <p align="center">©Copyright 2024 by pisa. All rights saya.</p>
+    </div>
+</body>
+</html>

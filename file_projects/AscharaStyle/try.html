@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CV Arinda</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      overflow-y: auto; 
+      background: linear-gradient(135deg, #f7e6d9, #e4e4e4); 
+    }
+ 
+    .background-decor {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+    }
+ 
+    .circle {
+      position: absolute;
+      border-radius: 50%;
+      opacity: 0.2;
+    }
+ 
+    .circle.circle-1 {
+      width: 300px;
+      height: 300px;
+      background: #14213d;
+      top: -50px;
+      left: -50px;
+    }
+ 
+    .circle.circle-2 {
+      width: 200px;
+      height: 200px;
+      background: #ffcf83;
+      bottom: 50px;
+      right: 50px;
+    }
+ 
+    .circle.circle-3 {
+      width: 150px;
+      height: 150px;
+      background: #e63946;
+      bottom: 200px;
+      left: 100px;
+    }
+ 
+    table {
+      width: 100%;
+      max-width: 1200px; 
+      margin: 20px auto;
+      border-collapse: collapse;
+      box-shadow: 0 0 10px #5c5c5c(0, 0, 0, 0.1);
+      background-color: #cdc6c3;
+      position: relative;
+      border-radius: 5%;
+    }
+ 
+    td {
+      vertical-align: top;
+    }
+ 
+    .left-section {
+      width: 50%;
+      background-color: #c1abad;
+      color: #623a18;
+      padding: 20px;
+      box-sizing: border-box;
+      border-radius: 5%;
+    }
+ 
+    .right-section {
+      width: 65%;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+ 
+    .profile-picture {
+      width: 120px;
+      height: 120px;
+      background-color: #ffffff;
+      border-radius: 50%;
+      margin: 0 auto 20px;
+      display: block;
+    }
+ 
+    h2, h3 {
+      margin: 0 0 10px;
+    }
+ 
+    .contact, .skills, .language, .about, .work-experience, .education {
+      background-color: #efede7; 
+      border: 1px solid #ccc;    
+      border-radius: 5px;        
+      padding: 15px;            
+      margin-bottom: 20px;        
+      }
+
+    h3 {
+      margin-top: 0;             
+      font-size: 18px;
+      color: #333;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    ul li {
+      margin-bottom: 8px;
+    }
+
+    .skill-bar-container {
+      background-color: #ddd;
+      border-radius: 5px;
+      height: 10px;
+      width: 100%;
+      margin-top: 5px;
+      overflow: hidden;
+    }
+
+    .skill-bar {
+      height: 100%;
+      border-radius: 5px;
+    }
+
+    .skill-1 { background-color: #c1abad; width: 45.85%; } 
+    .skill-2 { background-color: #c1abad; width: 13.69%; } 
+    .skill-3 { background-color: #c1abad; width: 30%; }
+    .skill-4 { background-color: #c1abad; width: 90%; } 
+
+    .experience img {
+      width: 150px;  
+      height: auto;  
+      border-radius: 5%;
+    }
+
+    .image-container {
+      display: flex;
+      gap: 10px; 
+    }
+
+    .image-container img {
+      width: 40%; 
+      border-radius: 5px; 
+    }
+    
+  </style>
+</head>
+
+<body>
+  <div class="background-decor">
+    <div class="circle circle-1"></div>
+    <div class="circle circle-2"></div>
+    <div class="circle circle-3"></div>
+  </div>
+
+  <table>
+    <tr>
+      <td class="left-section">
+        <img src=" " alt="Profile Picture" class="profile-picture">
+        <h2 style="font-family:'Times New Roman', Times, serif; color: #ffffff;">ARINDA PUTRI ANJANI</h2>
+        <p style="font-size: small; color: #ffffff;">Pengembangan Perangkat Lunak dan Gim</p>
+        <hr width="500">
+        <div><p class="job-title"><h3>PROFILE</h3></p></div>
+
+        <div class="contact">
+          <h3>Personal Data</h3>
+            <p><strong>Fullname: </strong>Arinda Putri Anjani </p>
+            <P><strong>Place, date of birth:</strong> Wonogiri, 5 Mei 2008</p>
+            <p><strong>Gender:</strong> Woman</p>
+            <p><strong>citizenship:</strong> Indonesia</p>
+          </div>
+
+        <div class="contact">
+            <h3>Contact</h3>
+            <p>📞 +62 857 8676 1684</p>
+            <P>🌐 <a href="https://drive.google.com/drive/folders/1_kv6XdZtPfUV9lH0Uiz83nHIfZK_gkIc">www.arin.com</a></p>
+            <p>📧 adoreayinn@gmail.com</p>
+            <p>🏠 Manggis RT.01/RW.04, Sanggrong, Jatiroto, Wonogiri, Jawa Tengah</p>
+        </div>
+
+        <div class="skills">
+          <h3>Skills Competency</h3>
+            <ul>
+              <li>
+              Canva
+              <div class="skill-bar-container">
+                <div class="skill-bar skill-1"></div>
+              </div>
+            </li>
+            <li>
+              Netbeans
+              <div class="skill-bar-container">
+                <div class="skill-bar skill-2"></div>
+              </div>
+            </li>
+            <li>
+              Replit
+              <div class="skill-bar-container">
+                <div class="skill-bar skill-3"></div>
+              </div>
+            </li>
+            <li>
+              VS Code
+                <div class="skill-bar-container">
+                  <div class="skill-bar skill-4"></div>
+                </div>
+              </li>
+          </ul>
+        </div>
+
+        <div class="skills">
+          <h3>Skills</h3>
+            <ul>
+              <li>
+                Graphic Design
+                <div class="skill-bar-container">
+                  <div class="skill-bar skill-1"></div>
+                </div>
+              </li>
+              <li>
+                Java
+                <div class="skill-bar-container">
+                  <div class="skill-bar skill-2"></div>
+                </div>
+              </li>
+              <li>
+                c++
+                <div class="skill-bar-container">
+                  <div class="skill-bar skill-3"></div>
+                </div>
+              </li>
+              <li>
+                HTML
+                <div class="skill-bar-container">
+                  <div class="skill-bar skill-4"></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </td>
+     
+        <td class="right-section">
+          <div class="about">
+            <h3>About Me</h3>
+            <p>Nama saya Arinda Putri Anjani, saya adalah siswa kelas 11 SMK Negeri 1 Jatiroto dengan jurusan Pengembangan Perangkat Lunak dan Gim (PPLG). Ke depannya, saya berencana 
+            untuk terus mendalami desain grafis dan berharap bisa berkarir di industri kreatif sebagai desainer grafis atau di bidang yang menggabungkan teknologi dan desain.</p>
+        </div>
+        
+        <div class="work-experience">
+          <h3>School History</h3>
+          <p><strong>TK Melati </strong>(2013 - 2015) </p>
+          <p><strong>SD NEGERI 1 SANGGRONG </strong>(2015 - 2020) </p>
+          <p><strong>SMP NEGERI 2 JATIROTO </strong>(2020 - 2023) </p>
+        </div>
+        
+        <div class="education">
+          <h3>Education</h3>
+          <p><strong>SMK NEGERI 1 JATIROTO</strong> - Jl. Tut Wuri Handayani, Sambiroto Kidul, Jatiroto, Kec. Jatiroto, Kabupaten Wonogiri, Jawa Tengah 57692</p>
+          <p><strong>Estimated Pass</strong>: 2023 -2025</p>
+        </div>
+
+        <div class="experience">
+            <h3>Experience</h3>
+            <p>Di sekolah, saya mempelajari berbagai keterampilan di bidang pengembangan perangkat lunak, seperti pemrograman, desain aplikasi, dan analisis sistem.</p>
+          
+            <p><strong>Desain Interface</strong></p>
+            <div class="image-container">
+              <img src="C:\Users\rplsk\Downloads\image(1).png" alt="Desain 1">
+              <img src="C:\Users\rplsk\Downloads\gambar.png" alt="Desain 2">
+            </div>
+          
+            <p><strong>Coding</strong></p>
+            <div class="image-container">
+              <img src="C:\Users\rplsk\Downloads\Media(1).jpg" alt="Coding 1">
+              <img src="C:\Users\rplsk\Downloads\gambar(2).png" alt="Coding 2">
+            </div>
+            
+            <p><strong>DKV</strong></p>
+            <div class="image-container">
+              <img src="C:\Users\rplsk\Downloads\WhatsApp Image 2024-12-05 at 10.05.26 AM.jpeg" alt="DKV 1">
+              <img src="C:\Users\rplsk\Downloads\WhatsApp Image 2024-12-05 at 10.05.41 AM.jpeg" alt="DKV 2">
+            </div>
+          </div>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>

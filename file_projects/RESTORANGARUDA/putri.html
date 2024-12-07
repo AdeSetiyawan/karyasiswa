@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV</title>
+    <style>
+
+        html{
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            flex-direction: column;
+        }
+
+
+        /* Container for CV Content */
+        .container {
+            width: 800px;
+            background-color: white;
+            padding: 10px;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+            border-radius: 8px;
+            margin-top: 10px; 
+        }
+
+        .nav {
+            width: 800px;
+            background-color: #0d4781;
+            color: white;
+            padding: 10px 10px;
+            border-radius: 8px;
+            position: fixed;
+            top: 0;
+            display: flex;
+            justify-content: space-between;
+            z-index: 10;
+        }
+
+        .nav a {
+            font-size: 14px;
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: bold;
+
+        }
+
+        .left-section {
+            background-color: #41aad3;
+            color: white;
+            padding: 30px;
+            width: 45%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .left-section img {
+            width: 250px;
+            height: 250px;
+            background-color: white;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+
+
+        @keyframes glow {
+            from {
+                text-shadow: 0 0 5px #3fa2cf, 0 0 10px #3fa2cf, 0 0 20px #3fa2cf, 0 0 30px #3fa2cf;
+            }
+
+            to {
+                text-shadow: 0 0 10px #3fa2cf, 0 0 20px #3fa2cf, 0 0 30px #3fa2cf, 0 0 40px #3fa2cf;
+            }
+        }
+
+        .personaldata,
+        .contact,
+        .skills,
+        .portfolio {
+            width: 100%;
+            text-align: left;
+            margin-top: 15px;
+        }
+
+        .right-section {
+            padding: 30px;
+            width: 55%;
+        }
+
+        .about,
+        .education,
+        .work-exp,
+        .hoby, 
+        .work {
+            margin-bottom: 20px;
+            line-height: 2;
+            text-align: justify;
+        }
+
+        
+        h2 {
+            color: #073997;
+            border-bottom: 2px solid;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+        }
+
+        .education div,
+        .work-exp div {
+            margin-bottom: 10px;
+        }
+
+        .education p,
+        .work-exp p {
+            margin-left: 0px;
+            line-height: 1;
+        }
+
+        .skills p {
+            margin-left: 20px;
+        }
+
+        .skills p::before {
+            content: '✦ ';
+        }
+
+        /* Progress bar styling */
+        .progress-bar {
+            width: 100%;
+            background-color: #e0e0e0;
+            border-radius: 5px;
+            margin: 5px 0;
+        }
+
+        .progress-bar div {
+            height: 10px;
+            border-radius: 5px;
+            position: relative;
+            text-align: right;
+            padding-right: 5px;
+            color: white;
+            font-weight: bold;
+            font-size: 10px;
+        }
+
+        .canva {
+            width: 79%;
+            background-color: #0b5c2d;
+        }
+
+        .replit {
+            width: 78%;
+            background-color: #2137b8;
+        }
+
+        .netbeans {
+            width: 70%;
+            background-color: #694104;
+        }
+
+        .vscode {
+            width: 60%;
+            background-color: #720f08;
+        }
+
+        .phyton {
+            width: 78%;
+            background-color: #2137b8;
+        }
+
+        .java {
+            width: 70%;
+            background-color: #694104;
+        }
+
+        .html {
+            width: 60%;
+            background-color: #720f08;
+        }
+
+        /* Footer Styling */
+        footer {
+            width: 810px;
+            background-color: #003366;
+            color: white;
+            text-align: center;
+            padding: 8px;
+            margin-top:0px;
+            border-radius: 8px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="nav">
+        <a href="indeks.html">Home</a>
+        <a href="#about">Tentang Saya</a>
+        <a href="#personaldata">Data Pribadi</a>
+        <a href="#education">Pendidikan</a>
+        <a href="#contact">Kontak</a>
+        <a href="#skill">Keahlian</a>
+        <a href="#work-exp">Pengalaman</a>
+        <a href="#hoby">Hobi</a>
+        <a href="#work">Karya</a>
+    </div>
+
+    <!-- Combined Navigation and Profile Section -->
+    <div class="container">
+        <div class="left-section">
+            <img src="putriazzr.jpg" alt="">
+            <h2 class="name-title">Nur Rohmah Putri A</h2>
+            <div class="personaldata" id="personaldata">
+                <h3>Data Pribadi</h3>
+                <p>📅 Wonogiri, 15 Agustus 2008</p>
+                <p>🏠 Sudimoro, Tremes, Sidoharjo</p>
+                <p>🏫 SMK Negeri 1 Jatiroto</p>
+            </div>
+            <div class="contact" id="contact">
+                <h3>Kontak</h3>
+                <p>📞 085293261030</p>
+                <p>✉️ <a href="mailto:nurrohmahputri048@gmail.com" style="color: rgb(0, 47, 255);">nurrohmahputri048@gmail.com</a></p>
+            </div>
+            <div class="skills" id="skill">
+                <h3>Keahlian</h3>
+                <h4>Aplikasi</h4>
+                <p>Canva</p>
+                <div class="progress-bar">
+                    <div class="canva">79%</div>
+                </div>
+                <p>Replit</p>
+                <div class="progress-bar">
+                    <div class="replit">78%</div>
+                </div>
+                <p>NetBeans</p>
+                <div class="progress-bar">
+                    <div class="netbeans">70%</div>
+                </div>
+                <p>VSCode</p>
+                <div class="progress-bar">
+                    <div class="vscode">60%</div>
+                </div>
+
+                <h4>Bahasa Pemrograman</h4>
+                <p>C++</p>
+                <div class="progress-bar">
+                    <div class="phyton">78%</div>
+                </div>
+                <p>Java</p>
+                <div class="progress-bar">
+                    <div class="java">70%</div>
+                </div>
+                <p>html</p>
+                <div class="progress-bar">
+                    <div class="html">60%</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="right-section">
+            <div class="about" id="about">
+                <h2>Tentang Saya</h2>
+                <p>Saya merupakan siswi SMK Negeri 1 Jatiroto kelas XI PPLG 3. Belajar dan berkembang adalah prinsip saya. Sebagai siswa PPLG, saya ingin menciptakan sesuatu yang tidak hanya bermanfaat, tapi juga berkesan. Saya percaya bahwa setiap tantangan adalah peluang untuk tumbuh, dan setiap kesalahan adalah langkah menuju kesempurnaan. Dengan tekad dan kreativitas, saya ingin menjadi seseorang yang mampu memberikan kontribusi nyata di dunia teknologi dan memberikan inspirasi bagi orang-orang di sekitar saya.</p>
+            </div>
+
+            <div class="education" id="education">
+                <h2>Pendidikan</h2>
+                <div>
+                    <h3>2013</h3>
+                    <p>TK Al-Hidayah</p>
+                </div>
+                <div>
+                    <h3>2014-2019</h3>
+                    <p>SD Negeri 2 Sidoharjo</p>
+                </div>
+                <div>
+                    <h3>2020-2023</h3>
+                    <p>SMP Negeri 1 Sidoharjo</p>
+                </div>
+            </div>
+
+            <div class="work-exp" id="work-exp">
+                <h2>Pengalaman</h2>
+                <div>
+                    <p>Juara 1 lomba Mapsi</p>
+                </div>
+            </div>
+            <div class="hoby" id="hoby">
+                <h2>Hobi</h2>
+                <p>🎵 Mendengarkan Musik</p>
+                <p>📚 Membaca</p>
+            </div>
+            <div class="work" id="work">
+                <h2>Karya</h2>
+                <a href="https://drive.google.com/drive/folders/12TJimLVw-McIR5iDU7imLp8W0-EYJLKx"><img src="punyaputri.jpg" width="60%" height="70%"></a>
+                <p>Klik gambar untuk melihat karya terbaik</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Nur Rohmah Putri A. All Rights Reserved.</p>
+    </footer>
+</body>
+
+</html>

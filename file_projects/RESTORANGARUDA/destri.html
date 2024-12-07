@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Destri</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <style>
+        .teko-uniquifier {
+  font-family: "Teko", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+ 
+.navbar {
+  background-color: rgb(155, 155, 155);
+  font: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1px 1px;
+}
+ 
+.navbar a {
+  color: rgb(0, 119, 199);
+  text-decoration: none;
+  padding: 1px 1px;
+}
+.navbar a:hover {
+  background-color: #575757;
+  border-radius: 5px;
+}
+ 
+.menu {
+  display: flex;
+  gap: 10px;
+}
+ 
+ * {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   
+ }
+ 
+ body {
+    background-color:rgb(124, 130, 136);
+    font-size: 15px;
+    line-height: 22px;
+    color: rgb(5, 4, 4);
+ }
+ 
+ .container {
+    width: 800px;
+    height: auto ;
+    display: flex;
+    margin: 50px auto;
+ }
+ 
+ .container .box-left {
+    width: 300px;
+    background-color: rgb(19, 173, 173);
+ }
+ 
+ .circle-photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+ 
+.circle-photo img {
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+ .container .box-left .profile {
+    width: 100%;
+    height: 150px;
+    background-color: rgb(63, 66, 66);
+ }
+ 
+ .container .box-left .profile img {
+    width: 100%;
+    height: 170%;
+ }
+ 
+ .container .box-left .content {
+    padding: 0 25px;
+ }
+ 
+ .container .resume-item {
+    padding: 25px 0;
+    border-bottom: 2px rgb(147, 160, 160) ;
+ }
+ 
+ .container .title {
+    margin-bottom: 35px;
+ }
+ 
+ .container .box-left .bold {
+    color: white;
+ }
+ 
+ .container .box-left .regular {
+    color: white;
+ }
+ 
+ .bold {
+    font-weight: 100;
+    font-size: 20px;
+    text-transform: uppercase;
+ }
+ 
+ .container .box-left ul li {
+   display: flex;
+   margin-bottom: 10px;
+   align-items: center;
+ }
+ 
+ .container .box-left ul li:last-child{
+   margin-bottom: 0;
+ }
+ 
+ .container .box-left ul li.data {
+   color: white;
+ }
+ 
+ .container .box-left .resume-skills ul li {
+   display: flex;
+   margin-bottom: 10px;
+   color:rgb(0, 0, 0);
+   justify-content: space-between;
+   align-items: center;
+ }
+ 
+ .container .box-left .resume-skills ul li .skill-name {
+   width: 50%;
+ }
+ 
+ .container .box-left .resume-skills ul li .skill-progress {
+   width: 70%;
+   margin: 0 5px;
+   height: 5px;
+   background-color: beige;
+   position: relative;
+ }
+ 
+ .container .box-left .resume-skills ul li .skill-progress span {
+   position: absolute;
+   top: 0;
+   left: 0;
+   height: 100%;
+   background-color: rgb(235, 13, 50);
+ }
+ 
+ .container .box-left .resume-skills ul li .skill-parcent {
+   width: 15%;
+ }
+ 
+ .container .box-left .resume-sosial .semi-bold {
+   color: beige;
+   margin-bottom: 3px;
+ }
+ 
+ /* right desain */
+ 
+ .container .box-right {
+   width: 600px;
+   background-color: #fff;
+   padding: 25px;
+ }
+ 
+ .container .box-left .resume-item:last-child,
+ .container .box-right .resume-item:last-child {
+   border-bottom: 0px;
+ }
+ 
+ .container .box-right .bold {
+   color: #333e51;
+ }
+ 
+ .container .box-right .resume-item img {
+  width: 35%;
+  height: 20%;
+}
+ 
+ .container .box-right ul li {
+   position: relative;
+ }
+ 
+ .container .box-right ul li .date {
+   font-size: 16px;
+   font-weight: 500;
+   margin-bottom: 15px;
+ }
+ 
+ .container .box-right ul li .info {
+   margin-bottom: 20px;
+ }
+ 
+ .container .box-right ul li:last-child .info {
+   margin-bottom: 0;
+ }
+ 
+ .container .box-right .resume-work ul,
+ .container .box-right .resume-education ul {
+   padding-left: 40px;
+   overflow: hidden;
+ }
+ 
+ .container .box-right .resume-work ul li::before,
+ .container .box-right .resume-education ul li::before {
+   content: "";
+   position: absolute;
+   top: 5px;
+   left: -25px;
+   width: 6px;
+   height: 6px;
+   border-radius: 50%;
+   border: 2px solid #333e51;
+ }
+ 
+ .container .box-right .resume-work ul li::after,
+ .container .box-right .resume-education ul li::after {
+   content:"";
+   position: absolute;
+   background-color: #333e51;
+   top: 14px;
+   left: -21px;
+   width: 2px;
+   height: 115px;
+ }
+ 
+ footer {
+  text-align: center;
+  padding: 1px 0;
+  background-color: rgb(155, 155, 155);
+  color: rgb(255, 255, 255);
+  position: relative;
+  bottom: 0;
+  width: 100%;
+ }
+ 
+        .custom-icon {
+            font-size: 15px;
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+ 
+    
+    <div class="container">
+ 
+        <div class="box-left">
+            <div class="profile">
+                <div class="circle-photo">
+                <img src="des.jpg" alt="">
+                </div>
+            </div>
+            <div class="content">
+                <div class="resume-item">
+                    <div class="title">
+                        <section id="data diri">
+                        <p class="bold"> DESTRI ANA BIDANI</p>
+                        <P class="regular"> Pelajar </P>
+                    </div>
+                    <ul>
+                        <li>
+                            Tempat Lahir : Wonogiri <br>
+                            Tanggal Lahir : 24 Juni 2008 <br>
+                            Alamat : Pesido, Jatiroto, Wonogiri <br>
+                            Jenis Kelamin : Perempuan <br>
+                            Agama : Islam <br>
+                            Status : Pelajar
+                        </li>
+                    </ul>
+                    </section>
+                </div>
+ 
+                <div class="resume-item resume-skills">
+                    <div class="title">
+                        <section id="bahasa">
+                        <p class="bold">Bahasa Pemrograman</p>
+                    </div>
+                    <ul>
+                        <li>
+                            <div class="skill-name">
+                                HTML CSS
+                            </div>
+                            <div class="skill-progress">
+                                <span style="width: 26%;"></span>
+                            </div>
+                            <div class="skill-parcent">26%</div>
+                        </li>
+                        <li>
+                            <div class="skill-name">
+                                JAVA
+                            </div>
+                            <div class="skill-progress">
+                                <span style="width: 62%;"></span>
+                            </div>
+                            <div class="skill-parcent">62%</div>
+                        </li>
+                        <li>
+                            <div class="skill-name">
+                                C++
+                            </div>
+                            <div class="skill-progress">
+                                <span style="width: 10%;"></span>
+                            </div>
+                            <div class="skill-parcent">10%</div>
+                        </li>
+                    </ul>
+                </section >
+                </div>
+ 
+                <div class="resume-item resume-skills">
+                    <div class="title">
+                        <section id="aplikasi">
+                        <p class="bold">Aplikasi</p>
+                    </div>
+                    <ul>
+                        <li>
+                            <div class="skill-name">
+                                VScode<br>
+                            </div>
+                            <div class="skill-progress">
+                                <span style="width: 26%;"></span>
+                            </div>
+                            <div class="skill-parcent">26%</div><br>
+                        </li>
+                        <li>
+                            <div class="skill-name">
+                                Netbeans <br>
+                            </div>
+                            <div class="skill-progress">
+                                <span style="width: 62%;"></span>
+                            </div>
+                            <div class="skill-parcent">62%</div>
+                        </li>
+                        <li>
+                            <div class="skill-name">
+                                Replit<br>
+                            </div>
+                            <div class="skill-progress">
+                                <span style="width: 10%;"></span>
+                            </div>
+                            <div class="skill-parcent">10%</div>
+                        </li>
+                        <li>
+                            <div class="skill-name">
+                                Canva<br>
+                            </div>
+                            <div class="skill-progress">
+                                <span style="width: 10%;"></span>
+                            </div>
+                            <div class="skill-parcent">10%</div>
+                        </li>
+                    </ul>
+                </section>
+                </div>
+ 
+                <div class="resume-item resume-sosial">
+                    <div class="title">
+                        <section id="contact">
+                        <p class="bold">Contact</p>
+                    </div>
+                    <ul>
+                        <li>
+                            <i class="fas fa-phone custom-icon"></i>
+                            <p>+62 821 1747 7581</p>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope custom-icon"></i>
+                            <p>destribidani@gmail.com</p>
+                        </li>
+                    </ul>
+                        </section>
+                </div>
+            </div>
+        </div>
+ 
+        <div class="box-right">
+            <div class="navbar">
+                <div class="menu">
+                    <a href="indeks.html">Home </a>
+                    <a href="#data diri">Data Diri </a>
+                    <a href="#bahasa">Bahasa </a>
+                    <a href="#aplikasi">Aplikasi</a>
+                    <a href="#contact">Contact </a>
+                    <a href="#tentang saya">Tentang </a>
+                    <a href="#pengalaman">Pengalaman </a>
+                    <a href="#pendidikan">Pendidikan </a>
+                </div>
+            </div>
+   
+            <div class="resume-item">
+                <div class="title">
+                    <section id="tentang ">
+                    <p class="bold">Tentang Saya</p>
+                </div>
+                <p>
+                    Saya adalah seorang individu yang berkomitmen tinggi, memiliki motivasi kuat, dan mampu bekerja baik
+                    secara mandiri maupun dalam tim.
+                    Dengan latar belakang pendidikan dan pengalaman di bidang pengembangan perangkat lunak dan gim saat
+                    berada di bangku sekolah Menengah Kejuruan,
+                    saya selalu berusaha memberikan hasil terbaik dalam setiap proyek yang saya tangani.
+                    Saya memiliki keterampilan C++, HTML, CSS, Java, desain, dsb.
+                    dan senantiasa ingin terus belajar dan berkembang.
+                </p>
+            </section>
+            </div>
+ 
+            <div class="resume-item resume-work">
+                <div class="title">
+                    <section id="pengalaman">
+                    <p class="bold">Pengalaman</p>
+                </div>
+                <ul>
+                    <li>
+                        <div class="date"> November 2024</div>
+                        <div class="info">
+                            <p class="semi-bold">Membuat Aplikasi</p>
+                            <p>Pada waktu itu saya pernah membuat sebuah aplikasi dengan menggunakan bahasa pemrograman
+                                java pada aplikasi Netbeans</p>
+                            <img src="java.png">
+                            <a href="https://drive.google.com/drive/folders/18ZoLfbSlKWkcwaYrXyI5hCNmdyPlix9c?usp=sharing" style="text-decoration: none;">
+                                <button
+                                    style="background-color: rgb(17, 229, 236); color: black; padding: 5px 10px; border: none; border-radius: 5px; cursor: pointer;">
+                                    View Project
+                                </button>
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="date">2023-2024</div>
+                        <div class="info">
+                            <p class="semi-bold">Project Lain</p>
+                            <p>Menyelesaikan berbagai projek dengan bahasa pemrograman HTML CSS, JAVA, C++, juga desain
+                                web</p>
+                                <img src="c++.jpg">
+                            <a href="https://drive.google.com/drive/folders/1-JyPFAsPGYvP_Mpd3nVY7ewZD5HYfyaN?usp=sharing" style="text-decoration: none;">
+                                <button
+                                    style="background-color: rgb(17, 229, 236); color: black; padding: 5px 10px; border: none; border-radius: 5px; cursor: pointer;">
+                                    View Project
+                                </button>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+                 </section>
+            </div>
+ 
+            <div class="resume-item resume-education">
+                <div class="title">
+                    <section id="pendidikan">
+                    <p class="bold">Pendidikan</p>
+                </div>
+                <ul>
+                    <li>
+                        <div class="date">2013-2014</div>
+                        <div class="info">
+                            <p class="semi-bold">TK SRI REJEKI</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="date">2014-2020</div>
+                        <div class="info">
+                            <p class="semi-bold">SD NEGERI 2 Pesido</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="date">2020-2023</div>
+                        <div class="info">
+                            <p class="semi-bold">SMP Negeri 1 Jatiroto</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="date">2023-Sekarang</div>
+                        <div class="info">
+                            <p class="semi-bold">SMK Negeri 1 Jatiroto</p>
+                        </div>
+                    </li>
+                </ul>
+            </pendidikan>
+            </div>
+            <div class="footer">
+                <footer>
+                    <P>&copy; @dstr_ana</P>
+                </footer>
+            </div>
+        </div>
+    </div>
+ 
+</body>
+</html>

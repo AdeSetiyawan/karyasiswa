@@ -1,0 +1,371 @@
+@font-face {
+  font-family: "Alex";
+  src: url("./fonts/Alex_Brush/AlexBrush-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Monserat";
+  src: url("./fonts/Montserrat/Montserrat-VariableFont_wght.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Monserat";
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+header img {
+  width: 30px;
+}
+
+header .top a {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.top,
+.left,
+.rigth {
+  display: flex;
+}
+
+.top {
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  padding: 10px;
+  color: #fff;
+}
+
+.left {
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.rigth {
+  justify-content: flex-end;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.search-bar {
+  padding: 1.5em 2.5em;
+  border-radius: 10px;
+  max-width: 225px;
+  position: relative;
+}
+
+.search-bar input {
+  padding: 10px 15px;
+  border-radius: 1em;
+  border: 2px solid black;
+}
+
+.search-bar img {
+  width: 30px;
+  position: absolute;
+  right: 0;
+  cursor: pointer;
+}
+
+.search-bar label {
+  display: flex;
+  align-items: center;
+}
+
+nav {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 1em;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+  padding: 1em;
+}
+
+nav a:hover {
+  background-color: #f1f1f1;
+}
+
+.home {
+  display: flex;
+}
+
+.home article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #333;
+  color: white;
+  padding: 2em;
+}
+
+h1 {
+  color: gold;
+  font-size: 5rem;
+  font-weight: 100;
+  /* margin-bottom: 0.25em; */
+  font-family: "Alex";
+}
+
+article h2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1.5em 0 0.875em 0;
+  font-size: 2rem;
+  gap: 0.5em;
+  width: 100%;
+}
+
+article h2 span {
+  display: block;
+  background-color: orange;
+  padding: 10px 1em;
+  width: 100%;
+  text-align: center;
+}
+
+article p {
+  text-align: center;
+  margin: 0.875em 0 4em 0;
+}
+
+article button {
+  border: 1px solid white;
+  border-radius: 6px;
+  padding: 7px 7px;
+  color: white;
+  background-color: transparent;
+}
+
+.line {
+  background-color: #f1f1f1;
+  height: 5px;
+  width: 100%;
+  border-radius: 1px;
+}
+
+.line-1 {
+  width: 80%;
+}
+
+.line-2 {
+  width: 50%;
+}
+
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2em 1em;
+  gap: 4em;
+  background-color: #c8c4b9;
+}
+
+.about .image {
+  padding: 2em;
+  border-top: 3px solid #fff;
+  border-left: 3px solid #fff;
+  border-radius: 2px;
+}
+
+.about .image img {
+  height: 180px;
+}
+
+.text-about {
+  width: 650px;
+  border-bottom: 3px solid #fff;
+  border-radius: 2px;
+  padding: 1em;
+  margin-bottom: 2em;
+}
+
+.text-about h2 {
+  width: 100%;
+  display: flex;
+  align-items: start;
+  margin: 1.5em 0 0 0;
+  font-size: 2.5rem;
+}
+
+.line-3 {
+  background-color: black;
+  width: 28%;
+}
+
+.text-about p {
+  text-align: justify;
+  margin-bottom: 25px;
+  font-weight: bold;
+}
+
+.icon-pack a img {
+  width: 30px;
+  margin: 0 0.1em;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 3em 1em;
+}
+
+.product .title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 1.5em;
+  font-weight: bolder;
+  font-size: 1.3rem;
+}
+
+.line-4 {
+  width: 30%;
+  background-color: black;
+}
+
+.product-cards {
+  display: flex;
+  padding: 2em;
+  gap: 2em;
+}
+
+.product-cards .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.25em;
+}
+
+.product-cards .card .shirt {
+  height: 300px;
+}
+
+.product-cards .card h4 {
+  margin-top: 1em;
+}
+
+.product-cards .card p {
+  display: flex;
+  gap: 4px;
+  margin: 0;
+}
+
+.product-cards .card p img {
+  width: 20px;
+}
+
+.product-cards .card h6 {
+  margin-top: 15px;
+  font-size: 1.2rem;
+  color: gold;
+}
+
+.feature {
+  display: flex;
+  padding: 2em 4em;
+  gap: 3em;
+}
+
+.feature .image {
+  padding: 2em;
+  border-top: 3px solid #c8c4b9;
+  border-left: 3px solid #c8c4b9;
+  border-radius: 2px;
+}
+
+.feature .image img {
+  height: 300px;
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 2em 0;
+  gap: 1em;
+}
+
+.skills .skill {
+  width: 300px;
+}
+
+.skills .skill h3 {
+  font-size: 1.8rem;
+  color: goldenrod;
+}
+
+.skills .skill p {
+  text-align: justify;
+  margin: 10px 0;
+}
+
+.skills .skill a {
+  text-decoration: none;
+  color: gold;
+}
+
+.skills .skill a:hover {
+  text-decoration: underline;
+}
+
+footer .logo img {
+  width: 150px;
+  border-radius: 50%;
+}
+
+.foot-text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2em 8em;
+  background-color: #333;
+}
+
+.foot-text h3 {
+  color: white;
+}
+
+.foot-text a {
+  text-decoration: none;
+  color: #c8c4b9;
+}
+
+.foot-text a:hover {
+  text-decoration: underline;
+}
+
+.founder {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25em;
+}
+
+.support {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25em;
+}

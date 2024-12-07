@@ -1,0 +1,484 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poppins", "sans-serif";
+}
+
+body {
+  color: rgb(243, 240, 255);
+  background: #007bff;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 10%;
+  background: rgb(0, 0, 0);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+header nav a {
+  color: #ffffff;
+}
+
+.logo {
+  position: relative;
+  font-size: 25px;
+  color: azure;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.logo::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: rgb(0, 0, 0);
+  animation: showRigth 1s ease forwards;
+  animation-delay: 0.4s;
+}
+
+.navbar a {
+  font-size: 18px;
+  color: azure;
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 35px;
+}
+
+.navbar a:hover,
+.navbar a.active {
+  color: #007bff;
+}
+
+.home {
+  height: 100vh;
+  background: url(luft-removebg-preview.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  padding: 0 10%;
+}
+
+.home-content {
+  max-width: 600px;
+}
+
+.home-content h1 {
+  position: relative;
+  font-size: 56px;
+  font-weight: 700;
+  color: rgb(129, 127, 255);
+  line-height: 1.2;
+}
+.home-content h1::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: #007bff;
+  animation: showRigth 1s ease forwards;
+  animation-delay: 0.1s;
+}
+
+.home-content,
+h3 {
+  position: relative;
+  font-size: 32px;
+  font-weight: 700;
+  color: rgb(245, 245, 245);
+}
+
+.home-content h3::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: #007bff;
+  animation: showRigth 1s ease forwards;
+  animation-delay: 0.4s;
+}
+
+.home-content,
+p {
+  position: relative;
+  font-size: 16px;
+  margin: 20px 0 40px;
+}
+
+.home-content p::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: skyblue;
+  animation: showRigth 1s ease forwards;
+  animation-delay: 1s;
+}
+
+.home-content .btn-box {
+  display: flex;
+  justify-content: space-between;
+  width: 345px;
+  height: 50px;
+}
+
+.btn-button a {
+  text-decoration: none;
+  padding: 7px 14px;
+  border-radius: 8px;
+}
+
+.btn-button .hire {
+  background-color: skyblue;
+  color: #000000;
+  border: 1px solid skyblue;
+}
+
+.btn-button .lets {
+  background-color: #000000;
+  color: skyblue;
+  border: 1px solid skyblue;
+}
+
+.btn-button .hire:hover {
+  background-color: #000000;
+  color: skyblue;
+}
+
+.btn-button .lets:hover {
+  background-color: skyblue;
+  color: #000000;
+}
+
+.home-sci {
+  position: absolute;
+  bottom: 40px;
+  width: 170px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.home-sci a {
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background: transparent;
+  border: 2px solid skyblue;
+  border-radius: 50%;
+  font-size: 20px;
+  color: skyblue;
+  text-decoration: none;
+  z-index: 1;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.home-sci a:hover {
+  color: black;
+}
+
+.home-sci a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: skyblue;
+  z-index: -1;
+  transition: 0.5s;
+}
+
+.home-sci a:hover::before {
+  width: 100%;
+}
+
+.home-imgHover {
+  position: absolute;
+  top: 0;
+  right: 30px;
+  width: 500px;
+  height: 100%;
+  background: transparent;
+  transition: 3s;
+}
+
+/* KEYFRAMES ANIMATION */
+@keyframes showRigth {
+  100% {
+    width: 0;
+  }
+}
+
+.About {
+  display: flexbox;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+  background: var(--second-bg-color);
+  padding-bottom: 6rem;
+}
+
+.about-content {
+  margin-left: 120px;
+}
+
+.heading {
+  font-size: 5rem;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+span {
+  color: var(--main-color);
+}
+
+.about-img {
+  position: relative;
+  width: 200px;
+  border-radius: 50%;
+  display: flex;
+}
+.about-img {
+  margin-left: 570px;
+}
+
+.about-img img {
+  width: 200px;
+  border-radius: 50%;
+  border: 0.2rem solid var(--main-color);
+}
+
+.about-img .circle-spin {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% -50%) rotate(0);
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border-top: 0.2rem solid rgb(151, 32, 32);
+  border-bottom: 0.2rem solid rgb(0, 0, 0);
+  border-left: 0.2rem solid var(--main-color);
+  border-right: 0.2rem solid var(--main-color);
+}
+
+.bar {
+  background-color: #007bff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  text-align: center;
+  width: 80%;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+.skill-bar {
+  width: 100%;
+  background-color: #ddd;
+  border-radius: 25px;
+  margin: 10px 0;
+  height: 30px;
+  overflow: hidden;
+}
+
+.progress {
+  height: 100%;
+  line-height: 30px;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  border-radius: 25px 0 0 25px;
+  background-color: #ac1111; /* Default color, can be changed for different skills */
+}
+
+.container {
+  display: flex;
+  gap: 3em;
+}
+
+.card {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+.container {
+  width: 80%;
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 40px;
+  font-size: 2rem;
+  color: #ffffff;
+}
+
+.card {
+  background-color: white;
+  width: 300px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.card-content h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.card-content p {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.card-content a {
+  text-decoration: none;
+  font-size: 1rem;
+  color: #007bff;
+  border: 2px solid #007bff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.card-content a:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+.contact-item h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+.card-container {
+  display: flex;
+  gap: 20px;
+}
+
+.card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  width: 250px;
+  height: 600px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card {
+  margin-left: 130px;
+}
+
+.content {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #000000;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card:hover .content {
+  opacity: 1;
+}
+
+.card h3 {
+  margin-bottom: 10px;
+  color: #000000;
+}
+
+.card p {
+  color: #000000;
+}
+
+/* Styling untuk footer */
+.footer {
+  background-color: #333;
+  color: white;
+  padding: 40px 0;
+  font-family: Arial, sans-serif;
+}
+.footer {
+  background-color: #f1f1f1;
+  padding: 20px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  border-top: 1px solid #ccc;
+}
+
+.footer-content {
+  margin-bottom: 10px;
+}
+
+.footer p {
+  margin: 5px 0;
+  color: #333;
+}
+
+.footer-bottom {
+  font-size: 14px;
+  color: #777;
+}

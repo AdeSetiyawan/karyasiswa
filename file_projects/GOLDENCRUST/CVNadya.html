@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <style>
+    body {
+        font-family: 'Arial', sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #0d1117; /* Hitam gelap */
+        color: #c9d1d9; /* Abu-abu terang */
+    }
+    
+    .resume-container {
+        max-width: 1100px;
+        margin: 30px auto;
+        padding: 20px;
+        background-color: #161b22; /* Hitam lebih terang */
+        border-radius: 12px;
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
+        overflow: hidden;
+    }
+    
+    /* Header */
+    .header {
+        display: flex;
+        align-items: center;
+        background: linear-gradient(45deg, #1f6feb, #0d1117);
+        padding: 40px;
+        border-radius: 12px 12px 0 0;
+        color: white;
+        transition: background-color 0.3s ease; /* Menambahkan transisi pada background */
+    }
+    
+    .header:hover {
+        background-color: #1a2341; /* Efek perubahan warna saat hover */
+    }
+    
+    .profile-photo img {
+        width: 200px;
+        height: 200px;
+        border-radius: 70%;
+        border: 3px solid #58a6ff;
+        margin-right: 50px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease; /* Menambahkan efek zoom dan bayangan */
+    }
+    
+    .profile-photo img:hover {
+        transform: scale(1.1); /* Zoom in saat hover */
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3); /* Menambahkan bayangan */
+    }
+    
+    .header-text h1 {
+        font-size: 40px;
+        margin: 0;
+        transition: color 0.3s ease, transform 0.3s ease; /* Menambahkan transisi pada warna dan ukuran */
+    }
+    
+    .header-text h1:hover {
+        color: #58a6ff; /* Mengubah warna teks menjadi biru */
+        transform: scale(1.05); /* Efek zoom pada judul */
+    }
+    
+    .header-text p {
+        font-size: 25px;
+        margin: 5px 0 0;
+        color: #8b949e;
+    }
+    
+    /* Main Content */
+    .content {
+        display: flex;
+        gap: 20px;
+        padding: 20px 0;
+    }
+    
+    /* Left Section */
+    .left-section {
+        width: 40%;
+        background-color: #21262d; /* Abu-abu gelap */
+        padding: 0px;
+        border-radius: 12px;
+    }
+    
+    .section {
+        margin-bottom: 20px;
+    }
+    
+    .section-title {
+        font-size: 20px;
+        color: #58a6ff;
+        margin-bottom: 10px;
+        transition: color 0.3s ease; /* Menambahkan transisi pada warna */
+    }
+    
+    .section-title:hover {
+        color: #1f6feb; /* Mengubah warna saat hover */
+    }
+    
+    .image-section img {
+        width: 150px;
+      }
+    
+    /* Right Section */
+    .right-section {
+        width: 60%;
+        background-color: #161b22;
+        padding: 20px;
+        border-radius: 12px;
+    }
+    
+    .skills {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* Membuat dua kolom */
+        gap: 50px; /* Menambahkan jarak antar item */
+    }
+    
+    
+    .skill-item {
+        width: 48%;
+    }
+    
+    .skill-item img {
+        width: 40px;
+        height: 40px;
+        margin-bottom: 10px;
+        transition: transform 0.3s ease; /* Menambahkan transisi zoom pada ikon skill */
+    }
+    
+    .skill-item img:hover {
+        transform: scale(1.2); /* Zoom in saat hover pada gambar skill */
+    }
+    
+    .progress-bar {
+        background: #30363d; /* Abu-abu lebih gelap */
+        height: 8px;
+        border-radius: 5px;
+        margin-top: 5px;
+    }
+    
+    .progress-bar div {
+        background: #58a6ff; /* Aksen biru */
+        height: 100%;
+        border-radius: 5px;
+    }
+    
+    /* Programming Languages */
+    .programming-languages {
+        display: flex;
+        gap: 40px;
+    }
+    
+    .language-item img {
+        width: 60px;
+        height: 60px;
+        margin-bottom: 10px;
+        transition: transform 0.3s ease; /* Menambahkan transisi zoom pada gambar bahasa pemrograman */
+    }
+    
+    .language-item img:hover {
+        transform: scale(1.2); /* Zoom in saat hover pada gambar bahasa pemrograman */
+    }
+    .progress-prgrm {
+        background: #30363d; /* Abu-abu lebih gelap */
+        height: 8px;
+        border-radius: 5px;
+        margin-top: 5px;
+    }
+    
+    .progress-prgrm div {
+        background: #58a6ff; /* Aksen biru */
+        height: 100%;
+        border-radius: 5px;
+    }
+    /* Links */
+    .link {
+        display: inline-block;
+        color: #58a6ff;
+        text-decoration: none;
+        font-size: 16px;
+        margin-top: 10px;
+        transition: color 0.3s ease; /* Menambahkan transisi pada warna link */
+    }
+    
+    .link:hover {
+        color: #1f6feb; /* Mengubah warna link saat hover */
+        text-decoration: underline;
+    }
+    </style>
+    <div class="resume-container">
+        <!-- Header -->
+        <div class="header">
+            <div class="profile-photo">
+                <img src="NADYA.jpeg" alt="Profile Photo">
+            </div>
+            <div class="header-text">
+                <h1>NADYA FITRIAN M</h1>
+                <p>PPLG Department Student</p>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="content">
+            <!-- Left Section -->
+            <div class="left-section">
+                <div class="section">
+                    <h2 class="section-title">PROFIL</h2>
+                    <p>Saya adalah siswa jurusan Pengembangan Perangkat Lunak (PPLG) dengan keahlian dalam bahasa pemrograman Java, C++, dan HTML, serta berpengalaman dalam pengembangan aplikasi web dan mobile. Saya juga memiliki keterampilan dalam bekerja secara tim dan memiliki komunikasi yang baik. Saya selalu bersemangat untuk mempelajari teknologi baru, siap menghadapi tantangan di industri perangkat lunak serta berkontribusi dalam menciptakan solusi yang inovatif.</p>
+                </div>
+
+                <div class="section">
+                    <h2 class="section-title">DATA PRIBADI</h2>
+                    <ul>
+                        <li>Tempat, Tanggal Lahir: Wonogiri, 12 Oktober 2007</li>
+                        <li>Jenis Kelamin: Perempuan</li>
+                        <li>Agama: Islam</li>
+                        <li>Kewarganegaraan: Indonesia</li>                        
+                        <li>Email: nadiamaharani568@gmail.com</li>
+                        <li>Status: Pelajar</li>
+                    </ul>
+                </div>
+
+                <div class="section">
+                    <h2 class="section-title">RIWAYAT PENDIDIKAN</h2>
+                    <ul>
+                        <li>TKIT IBNU SINA (2011 - 2013)</li>
+                        <li>SDN 3 JATISRONO (2014 - 2020)</li>
+                        <li>SMP NEGERI 1 JATISRONO (2020 - 2023)</li>
+                        <li>SMKN 1 JATIROTO (2023-2025)</li>                        
+                    </ul>
+                </div>
+                <div class="section">
+                    <h2 class="section-title">PENGHARGAAN</h2>
+                    <ul>
+                        <li>JUARA UMUM (LOMBA PIALA PANGLIMA)</li>
+                        <li>JUARA HARAPAN 1 (PORSIMPTAR AKPOL)</li>
+                        <li>JUARA HARAPAN 2 (LKBB LAWU)</li>
+                        <li>JUARA HARAPAN 3 (LKBB KSATRIA TIDAR)</li>
+                    </ul>                     
+                </div>
+
+                <div class="section">
+                    <h2 class="section-title">BEST PROJECT</h2>
+                    <div class="image-section">
+                        <img src="PJ1.jpeg" alt="Project 1">
+                        <img src="PJ2.jpeg" alt="Project 2">
+                        <img src="PJ3 .jpeg" alt="Project 3">
+                        <img src="PJ4.jpeg" alt="Project 4">
+                    </div>
+                    <p>
+                        <a href="https://drive.google.com/drive/folders/1--69ZrXbJ30eiOtRcSuiPEzXkFGGaeFp" target="_blank">Lihat lebih banyak di Google Drive</a>
+                    </p>
+                </div>
+            </div>
+
+            <!-- Right Section -->
+            <div class="right-section">
+                <div class="section">
+                    <h2 class="section-title">PENGALAMAN</h2>
+                    <ul>
+                        <li>
+                            <strong>PENGURUS OSIS 2023/2024 - SEKSI BIDANG 5</strong>
+                            <p>Mengelola kegiatan yang berhubungan dengan Demokrasi HAM Pendidikan Politik Lingkungan Hidup Kepekaan dan Toleransi Sosial.</p>
+                        </li>
+                        <li>
+                            <strong>PENGURUS OSIS 2024/2025 - WAKIL KETUA OSIS 2</strong>
+                            <p>Bertanggung jawab atas pengkoordinasian program kerja OSIS di tingkat sekolah bersama ketua OSIS.</p>
+                        </li>
+                        <li>
+                            <strong>PASKIBRA KECAMATAN JATIROTO 2023</strong>
+                            <p>Berpartisipasi sebagai anggota Pasukan Pengibar Bendera di tingkat kecamatan.</p>
+                        </li>
+                        <li>
+                            <strong>ANGGOTA PASKIBRA SMKN 1 JATIROTO (PASSKANSA)</strong>
+                            <p>Terlibat dalam pembentukan karakter disiplin, tanggung jawab, dan kerjasama tim melalui pelatihan baris-berbaris.</p>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="section">
+                    <h2 class="section-title">SKILL/KEAHLIAN</h2>
+                    <div class="skills">
+                        <div class="skill-item">
+                            <a href="https://drive.google.com/drive/folders/10Imhd9rCFm066I0na5_0tNqaaYSAVWS3" target="_blank">
+                                <img src="canvaNadya.png" alt="CANVA">
+                                <p>CANVA</p>
+                            </a>
+                            <div class="progress-bar"><div style="width: 50%;"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <a href="https://drive.google.com/drive/folders/11PWXC_8dbReJngVFe-Y5k0wghfDaeJCi" target="_blank">
+                                <img src="ReplitNadya.jpeg" alt="REPLIT">
+                                <p>REPLIT</p>
+                            </a>
+                            <div class="progress-bar"><div style="width: 78%;"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <a href="https://drive.google.com/drive/folders/110WlGYoc4h6_sZjAo0z3tgiPZC0dDTSp" target="_blank">
+                                <img src="NBNadya.png" alt="NETBEANS">
+                                <p>NETBEANS</p>
+                            </a>
+                            <div class="progress-bar"><div style="width: 70%;"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <a href="https://drive.google.com/drive/folders/10LvZiSxeppwe9LCyLrr8i_EK2elN7Bie" target="_blank">
+                                <img src="VSCODENadya.png" alt="VS CODE">
+                                <p>VS CODE</p>
+                            </a>
+                            <div class="progress-bar"><div style="width: 50%;"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h2 class="section-title">BAHASA PEMROGRAMAN</h2>
+                    <div class="programming-languages">
+                        <div class="language-item">
+                            <img src="C++NADYA.png" alt="C++">
+                            <p>C++</p>
+                            <div class="progress-prgrm"><div style="width: 78%;"></div></div>
+                        </div>
+                        <div class="language-item">
+                            <img src="JavaNADYA.png" alt="JAVA">
+                            <p>JAVA</p>
+                            <div class="progress-prgrm"><div style="width: 70%;"></div></div>
+                        </div>
+                        <div class="language-item">
+                            <img src="HTMLNADYA.png" alt="HTML">
+                            <p>HTML</p>
+                            <div class="progress-prgrm"><div style="width: 50%;"></div></div>
+                        </div>
+                        </div>
+                        </div>
+                        <button>
+                            <a href="index.html">COMPANY PROFILE</a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

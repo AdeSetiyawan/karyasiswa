@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Toko Ice Cream</title>
+  <style>
+
+    button {
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      padding: 8px 15px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s, transform 0.2s;
+    }
+    
+    button:hover {
+      background-color: #0056b3;
+      transform: scale(1.1);
+    }
+
+    button:active {
+      transform: scale(0.9);
+    }
+
+   
+    html {
+      scroll-behavior: smooth;
+    }
+
+    .k9{
+      justify-content: center;
+      align-items: center;
+    }
+
+    .k9 a img{
+      border-radius: 50%;
+    }
+ 
+    #menuSection {
+      padding-top: 20px;
+    }
+
+    #footer {
+      background-color: #000;
+      color: #fff;
+      text-align: center;
+      padding: 10px 0;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+
+    }
+
+    #paymentSection {
+      margin-top: 10px;
+    }
+
+    #paymentSection input {
+      padding: 5px;
+      margin: 5px;
+      border-radius: 5px;
+      border: 1px solid #ddd;
+    }
+    .k9 {
+    display: flex;
+    gap: 100px; 
+    margin-top: 20px;
+  }
+  </style>
+</head>
+<body style="background-image: url(bg.jpg); background-size: cover;">
+
+  
+  <div style="display: flex; justify-content: space-between; align-items: center; background-color: #000; color: #ffffff; padding: 10px 20px;">
+    <div style="font-size: 20px; font-weight: bold; font-family: Georgia, 'Times New Roman', Times, serif;">Toko Eskrim BAFFI</div>
+    <img src="logo es.jpg" alt="Logo" style="height: 40px;">
+  </div>
+
+  
+  <div style="text-align: center; padding: 20px; background-image: url(gg.jpg); background-size: cover;">
+    <img src="banner es.jpg" alt="Ice Cream" style="width: 100%; max-width: 600px; border-radius: 10px;">
+    <h1 style="font-size: 28px; margin: 10px 0; font-family: Verdana, Geneva, Tahoma, sans-serif;">Toko Ice Cream</h1>
+    <p style="font-size: 16px; margin-bottom: 20px;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Rasakan manisnya es krim kami yang lezat dan segar</p>
+    <a href="#menuSection">
+      <button>Menu</button>
+    </a>
+    
+  </div>
+
+     <div> 
+    <center>
+    <h2>KELOMPOK 9</h2>
+    </center>
+    <center>
+      <img src="klmpk9.jpg" width="350px" height="200px">
+    </center>
+    <center>
+      <h2>ANGGOTA KELOMPOK</h2>
+    </center>
+    <div class="k9">
+  <a href="cvanka.html">
+    <img src="sigma.jpg" width="200px" height="200px">
+</a>
+<a href="cvirma.html">
+  <img src="firma.jpg" width="200px" height="200px" >
+</a>
+<a href="cvfebri.html">
+  <img src="ftfebri.jpg" width="200px" height="200px" >
+</a>
+</a>
+<a href="cvpitri.html">
+  <img src="ftfitri.jpg" width="200px" height="200px" >
+</a>
+<a href="Bagusss/index.html">
+  <img src="ftBagus.jpeg" width="200px" height="200px" >
+</a>
+</div>
+</div>
+
+
+  <div id="menuSection" style="display: flex; flex-wrap: wrap; justify-content: space-around; padding: 20px;">
+  
+    <div id="item1" class="menu-item" style="background-color: #ff52cb; margin: 10px; padding: 10px; border-radius: 10px; text-align: center; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); width: 150px;">
+      <img src="rainbow es.jpg" alt="Rainbow Ice" style="width: 100px; height: 100px; border-radius: 10px;">
+      <h3 style="font-size: 18px; margin: 10px 0 5px;">Rainbow Ice</h3>
+      <p style="font-size: 16px; margin-bottom: 10px;">10k</p>
+      <button onclick="addToOrder(10.000)">Pesan Sekarang</button>
+    </div>
+    
+    <div id="item2" class="menu-item" style="background-color: #df9568; margin: 10px; padding: 10px; border-radius: 10px; text-align: center; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); width: 150px;">
+      <img src="capucino es.jpg" alt="Capucino" style="width: 100px; height: 100px; border-radius: 10px;">
+      <h3 style="font-size: 18px; margin: 10px 0 5px;">Capucino</h3>
+      <p style="font-size: 16px; margin-bottom: 10px;">8k</p>
+      <button onclick="addToOrder(8.000)">Pesan Sekarang</button>
+    </div>
+
+    <div style="background-color: #897b7b; margin: 10px; padding: 10px; border-radius: 10px; text-align: center; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); width: 150px;">
+        <img src="choco vanila es.jpg" alt="Choco Vanilla" style="width: 100px; height: 100px; border-radius: 10px;">
+        <h3 style="font-size: 18px; margin: 10px 0 5px;">Choco Vanilla</h3>
+        <p style="font-size: 16px; margin-bottom: 10px;">13k</p>
+        <button onclick="addToOrder(13.000)">Pesan Sekarang</button>
+      </div>
+     
+       
+        <div style="background-color: #00c137; margin: 10px; padding: 10px; border-radius: 10px; text-align: center; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); width: 150px;">
+          <img src="matcha es.jpg" alt="Matcha" style="width: 100px; height: 100px; border-radius: 10px;">
+          <h3 style="font-size: 18px; margin: 10px 0 5px;">Matcha</h3>
+          <p style="font-size: 16px; margin-bottom: 10px;">12k</p>
+          <button onclick="addToOrder(12.000)">Pesan Sekarang</button>
+        </div>
+      
+        <div style="background-color: #c500cf; margin: 10px; padding: 10px; border-radius: 10px; text-align: center; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); width: 150px;">
+          <img src="scop friend es.jpg" alt="Ice Scoop Friend" style="width: 100px; height: 100px; border-radius: 10px;">
+          <h3 style="font-size: 18px; margin: 10px 0 5px;">Ice Scoop Friend</h3>
+          <p style="font-size: 16px; margin-bottom: 10px;">15k</p>
+          <button onclick="addToOrder(15.000)">Pesan Sekarang</button>
+        </div>
+       
+      <div style="background-color: #ff0073; margin: 10px; padding: 10px; border-radius: 10px; text-align: center; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); width: 150px;">
+        <img src="strawberry es.jpg" alt="Jumbo Strawberry Ice" style="width: 100px; height: 100px; border-radius: 10px;">
+        <h3 style="font-size: 18px; margin: 10px 0 5px;">Strawberry Ice</h3>
+        <p style="font-size: 16px; margin-bottom: 10px;">25k</p>
+        <button onclick="addToOrder(25.000)">Pesan Sekarang</button>
+      </div>
+    
+  </div>
+</div>
+<div style="text-align: center; padding: 20px;background-color: #eaff00;">
+  <h1 style="font-size: 28px; margin: 10px 0;">Ayo belii!!</h1>
+  <p style="font-size: 16px; margin-bottom: 20px;">Nikmati sejuk dan legitnya eskrim kami:)</p>
+ 
+</div>
+    
+
+ 
+  <div id="footer">
+    <p>Total Pesanan: <span id="totalItems">0</span> | Rp. <span id="totalPrice">0</span></p>
+    
+   
+    <div id="paymentSection">
+      <label for="paymentAmount">Jumlah Pembayaran: </label>
+      <input type="number" id="paymentAmount" placeholder="Masukkan jumlah bayar" />
+      <button onclick="processPayment()">Bayar</button>
+      <p id="changeMessage" style="color: green;"></p>
+    </div>
+    
+  </div>
+
+  <script>
+    let totalItems = 0;
+    let totalPrice = 0;
+
+    function addToOrder(price) {
+      totalItems++; 
+      totalPrice += price;
+      document.getElementById("totalItems").textContent = totalItems; 
+      document.getElementById("totalPrice").textContent = totalPrice;
+    }
+
+    function processPayment() {
+      const paymentAmount = parseFloat(document.getElementById("paymentAmount").value);
+      
+      if (isNaN(paymentAmount) || paymentAmount < totalPrice) {
+        document.getElementById("changeMessage").textContent = "Jumlah pembayaran kurang. Silakan masukkan jumlah yang lebih besar.";
+        document.getElementById("changeMessage").style.color = "red";
+      } else {
+        const change = paymentAmount - totalPrice;
+        document.getElementById("changeMessage").textContent = `Kembalian: Rp. ${change.toFixed(2)}`;
+        document.getElementById("changeMessage").style.color = "green";
+      }
+    }
+  </script>
+</body>
+</html>
+

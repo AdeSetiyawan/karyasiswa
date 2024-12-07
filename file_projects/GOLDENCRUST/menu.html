@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+
+/* Page transition */
+.page-transition {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ffeb3b; /* Warna transisi */
+    z-index: 9999;
+    pointer-events: none;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: transform 0.6s ease-in-out;
+}
+
+.page-transition.active {
+    transform: scaleY(1);
+}
+
+
+ *{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: rgb(8, 6, 6);
+
+}
+html {
+    scroll-behavior: smooth;
+}
+
+
+nav {
+    display: flex;
+    width: 85%;
+    margin:auto;
+    padding: 10px 0;
+    align-items: center;
+    justify-content: space-around;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 50px;
+
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: rgb(251, 250, 250);
+    font-weight: bold;
+}
+
+nav ul li a:hover{
+    color: red;
+
+}
+.line {
+      height: 2px;
+      background: #ffe23c;
+      margin: 20px 0;
+    }
+
+ /* Menu Grid */
+ .menu-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 15px;
+      padding: 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .menu-item {
+      position: relative;
+      text-align: center;
+      border-radius: 10px;
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
+
+    .menu-item:hover {
+      transform: scale(1.05);
+    }
+
+    .menu-item img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .menu-item h3 {
+      margin: 10px 0 0;
+      font-size: 18px;
+    }
+
+    .footer-bottom {
+  text-align: center;
+  padding: 10px 0;
+  border-top: 1px solid #444;
+  background-color: #ff0202;
+  padding: 20px;
+}
+
+.footer-bottom h2 {
+  margin: 0;
+  font-size: 20px;
+  color: #ffffff;
+ background-color: #ff0202;
+}
+</style>
+
+<body>
+  <div class="page-transition" id="page-transition"></div>
+
+    <div class="nav">
+        <nav>
+        <img src="Bright Orange illustrates Food Chicken Logo (Logo).png" width="100" height="100" class="logo">
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="menu.html">OUR MENU</a></li>
+          <li><a href="promo.html">PROMO</a></li>
+          <li><a href="follow.html">FOLLOW US</a></li>
+          <li><a href="position.html">CONTACT</a></li>             
+        </ul>
+    </nav></div>
+     <div class="line"></div>
+     <nav>
+        <ul>
+            <li><a href="#fireChicken">Fire Chicken</a></li>
+            <li><a href="#Chicken">Chicken</a></li>
+            <li><a href="#Drinks">Drinks</a></li>
+            <li><a href="#Burger">Burger</a></li>    
+            <li><a href="#Snack">Snack</a></li>        
+        </ul>
+     </nav>
+     <div class="line"></div>
+      
+     <!-- Menu Grid -->
+  <div class="menu-container">
+    <div class="menu-item">
+      <img src="Tanpa judul (Papan Reklame (Persegi)) (1).png" alt="Fire Chicken">
+      <h3>Fire Chicken</h3>
+    </div>
+    <div class="menu-item">
+      <img src="Tanpa judul (Papan Reklame (Persegi)) (2).png" alt="Fried Chicken">
+      <h3>Fried Chicken</h3>
+    </div>
+    <div class="menu-item">
+        <img src="Tanpa judul (Papan Reklame (Persegi)).png" alt="Drinks">
+        <h3>Drinks</h3>
+      </div>
+    <div class="menu-item">
+      <img src="Tanpa judul (Papan Reklame (Persegi)) (4).png" alt="Fire Burger">
+      <h3>Fire Burger</h3>
+    </div>
+    <div class="menu-item">
+      <img src="Tanpa judul (Papan Reklame (Persegi)) (5).png" alt="Snack">
+      <h3>Snack</h3>
+    </div>
+  </div>
+
+  <!-- Menu Items -->
+   <section id="fireChicken">
+    <div class="menu-container">
+        <div class="menu-item">
+          <img src="Tanpa judul (Papan Reklame (Persegi)) (8).png" alt="Fire Chicken">
+          <h3>Fire Chicken</h3>
+        </div>
+        <div class="menu-item">
+          <img src="Tanpa judul (Papan Reklame (Persegi)) (9).png" alt="Fire Wings">
+          <h3>Fire Wings</h3>
+        </div>
+        <div class="menu-item">
+          <img src="Tanpa judul (Papan Reklame (Persegi)) (10).png" alt="Fire Chicken Whole">
+          <h3>Fire Chicken Whole</h3>
+        </div>
+      </div>
+   </section>
+
+   <section id="Chicken">
+    <div class="menu-container">
+        <div class="menu-item">
+          <img src="Tanpa judul (Papan Reklame (Persegi)) (11).png" alt="Fried Chicken">
+          <h3>Fried Chicken</h3>
+        </div>
+        <div class="menu-item">
+            <img src="Tanpa judul (Papan Reklame (Persegi)) (12).png" alt="Fried Chicken">
+            <h3>Fried Chicken</h3>
+          </div>
+          <div class="menu-item">
+            <img src="Tanpa judul (Papan Reklame (Persegi)) (13).png" alt="Fried Chicken">
+            <h3>Fried Chicken</h3>
+          </div>
+ </section>
+
+ <section id="Drinks">
+    <div class="menu-container">
+        <div class="menu-item">
+          <img src="Tanpa judul (Papan Reklame (Persegi)) (14).png" alt="Drinks">
+          <h3>Drinks</h3>
+        </div>
+        <div class="menu-item">
+            <img src="Tanpa judul (Papan Reklame (Persegi)) (15).png" alt="Drinks">
+            <h3>Drinks</h3>
+          </div>
+          <div class="menu-item">
+            <img src="Tanpa judul (Papan Reklame (Persegi)) (16).png" alt="Drinks">
+            <h3>Drinks</h3>
+          </div>
+ </section>
+
+ <section id="Burger">
+    <div class="menu-container">
+        <div class="menu-item">
+          <img src="Tanpa judul (Papan Reklame (Persegi)) (17).png" alt="Burger">
+          <h3>Burger</h3>
+        </div>
+        <div class="menu-item">
+            <img src="Tanpa judul (Papan Reklame (Persegi)) (18).png" alt="Burger">
+            <h3>Burger</h3>
+          </div>
+          <div class="menu-item">
+            <img src="Tanpa judul (Papan Reklame (Persegi)) (19).png" alt="Burger">
+            <h3>Burger</h3>
+          </div>
+ </section>
+     
+ <section id="Snack">
+    <div class="menu-container">
+        <div class="menu-item">
+          <img src="Tanpa judul (Papan Reklame (Persegi)) (20).png" alt="Snack">
+          <h3>Snack</h3>
+        </div>
+        <div class="menu-item">
+            <img src="Tanpa judul (Papan Reklame (Persegi)) (21).png" alt="Snack">
+            <h3>Snack</h3>
+          </div>
+          <div class="menu-item">
+            <img src="Tanpa judul (Papan Reklame (Persegi)) (22).png" alt="Snack">
+            <h3>Snack</h3>
+          </div>
+ </section>
+
+ <div class="footer-bottom">
+  <h2>@Golden Crust 2024</h2>
+
+  <script>
+    // Pilih semua tautan di menu navigasi dan tombol
+    document.querySelectorAll('nav ul li a, .button').forEach(link => {
+        link.addEventListener('click', (e) => {
+            const targetUrl = link.getAttribute('href'); // Ambil URL tujuan
+
+            // Cek apakah link adalah anchor link internal (dimulai dengan #)
+            if (targetUrl.startsWith('#')) {
+                e.preventDefault(); // Cegah tindakan default tautan
+                const targetElement = document.querySelector(targetUrl); // Cari elemen target berdasarkan ID
+
+                if (targetElement) {
+                    // Scroll ke elemen target secara halus
+                    targetElement.scrollIntoView({ behavior: 'smooth' });
+                }
+            } else {
+                // Jika bukan anchor link (navigasi antar halaman)
+                e.preventDefault(); // Cegah tindakan default tautan
+
+                // Aktifkan efek transisi
+                const pageTransition = document.getElementById('page-transition');
+                pageTransition.classList.add('active');
+
+                // Pindahkan ke halaman tujuan setelah animasi selesai
+                setTimeout(() => {
+                    window.location.href = targetUrl;
+                }, 600); // Harus sesuai dengan durasi CSS transition (0.6s)
+            }
+        });
+    });
+</script>
+
+
+
+    </body>
+</html>
